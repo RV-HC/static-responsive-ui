@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Home</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- <link href="assets/css/merchant_style.css" rel="stylesheet" /> -->
+  <!-- <link href="assets/css/custom_style.css" rel="stylesheet" /> -->
+  <!-- <link href="assets/css/font-awesome.css" rel="stylesheet" /> -->
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+  <style></style>
+  <script type='text/javascript' src=''></script>
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+  <script type='text/javascript'
+    src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+  <!-- swiper css link -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+
+
+  <!-- =======================================================
+  * Template Name: Presento - v3.7.0
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body id="home">
+
+  <div id="loader">
+    <img src="./assets/img/loader2.gif" />
+  </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <div class="logo"><a href="/customer/index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></div>
+      <!-- <h1 class="logo"></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <div class="dropdown">
+        <button class="btn dropdown-toggle" type="button" id="dropdown_coins" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          City
+        </button>
+        <div id="menu" class="dropdown-menu" aria-labelledby="dropdown_coins">
+          <form class="px-4 py-2">
+            <input type="search" class="form-control" id="searchCoin" placeholder="Delhi" autofocus="autofocus">
+          </form>
+          <div id="menuItems"></div>
+          <div id="empty" class="dropdown-header">City Not Found</div>
+        </div>
+      </div>
+
+      <div class="dropdown" style="width: 50%;">
+        <!-- <button class="btn dropdown-toggle" type="button" style="display:none"></button> -->
+        <div id="myInput" class="input-group rounded dropdown-toggle custom-toggle">
+          <span class="input-group-text border-0 custom-removal-color" id="search-addon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </span>
+          <div id="search-button" name="search-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <input id="search" type="search" name="search" class="form-control rounded" widht="1" placeholder="Search For Hobby Center Or an Event" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </div>
+        </div>
+        <div id="searchSuggestions" class="dropdown-menu" aria-labelledby="search-button">
+          <div id="suggestions"></div>
+        </div>
+      </div>
+      
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <div class="btn-group">
+            <button type="button" id="greet" class="btn dropdown-toggle mr-3" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Account & List
+            </button>
+            <div class="dropdown-menu text-center">
+              <div id="login-div" class="container">
+                <div class="btn text-white text-center mt-1"
+                  style="background-color:rgba(21, 202, 187, 0.808);width:100%;color:black"><a
+                    href="signin.html">Login</a></div>
+              </div>
+              <div id="sign-up"><a class="sign-up" href="signup.html" style="font-size:10px;color:black;">New User?
+                  Create Account</a></div>
+              <div id="signup-divider" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);"></div>
+              <div id="myAccount"><a class="dropdown-item" href="myAccount.html">My Account</a></div>
+              <div id="bookingHistory"><a class="dropdown-item" href="bookingHistory.html">Booking History</a></div>
+              <a class="dropdown-item" href="Coupons.html">Coupons</a>
+              <div id="dividerAboveLogout" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);">
+              </div>
+              <a id="logout" class="dropdown-item" href="#" onclick="logout();">Logout</a>
+            </div>
+          </div>
+          <li class="mr-2
+            " style="cursor: pointer;"><img id="notificationDiv" src="assets/img/active_notification.gif" width="30"
+              height="30" class="img-fluid" data-bs-toggle="modal" data-bs-target="#notificationModal"></li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <!-- <li><img id="favouritesDiv" src="assets/img/wishlist.png" width="30" height="30"
+              class="img-fluid" data-bs-toggle="modal" data-bs-target="#wishlistModal" style="filter:grayscale"></li> -->
+              <li style="cursor: pointer;"><img id="cart" src="assets/img/shopping-cart.png" width="30" height="30"
+                class="img-fluid"></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- Notification  -->
+  <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="verificationModalLabel">Notifications</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Empty
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Favourites -->
+  <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="verificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="verificationModalLabel">Favourites</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="myFavouriteList">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container-fluid position-relative" >
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-lg-12 text-center">
+          <h1 style="color:#fff"> Explore your Hobby Center Instantly ! </h1>
+        </div>
+        <div class="container text-center custom-bannner-container">
+          <div class="for-divide">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle bg-white custom-banner-dropdown" style="color:black; width:100%; height:50px;" type="button"
+              id="dropdown_coinsl" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="bg-white" src="./assets/img/black-placeholder-variant.png"></img> Your Preferred Locality
+            </button>
+            <div id="menul" class="dropdown-menu" aria-labelledby="dropdown_coinsl"
+              style="width:100%; overflow: scroll;overflow:auto">
+              <form class="px-4 py-2">
+                <input type="search" class="form-control" id="searchCoinl" placeholder="Saket" autofocus="autofocus">
+              </form>
+              <div id="menuItemsl"></div>
+              <div id="emptyl" class="dropdown-header">Locality Not Found</div>
+            </div>
+          </div>
+          <span class="custom-divider"></span>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle bg-white custom-banner-dropdown" style="color:black;width:100%;height:50px;" type="button"
+              id="dropdown_coinsh" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Let's choose your hobby here
+            </button>
+            <div id="menuh" class="dropdown-menu" aria-labelledby="dropdown_coinsh"
+              style="width:100%; overflow: scroll;overflow:auto">
+              <form class="px-4 py-2">
+                <input type="search" class="form-control" id="searchCoinh" placeholder="Dance" autofocus="autofocus">
+              </form>
+              <div id="menuItemsh"></div>
+              <div id="emptyh" class="dropdown-header">Hobby Not Found</div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <section class="day-deal d-none">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title-day-deal">
+              <h2>DEAL OF THE DAY</h2>
+            </div>
+            <div class="deal-view-all">
+              <a href="#">View All</a>
+            </div>
+            <div class="deal-day-custom-slider">
+              <div class="slide-container swiper">
+                <div class="slide-content1">
+                  <div class="card-wrapper swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="day-deal-custom-profile">
+                        <div class="slide-single-image">
+                          <img src="./assets/img/day-dance.png" class="img img-responsive">
+                        </div>
+                        <div class="main-slide-content">
+                          <div class="content-slide-colored">
+                            <p class="yellow-colored">
+                              (Western Dance) <b>Hip Hop</b>
+                            </p>
+                          </div>
+                          <div class="simple-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          </div>
+                          <div class="offering-text">
+                            <p>Get <span class="yellowish">10%</span> On This Course Booking</p>
+                          </div>
+                          <div class="start-from">
+                            <h2>Starting From</h2>
+                            <span class="line-throgh-price">
+                              $40K/Month
+                            </span>
+                            <span class="the-actual-price">
+                              $20k/Month
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="day-deal-custom-profile">
+                        <div class="slide-single-image">
+                          <img src="./assets/img/day-dance.png" class="img img-responsive">
+                        </div>
+                        <div class="main-slide-content">
+                          <div class="content-slide-colored">
+                            <p class="yellow-colored">
+                              (Western Dance) <b>Hip Hop</b>
+                            </p>
+                          </div>
+                          <div class="simple-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          </div>
+                          <div class="offering-text">
+                            <p>Get <span class="yellowish">10%</span> On This Course Booking</p>
+                          </div>
+                          <div class="start-from">
+                            <h2>Starting From</h2>
+                            <span class="line-throgh-price">
+                              $40K/Month
+                            </span>
+                            <span class="the-actual-price">
+                              $20k/Month
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="day-deal-custom-profile">
+                        <div class="slide-single-image">
+                          <img src="./assets/img/day-dance.png" class="img img-responsive">
+                        </div>
+                        <div class="main-slide-content">
+                          <div class="content-slide-colored">
+                            <p class="yellow-colored">
+                              (Western Dance) <b>Hip Hop</b>
+                            </p>
+                          </div>
+                          <div class="simple-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          </div>
+                          <div class="offering-text">
+                            <p>Get <span class="yellowish">10%</span> On This Course Booking</p>
+                          </div>
+                          <div class="start-from">
+                            <h2>Starting From</h2>
+                            <span class="line-throgh-price">
+                              $40K/Month
+                            </span>
+                            <span class="the-actual-price">
+                              $20k/Month
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="day-deal-custom-profile">
+                        <div class="slide-single-image">
+                          <img src="./assets/img/day-dance.png" class="img img-responsive">
+                        </div>
+                        <div class="main-slide-content">
+                          <div class="content-slide-colored">
+                            <p class="yellow-colored">
+                              (Western Dance) <b>Hip Hop</b>
+                            </p>
+                          </div>
+                          <div class="simple-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          </div>
+                          <div class="offering-text">
+                            <p>Get <span class="yellowish">10%</span> On This Course Booking</p>
+                          </div>
+                          <div class="start-from">
+                            <h2>Starting From</h2>
+                            <span class="line-throgh-price">
+                              $40K/Month
+                            </span>
+                            <span class="the-actual-price">
+                              $20k/Month
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next one swiper-navBtn"></div>
+                <div class="swiper-button-prev one swiper-navBtn"></div>
+                <div class="swiper-pagination one"></div>
+    </section>
+    <section id="all-categories" class="all-categories-custom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title-cat">
+              <h2>Active Categories</h2>
+            </div>
+            <div class="cat-view-all">
+              <a href="#">View All</a>
+            </div>
+            <div class="cat-custom-slider">
+              <div class="slide-container swiper">
+                <div class="slide-content2">
+                  <div class="card-wrapper swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Dance-Classical</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Dance-Folk</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Dance-Western</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Music-Instrumental</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Music-Vocal</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Art & Crafts</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Robotics</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Computer Skills</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Yoga</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Language Learning</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="cat-full-image">
+                          <img src="./assets/img/mount.webp">
+                          <div class="black-over-text">
+                            <p>Driving School</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="swiper-button-next two swiper-navBtn"></div>
+                <div class="swiper-button-prev two swiper-navBtn"></div>
+                <div class="swiper-pagination two"></div>
+    </section>
+
+    <!-- Adventurous -->
+    <section id="adventours" class="adventours-custom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="adven-subhead">
+              <h3>Do More Of What Makes You Happy</h3>
+            </div>
+            <div class="adven-head">
+              <h2>ADVENTUROUS</h2>
+            </div>
+            <div class="adven-discription-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="adven-custom-slider">
+              <div class="slide-container swiper">
+                <div class="slide-content3">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="adven-full-image">
+                          <img src="./assets/img/boxing.jpeg">
+                          <div class="white-over-text">
+                            <p>Indoor Climbing</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="adven-full-image">
+                          <img src="./assets/img/karting.jpg">
+                          <div class="white-over-text">
+                            <p>Archery</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="swiper-slide">
+                      <div class="adven-full-image">
+                        <img src="./assets/img/archey.jpg">
+                        <div class="white-over-text">
+                          <p>Boxing</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="adven-full-image">
+                        <img src="./assets/img/shooting.webp">
+                        <div class="white-over-text">
+                          <p>Kick-Boxing</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="adven-full-image">
+                        <img src="./assets/img/shooting.webp">
+                        <div class="white-over-text">
+                          <p>Shooting Range</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="adven-full-image">
+                        <img src="./assets/img/shooting.webp">
+                        <div class="white-over-text">
+                          <p>Go Karting</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="adven-full-image">
+                        <img src="./assets/img/shooting.webp">
+                        <div class="white-over-text">
+                          <p>Javelin Throw</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="adven-full-image">
+                        <img src="./assets/img/shooting.webp">
+                        <div class="white-over-text">
+                          <p>Discus Throw</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="swiper-button-next three swiper-navBtn"></div>
+                <div class="swiper-button-prev three swiper-navBtn"></div>
+                <div class="swiper-pagination three"></div>
+          </div>
+    </section>
+    <section id="artistic" class="artistic-custom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="artistic-head">
+              <h2>ARTISTIC</h2>
+            </div>
+            <div class="artistic-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="artistic-custom-slider">
+              <div class="slide-container swiper">
+                <div class="slide-content4">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="artistic-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Dance-Classical</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="artistic-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Dance-Folk</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="artistic-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Clay Modelling</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="artistic-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Dance-Western</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="artistic-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Music-Instrumental</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="artistic-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Music-Vocal</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="artistic-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Art & Crafts</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="artistic-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Acting School</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next four swiper-navBtn"></div>
+                <div class="swiper-button-prev four swiper-navBtn"></div>
+                <div class="swiper-pagination four"></div> 
+    </section>
+    <section id="skill" class="skill-custom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="skill-head">
+              <h2>SKILL</h2>
+            </div>
+            <div class="skill-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="skill-custom-slider">
+              <div class="slide-container swiper">
+                <div class="slide-content5">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="skill-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Robotics</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="skill-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Computer Skills</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="skill-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Yoga</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="skill-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Language Learning</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="skill-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Driving School</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="skill-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Photography</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="skill-full-image">
+                          <img src="./assets/img/clay-mode.jpg">
+                          <div class="gradient-over-text">
+                            <h3>Bakery</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next five swiper-navBtn"></div>
+                <div class="swiper-button-prev five swiper-navBtn"></div>
+                <div class="swiper-pagination five"></div> 
+    </section>
+
+   
+
+
+    <!-- Sports -->
+    <section id="sports" class="custom-sports" style="background-color:rgba(11, 219, 202, 0.808);">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="sports-heads">
+                <h2>SPORTS</h2>
+              </div>
+              <div class="sports-subheading">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+              <div class="sports-custom-slider">
+                <div class="side-by-side-content">
+                            <h3>
+                              No One is<br>
+                              Really Happy<br>
+                              or Safe<br>
+                              Without a<br>
+                              Hobby
+                            </h3>
+                          </div>
+                <div class="slide-container swiper">
+                  <div class="slide-content6">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Shooting Range</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Archery</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Indoor Climbing</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>GO Karting</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Squash</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Javelin Throw</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Discus Throw</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="swiper-button-next six swiper-navBtn"></div>
+                <div class="swiper-button-prev six swiper-navBtn"></div>
+                <div class="swiper-pagination six"></div>
+                </section>
+                
+                <section id="sports" class="custom-sports-two" style="background-color:rgba(11, 219, 202, 0.808);">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">  
+              <div class="sports-custom-slider">
+                <div class="slide-container swiper">
+                  <div class="slide-content7">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Boxing</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Kick Boxing</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Table Tennis</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Lawn Tennis</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Cricket</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="swiper-slide">
+                          <div class="sports-full-image">
+                            <img src="./assets/img/sports-images.jpg">
+                            <div class="sport-gradient-over-text">
+                              <h3>Basketball</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="side-by-side-content">
+                            <h3>
+                              No One is<br>
+                              Really Happy<br>
+                              or Safe<br>
+                              Without a<br>
+                              Hobby
+                            </h3>
+                          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next seven swiper-navBtn"></div>
+                <div class="swiper-button-prev seven swiper-navBtn"></div>
+                <div class="swiper-pagination seven"></div> 
+    </section>
+
+    <section id="hobby" class="hobby-custom d-none">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="hobby-head">
+              <h2>TOP HOBBY CENTER IN NOIDA</h2>
+            </div>
+            <div class="hobby-discription-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="hobby-custom-slider">
+              <div class="slide-container swiper">
+                <div class="slide-content8">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="hobby-full-image">
+                          <img src="./assets/img/boxing.jpeg">
+                          <div class="sky-blue-over-text">
+                            <p>Baratizz Bazz</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="hobby-full-image">
+                          <img src="./assets/img/karting.jpg">
+                          <div class="sky-blue-over-text">
+                            <p>Baratizz Bazz</p>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="swiper-slide">
+                      <div class="hobby-full-image">
+                        <img src="./assets/img/archey.jpg">
+                        <div class="sky-blue-over-text">
+                          <p>Baratizz Bazz</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="hobby-full-image">
+                        <img src="./assets/img/shooting.webp">
+                        <div class="sky-blue-over-text">
+                          <p>Baratizz Bazz</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="swiper-button-next eight swiper-navBtn"></div>
+                <div class="swiper-button-prev eight swiper-navBtn"></div>
+                <div class="swiper-pagination eight"></div>
+          </div>
+    </section>
+    <section class="recommendation d-none">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="recommendation-head">
+              <h2>RECOMMENDATION</h2>
+            </div>
+            <div class="recommendation-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="recommendation-custom-slider">
+              <div class="slide-container swiper">
+                <div class="slide-content9">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="recommendation-full-image">
+                          <img src="./assets/img/boxing.jpeg">
+                            <h3>Snow Boarding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="recommendation-full-image">
+                          <img src="./assets/img/boxing.jpeg">
+                            <h3>Snow Boarding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="recommendation-full-image">
+                          <img src="./assets/img/boxing.jpeg">
+                            <h3>Snow Boarding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="recommendation-full-image">
+                          <img src="./assets/img/boxing.jpeg">
+                            <h3>Snow Boarding</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next nine swiper-navBtn"></div>
+                <div class="swiper-button-prev nine swiper-navBtn"></div>
+                <div class="swiper-pagination nine"></div> 
+    </section>
+    <section class="contact-custom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main-shadow-contact">
+              <div class="right-one">
+                <div class="content-right">
+                  <h3>Get in touch With US For<br> any Question</h3>
+                  <div class="all-call-contact">
+                    <div class="contact-type">
+                      <img src="./assets/img/map.png">
+                      <div class="head-text">
+                        <h4>Location</h4>
+                        <p> E-5, First Floor, Lane, Number 1, Westend Marg, Saket, New Delhi, Delhi 110030</p>
+                      </div>
+                    </div>
+                    <hr class="white-divide">
+                    <div class="contact-type">
+                      <img src="./assets/img/phone-call.png">
+                      <div class="head-text">
+                        <h4>Phone Number</h4>
+                        <p>+91 888 2568 222</p>
+                      </div>
+                    </div>
+                    <hr class="white-divide">
+                    <div class="contact-type">
+                      <img src="./assets/img/mail-an.png">
+                      <div class="head-text">
+                        <h4>Email Address</h4>
+                        <p><a href="mailto:customersupport@hobbycaddy.com">customersupport@hobbycaddy.com</a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="left-one">
+                <div class="filter-for-contact">
+                  <p>I am a:</p>
+                  <a href="#">Customer</a>
+                  <a href="#">Corporate</a>
+                  <a href="#">Partner</a>
+                </div>
+                <div class="main-left-form">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-6 form-group">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" name="first-name" placeholder=""/>
+                      </div>
+                      <div class="col-6 form-group">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" name="last-name" placeholder=""/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 form-group">
+                        <label>Phone Number</label>
+                        <input type="number" class="form-control" name="number" placeholder=""/>
+                      </div>
+                      <div class="col-6 form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" name="email" placeholder=""/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label>Reason to Contact</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Write Description</label>
+                      <textarea class="form-control" placeholder=""></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+  <footer style="position: relative; z-index: 0;">
+    
+    <div class="footer-back">
+    <div class="footer-top text-white pt-5">
+      <div class="container-fluid">
+        <h1 class="logo"><a href="#"><img src="assets/img/logo.png" alt="" class="img-fluid"
+              style="width: 70mm; height:12mm"></a></h1>
+      <div class="custom-container ">
+        <div class="footer-about wow fadeInUp animated footer-about-sec"
+          style="visibility: visible; animation-name: fadeInUp; width: 70%;">
+
+          <h3>About us</h3>
+          <p>
+            Wipe away the problems from your life by experiencing a whole new and 
+            creative platform proving hobbies. HOBBY CADDY is that platform that helps 
+            you with different options as per your interest. Our team is here to fulfil 
+            your dreams into reality. We aim to serve you with memorable activities, 
+            tremendous opportunities, and creative feats. Join us and let us help you 
+            fulfil your dreams, passion, and hobby. 
+        </p>
+
+        </div>
+        <div class="footer-assistance-sec" style="width: 30%;">
+          <h4>For Any Assistance</h4>
+          <div class="assistance-divi">
+            <div class="mail-image">
+              <img src="./assets/img/mail-an.png">
+            </div>
+            <div class="all-mails">
+              <h4>Business Inquiries</h4>
+              <p><a href="mailto:merchant@hobbycadyy.com">merchant@hobbycadyy.com</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    <hr style="width:100%;margin-left:0;height:2px;color:white; border: 1px dashed black;">
+    <div class="container-fluid">
+    <div class="custom-sec-footer text-white text-center">
+      <h3>Quick Links</h3>
+      <br>
+      <div class="row custom-menu-footer-row">
+        <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Hiring</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Guidelines and Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Terms of Services</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+        <li>
+        
+          <a data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sell On HOBBY CADDY</a>
+          <!-- Modal -->
+          
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="copyright-dividation">
+          <div class="copyright">
+           2021 &copy; HobbyCaddy.com
+          </div>
+          <div class="social-links">
+            <h6>Follow Us On :</h6>
+            <a href="#" class="twitter"><img src="./assets/img/twitter.png" style="height:6mm"></a>
+            <a href="https://www.facebook.com/hobbycaddy/" class="facebook"><img src="./assets/img/facebook.png" style="height:6mm"></a>
+            <a href="https://www.instagram.com/hobbycaddy/" class="instagram"><img src="./assets/img/instagram.png" style="height:6mm"></a>
+            <a href="https://in.linkedin.com/company/hobby-caddy/
+" class="linkedin"><img src="./assets/img/linkedin.png" style="height:6mm"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <div class="custom-sell-form-footer">
+                   <form action="">
+                       <div class="form-group">
+                          <label>Business Name</label>
+                          <input type="text" name="business-name" placeholder="Enter your Business Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Contacting Person Name</label>
+                          <input type="text" name="contact-person-name" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                          <label>City</label>
+                          <input type="text" name="city-name" placeholder="Enter your City Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Pin Code</label>
+                          <input type="number" name="pin-code" placeholder="Enter your Pin Code">
+                        </div>
+                        <div class="form-group">
+                          <label>Email Id</label>
+                          <input type="email" name="email" placeholder="Enter your Email Address">
+                        </div>
+                        <div class="form-group">
+                          <label>WhatsApp Number</label>
+                          <input type="number" name="whatsapp-no" placeholder="Enter your WhatsApp Number">
+                        </div>
+                        <button type="submit">Submit</button>
+                   </form>
+                 </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- Swiper JS -->
+  <!-- <script src="./assets/js/swiper-bundle.min.js"></script> -->
+  <!-- JavaScript -->
+  <script src="./assets/js/script.js"></script>
+  <script>
+
+    //Initialize with the list of symbols
+    let cityNames = ["Delhi"]
+
+    //Find the input search box
+    let search = document.getElementById("searchCoin")
+
+    //Find every item inside the dropdown
+    let items = document.getElementsByClassName("dropdown-city")
+    function buildDropDownCity(values) {
+      let contents = []
+      for (let name of values) {
+        contents.push('<input type="button" class="dropdown-item dropdown-city" type="button" value="' + name + '"/>')
+      }
+      $('#menuItems').append(contents.join(""))
+
+      //Hide the row that shows no items were found
+      $('#empty').hide()
+    }
+
+    //Capture the event when user types into the search box
+    document.getElementById("searchCoin").addEventListener('input', function () {
+      event.preventDefault();
+      filterCity(search.value.trim().toLowerCase())
+    })
+
+    //For every word entered by the user, check if the symbol starts with that word
+    //If it does show the symbol, else hide it
+    function filterCity(word) {
+      console.log(word)
+      let length = items.length
+      console.log(items)
+      let collection = []
+      let hidden = 0
+      for (let i = 0; i < length; i++) {
+        if (items[i].value.toLowerCase().startsWith(word)) {
+          $(items[i]).show()
+        }
+        else {
+          $(items[i]).hide()
+          hidden++
+        }
+      }
+
+      //If all items are hidden, show the empty view
+      if (hidden === length) {
+        $('#empty').show()
+      }
+      else {
+        $('#empty').hide()
+      }
+    }
+
+    //If the user clicks on any item, set the title of the button as the text of the item
+    $('#menuItems').on('click', '.dropdown-item', function () {
+      sessionStorage.setItem("city", $(this)[0].value);
+      $('#dropdown_coins').text($(this)[0].value)
+      $("#dropdown_coins").dropdown('toggle');
+    })
+    buildDropDownCity(cityNames)
+  </script>
+
+  <script>
+    //Initialize with the list of symbols
+    let namesl = ["Saket", "Malviya Nagar", "Hauz khas", "Vasant Kunj", "Green Park", "Rajouri Garden", "Punjabi Bagh", "Paschim Vihar"]
+
+    //Find the input search box
+    let searchl = document.getElementById("searchCoinl")
+
+    //Find every item inside the dropdown
+    let itemsl = document.getElementsByClassName("dropdown-locality")
+    function buildDropDownLocality(values) {
+      let contents = []
+      for (let name of values) {
+        contents.push('<input type="button" class="dropdown-item dropdown-locality" type="button" value="' + name + '"/>')
+      }
+      $('#menuItemsl').append(contents.join(""))
+
+      //Hide the row that shows no items were found
+      $('#emptyl').hide()
+    }
+
+    //Capture the event when user types into the search box
+    document.getElementById("searchCoinl").addEventListener('input', function () {
+      event.preventDefault();
+      filterLocality(searchl.value.trim().toLowerCase())
+    })
+
+    function newPage(category) {
+      window.open('category.html?search=' + category, "_self");
+    }
+
+    //For every word entered by the user, check if the symbol starts with that word
+    //If it does show the symbol, else hide it
+    function filterLocality(word) {
+      console.log(word)
+      let length = itemsl.length
+      let collection = []
+      let hidden = 0
+      for (let i = 0; i < length; i++) {
+        if (itemsl[i].value.toLowerCase().startsWith(word)) {
+          $(itemsl[i]).show()
+        }
+        else {
+          $(itemsl[i]).hide()
+          hidden++
+        }
+      }
+
+      //If all items are hidden, show the empty view
+      if (hidden === length) {
+        $('#emptyl').show()
+      }
+      else {
+        $('#emptyl').hide()
+      }
+    }
+
+    //If the user clicks on any item, set the title of the button as the text of the item
+    $('#menuItemsl').on('click', '.dropdown-item', function () {
+      console.log($(this)[0].value);
+      sessionStorage.setItem("locality", $(this)[0].value);
+      $('#dropdown_coinsl').text($(this)[0].value)
+      $("#dropdown_coinsl").dropdown('toggle');
+    })
+    buildDropDownLocality(namesl)
+  </script>
+
+  <script>
+    //Initialize with the list of symbols
+    let namesh = ["Dance-Classical", "Dance-Folk", "Dance-Western", "Music-Instrumental", "Music-Vocal", "Art & Crafts", "Robotics", "Computer Skills", "Yoga", "Language Learning", "Driving School"]
+
+    //Find the input search box
+    let searchh = document.getElementById("searchCoinh")
+
+    //Find every item inside the dropdown
+    let itemsh = document.getElementsByClassName("dropdown-category")
+    function buildDropDownCategory(values) {
+      let contents = []
+      for (let name of values) {
+        contents.push('<input type="button" class="dropdown-item dropdown-category" type="button" value="' + name + '"/>')
+      }
+      $('#menuItemsh').append(contents.join(""))
+
+      //Hide the row that shows no items were found
+      $('#emptyh').hide()
+    }
+
+    //Capture the event when user types into the search box
+    document.getElementById("searchCoinh").addEventListener('input', function () {
+      event.preventDefault();
+      filterCategory(searchh.value.trim().toLowerCase())
+    })
+
+    //For every word entered by the user, check if the symbol starts with that word
+    //If it does show the symbol, else hide it
+    function filterCategory(word) {
+      let length = itemsh.length
+      let collection = []
+      let hidden = 0
+      for (let i = 0; i < length; i++) {
+        if (itemsh[i].value.toLowerCase().startsWith(word)) {
+          $(itemsh[i]).show()
+        }
+        else {
+          $(itemsh[i]).hide()
+          hidden++
+        }
+      }
+
+      //If all items are hidden, show the empty view
+      if (hidden === length) {
+        $('#emptyh').show()
+      }
+      else {
+        $('#emptyh').hide()
+      }
+    }
+
+    //If the user clicks on any item, set the title of the button as the text of the item
+    $('#menuItemsh').on('click', '.dropdown-item', function () {
+      var localityFilter = sessionStorage.getItem("locality");
+
+      console.log(localityFilter)
+      if (localityFilter == "") {
+        window.open('category.html?search=' + $(this)[0].value, "_self");
+      }
+      else {
+        window.open('category.html?search=' + $(this)[0].value + "&locality=" + localityFilter, "_self");
+      }
+      $('#dropdown_coinsh').text($(this)[0].value)
+      $("#dropdown_coinsh").dropdown('toggle');
+    })
+    buildDropDownCategory(namesh)
+  </script>
+  <script>
+    var myInputWidth = (document.getElementById("myInput").offsetWidth);
+    console.log(myInputWidth);
+    document.getElementById("myInput").style.width = myInputWidth * 0.8 + "px";
+    console.log(myInputWidth * 0.001);
+
+    var role = "";
+
+    function setRole(id) {
+      role = id;
+      console.log(role);
+      if (role == "customer") {
+        document.getElementById(id).style.backgroundColor = "rgba(3, 90, 83, 0.808)";
+        document.getElementById("corporate").style.backgroundColor = "lightgrey";
+        document.getElementById("partner").style.backgroundColor = "lightgrey";
+      }
+      else if (role == "corporate") {
+        document.getElementById(id).style.backgroundColor = "rgba(3, 90, 83, 0.808)";
+        document.getElementById("customer").style.backgroundColor = "lightgrey";
+        document.getElementById("partner").style.backgroundColor = "lightgrey";
+      }
+      else {
+        document.getElementById(id).style.backgroundColor = "rgba(3, 90, 83, 0.808)";
+        document.getElementById("customer").style.backgroundColor = "lightgrey";
+        document.getElementById("corporate").style.backgroundColor = "lightgrey";
+      }
+    }
+
+    // Display add to Favourites button
+    // function display(id) {
+    //   id = id + '-Favourites';
+
+    //   var greet = document.getElementById("greet").innerHTML;
+    //   if (greet.includes("Hi")) {
+    //     console.log(id);
+    //     document.getElementById(id).style.display = "inline";
+    //   }
+    // }
+
+    // function hide(id) {
+    //   id = id + '-Favourites';
+    //   document.getElementById(id).style.display = "none";
+    // }
+
+    function addToFavourites(id) {
+      loader.style.height = "100%";
+      loader.style.width = "100%";
+      var img = document.getElementById(id);
+
+      loader.style.borderRadius = "50%";
+      loader.style.visibility = "visible";
+      const category = id.slice(0, -5);
+
+      $.ajax({
+        url: 'http://127.0.0.1:8080/api/customer/v1/addToFavouriteCategory',
+        type: 'POST',
+        contentType: "application/text;",
+        dataType: 'text',
+        data: category,
+        crossDomain: true,
+        headers: {
+          Authorization: "Bearer " + getCookie("customerToken")
+        },
+        success: function (res, req) {
+          if (category == "Dance" || category == "Robotics" || category == "Instrumental" || category == "Vocal" || category == "Coding" || category == "Painting") {
+            var img1 = document.getElementById(category + "abcde");
+            var img2 = document.getElementById(category + "Image");
+            img1.setAttribute("src", "./assets/img/filled-heart.png");
+            img2.setAttribute("src", "./assets/img/filled-heart.png");
+          }
+          else {
+            img.setAttribute("src", "./assets/img/filled-heart.png");
+          }
+          console.log(JSON.parse(res));
+          if (res == null) {
+            document.getElementById("myFavouriteList").innerHTML = "EMPTY";
+          }
+          else {
+            document.getElementById("myFavouriteList").innerHTML = JSON.parse(res);
+          }
+          loader.style.visibility = "hidden";
+        },
+        error: function (e) {
+          loader.style.visibility = "hidden";
+        }
+      });
+    }
+
+    function removeFromFavourites(id) {
+      const category = id.slice(0, -5);
+      loader.style.height = "100%";
+      loader.style.width = "100%";
+      var img = document.getElementById(id);
+
+      loader.style.borderRadius = "50%";
+      loader.style.visibility = "visible";
+      $.ajax({
+        url: 'http://127.0.0.1:8080/api/customer/v1/removeFromFavouriteCategory',
+        type: 'POST',
+        contentType: "application/text;",
+        dataType: 'text',
+        data: category,
+        crossDomain: true,
+        headers: {
+          Authorization: "Bearer " + getCookie("customerToken")
+        },
+        success: function (res, req) {
+          if (category == "Dance" || category == "Robotics" || category == "Instrumental" || category == "Vocal" || category == "Coding" || category == "Painting") {
+            var img1 = document.getElementById(category + "abcde");
+            var img2 = document.getElementById(category + "Image");
+            img1.setAttribute("src", "./assets/img/emptyHeart.png");
+            img2.setAttribute("src", "./assets/img/emptyHeart.png");
+          }
+          else {
+            img.setAttribute("src", "./assets/img/emptyHeart.png");
+          }
+          console.log(res);
+          if (res == null) {
+            document.getElementById("myFavouriteList").innerHTML = "EMPTY";
+          }
+          else {
+            document.getElementById("myFavouriteList").innerHTML = JSON.parse(res);
+          }
+          loader.style.visibility = "hidden";
+        },
+        error: function (e) {
+          loader.style.visibility = "hidden";
+        }
+      });
+    }
+
+    function change(id) {
+      var img = document.getElementById(id);
+      if (img.getAttribute("src") == './assets/img/emptyHeart.png') {
+        addToFavourites(id);
+      }
+      else {
+        removeFromFavourites(id);
+      }
+    }
+
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1, c.length);
+        }
+        if (c.indexOf(nameEQ) == 0) {
+          return c.substring(nameEQ.length, c.length);
+        }
+      }
+      return null;
+    }
+
+    $(document).ready(function () {
+      $('#dropdown_coins').text("Delhi")
+
+      sessionStorage.setItem("locality", "");
+
+      $.ajax({
+        url: 'http://127.0.0.1:8080/api/customer/v1/getCustomersName',
+        type: 'GET',
+        contentType: "application/json;",
+        dataType: 'json',
+        crossDomain: true,
+        headers: {
+          Authorization: "Bearer " + getCookie("customerToken")
+        },
+        success: function (res, req) {
+          const name = res.customerFullName.split(" ");
+          const firstName = name[0];
+          let categories = ["KickBoxing", "GoKarting", "Archery", "ShootingRange", "HorseRiding", "ClayModelling", "Dance", "Instrumental", "Vocal", "Painting", "Coding", "Robotics", "LanguageLearning", "DrivingSchool", "TableTennis", "Badminton", "Skating", "Football", "BasketBall", "Cricket"];
+          document.getElementById("greet").innerHTML = "Hi, " + firstName;
+          document.getElementById("login-div").style.display = "none";
+          document.getElementById("sign-up").style.display = "none";
+          document.getElementById("signup-divider").style.display = "none";
+          document.getElementById("myAccount").style.display = "block";
+          // document.getElementById("favouritesDiv").setAttribute("data-bs-target", "#");
+          if (res.customerFavourites == null) {
+            document.getElementById("myFavouriteList").innerHTML = "EMPTY";
+          }
+          else {
+            for (let category of categories) {
+              var id1 = document.getElementById(category + "Image");
+              var id2 = document.getElementById(category + "abcde");
+              if (res.customerFavourites.includes(category)) {
+                id1.setAttribute("src", "./assets/img/filled-heart.png");
+                if (id2 != null) {
+                  id2.setAttribute("src", "./assets/img/filled-heart.png");
+                }
+              }
+            }
+            document.getElementById("myFavouriteList").innerHTML = res.customerFavourites;
+          }
+        },
+        error: function (e) {
+          document.getElementById("logout").style.display = "none";
+          document.getElementById("dividerAboveLogout").style.display = "none";
+          document.getElementById("myAccount").style.display = "none";
+          document.getElementById("bookingHistory").style.display = "none";
+          document.getElementById("notificationDiv").setAttribute("data-bs-target", "#");
+          // document.getElementById("favouritesDiv").setAttribute("data-bs-target", "#");
+        }
+      });
+    });
+
+    document.getElementById("search").addEventListener('input', function () {
+      event.preventDefault();
+      // document.getElementById("search-button").click();
+      var search = document.getElementById("search").value;
+      search = search.replace(/\s+/g, '-').toLowerCase();
+      console.log(search);
+      $('#suggestions').empty();
+      if(search!=""){
+        $.ajax({
+          url: 'http://127.0.0.1:8080/api/customer/v1/search?search=' + search,
+          type: 'GET',
+          contentType: "application/json;",
+          dataType: 'json',
+          crossDomain: true,
+          headers: {
+            Authorization: "Bearer " + getCookie("customerToken")
+          },
+          success: function (res, req) {
+            console.log(res)
+            let category = [];
+            let subCategory = [];
+            let business = [];
+            category.push('<input type="button" class="dropdown-item dropdown-suggestion-category" type="button" value="Categories" style="font-weight: bold;" disabled/>');
+            for(var i=0;i<res.category.length;i++){
+              category.push('<input type="button" class="dropdown-item dropdown-suggestion-category" type="button" value="' + res.category[i].category + '"/>')
+            }
+            if(category.length==1){
+              category.push('<input type="button" class="dropdown-item dropdown-suggestion-category" type="button" value="OOPS No Categories with this name exists" disabled/>')
+            }
+            subCategory.push('<input type="button" class="dropdown-item dropdown-suggestion-subCategory" type="button" value="Subcategories" style="font-weight: bold;" disabled/>')
+            for (var i=0;i<res.subCategory.length;i++) {
+              subCategory.push('<input type="button" class="dropdown-item dropdown-suggestion-subCategory" type="button" value="' + res.subCategory[i].subCategory + '"/>')
+            }
+            if(subCategory.length==1){
+              subCategory.push('<input type="button" class="dropdown-item dropdown-suggestion-subCategory" type="button" value="OOPS No Subcategories with this name exists" disabled/>')
+            }
+            business.push('<input type="button" class="dropdown-item dropdown-suggestion-center" type="button" value="HobbyCenter" style="font-weight: bold;" disabled/>')
+            for (var i=0;i<res.center.length;i++) {
+              business.push('<input type="button" class="dropdown-item dropdown-suggestion-center" type="button" value="' + res.center[i].centerName + '"/>')
+            }
+            if(business.length==1){
+              business.push('<input type="button" class="dropdown-item dropdown-suggestion-center" type="button" value="OOPS, No Hobby Center with this Name Exists" disabled/>')
+            }
+            $('#suggestions').append(category.join(""))
+            $('#suggestions').append(subCategory.join(""))
+            $('#suggestions').append(business.join(""))
+          },
+          error: function (e) {
+            console.log("error");
+          }
+        });
+      }      
+    })
+
+    function eraseCookie() {
+      document.cookie = "customerToken" + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    }
+
+    //Logout
+    function logout() {
+      $.ajax({
+        url: 'http://127.0.0.1:8080/api/customer/auth/signout',
+        type: 'POST',
+        contentType: "application/json;",
+        crossDomain: true,
+        withCredentials: true,
+        headers: {
+          Authorization: "Bearer " + getCookie("customerToken")
+        },
+        success: function (res, req) {
+          eraseCookie();
+          location.href = "/customer/index.html";
+        },
+        error: function (e) {
+          location.href = '/customer/index.html';
+        }
+      });
+    }
+
+    document.getElementById("sendMessage").addEventListener('click', () => {
+      event.preventDefault();
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var contact = document.getElementById("phoneNumber").value;
+      var message = document.getElementById("messsage").value;
+
+      var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      if (!email.match(validRegex)) {
+        document.getElementById("success").style.display = "none";
+        document.getElementById("error").style.display = "block";
+        document.getElementById("internal-error").innerHTML = "Invalid Email Address!"
+      }
+      else {
+        if (role == "") {
+          document.getElementById("success").style.display = "none";
+          document.getElementById("error").style.display = "block";
+          document.getElementById("internal-error").innerHTML = "Select Your Designation"
+        }
+        else {
+          var obj = new Object();
+          obj.type = role.toString();
+          obj.name = name.toString();
+          obj.email = email.toString();
+          obj.phoneNumber = contact.toString();
+          obj.message = message.toString();
+          var data = JSON.stringify(obj);
+          console.log(data);
+
+          loader.style.height = "100%";
+          loader.style.width = "100%";
+
+          loader.style.borderRadius = "50%";
+          loader.style.visibility = "visible";
+
+          $.ajax({
+            url: 'http://127.0.0.1:8080/api/customer/auth/getInTouch',
+            type: 'POST',
+            contentType: "application/json;",
+            data: data,
+            dataType: 'json',
+            crossDomain: true,
+            success: function (res, req) {
+              document.getElementById("error").style.display = "none";
+              document.getElementById("success").style.display = "block";
+              document.getElementById("internal-success").innerHTML = "Message Sent Successfully!"
+              document.getElementById("sendMessage").disabled = true;
+              loader.style.visibility = "hidden";
+            },
+            error: function (e) {
+              document.getElementById("error").style.display = "block";
+              document.getElementById("internal-error").innerHTML = "Could Not Send Your Message! Please Try Again Later";;
+              loader.style.visibility = "hidden";
+            }
+          });
+        }
+      }
+    })
+
+  </script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"></script> -->
+
+  <!-- swiper-bundle -->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+
+        991: {
+          slidesPerView: 3,
+        },
+      },
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+
+  </script>
+</body>
+</html>

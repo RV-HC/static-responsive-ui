@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Hobby Center</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- <link href="assets/css/merchant_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/custom_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/font-awesome.css" rel="stylesheet" /> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <style></style>
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Presento - v3.7.0
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <div id="loader">
+        <img src="./assets/img/loader2.gif" />
+    </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <div class="logo"><a href="/customer/index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></div>
+          <!-- <h1 class="logo"></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdown_coins" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              City
+            </button>
+            <div id="menu" class="dropdown-menu" aria-labelledby="dropdown_coins">
+              <form class="px-4 py-2">
+                <input type="search" class="form-control" id="searchCoin" placeholder="Delhi" autofocus="autofocus">
+              </form>
+              <div id="menuItems"></div>
+              <div id="empty" class="dropdown-header">City Not Found</div>
+            </div>
+          </div>
+    
+          <div class="dropdown" style="width: 50%;">
+            <!-- <button class="btn dropdown-toggle" type="button" style="display:none"></button> -->
+            <div id="myInput" class="input-group rounded dropdown-toggle custom-toggle">
+              <span class="input-group-text border-0 custom-removal-color" id="search-addon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </span>
+              <div id="search-button" name="search-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <input id="search" type="search" name="search" class="form-control rounded" widht="1" placeholder="Search For Hobby Center Or an Event" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              </div>
+            </div>
+            <div id="searchSuggestions" class="dropdown-menu" aria-labelledby="search-button">
+              <div id="suggestions"></div>
+            </div>
+          </div>
+          
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <div class="btn-group">
+                <button type="button" id="greet" class="btn dropdown-toggle mr-3" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Account & List
+                </button>
+                <div class="dropdown-menu text-center">
+                  <div id="login-div" class="container">
+                    <div class="btn text-white text-center mt-1"
+                      style="background-color:rgba(21, 202, 187, 0.808);width:100%;color:black"><a
+                        href="signin.html">Login</a></div>
+                  </div>
+                  <div id="sign-up"><a class="sign-up" href="signup.html" style="font-size:10px;color:black;">New User?
+                      Create Account</a></div>
+                  <div id="signup-divider" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);"></div>
+                  <div id="myAccount"><a class="dropdown-item" href="myAccount.html">My Account</a></div>
+                  <div id="bookingHistory"><a class="dropdown-item" href="bookingHistory.html">Booking History</a></div>
+                  <a class="dropdown-item" href="Coupons.html">Coupons</a>
+                  <div id="dividerAboveLogout" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);">
+                  </div>
+                  <a id="logout" class="dropdown-item" href="#" onclick="logout();">Logout</a>
+                </div>
+              </div>
+              <li class="mr-2
+                " style="cursor: pointer;"><img id="notificationDiv" src="assets/img/active_notification.gif" width="30"
+                  height="30" class="img-fluid" data-bs-toggle="modal" data-bs-target="#notificationModal"></li>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <li><img id="favouritesDiv" src="assets/img/wishlist.png" width="30" height="30"
+                  class="img-fluid" data-bs-toggle="modal" data-bs-target="#wishlistModal" style="filter:grayscale"></li> -->
+                  <li style="cursor: pointer;"><img id="cart" src="assets/img/shopping-cart.png" width="30" height="30"
+                    class="img-fluid"></li>
+    
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </header><!-- End Header -->
+
+    <!-- End Header -->
+
+    <!-- Notification  -->
+    <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Notifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Empty
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WishList -->
+    <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Wishlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="myFavouriteList">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="main">
+
+      <section class="succes-order">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="order-success-dividation">
+                <div class="one-side-text-order">
+                  <div class="colored-succes-text">
+                    <h1 class="regard"><span class="green">Thank you!</span><br>For your Booking an Appointment with</h1>
+                  </div>
+                  <div class="order-message">
+                    <p>Your Booking has been placed successfully</p>
+                  </div>
+                  <div class="order-continue-button">
+                    <a href="#">Continue Booking</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="succces-image">
+                <img src="./assets/img/successful-business-man.webp">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </main>
+<footer style="position: relative; z-index: 0;">
+    
+    <div class="footer-back">
+    <div class="footer-top text-white pt-5">
+      <div class="container-fluid">
+        <h1 class="logo"><a href="#"><img src="assets/img/logo.png" alt="" class="img-fluid"
+              style="width: 70mm; height:12mm"></a></h1>
+      <div class="custom-container ">
+        <div class="footer-about wow fadeInUp animated footer-about-sec"
+          style="visibility: visible; animation-name: fadeInUp; width: 70%;">
+
+          <h3>About us</h3>
+          <p>
+            Wipe away the problems from your life by experiencing a whole new and 
+            creative platform proving hobbies. HOBBY CADDY is that platform that helps 
+            you with different options as per your interest. Our team is here to fulfil 
+            your dreams into reality. We aim to serve you with memorable activities, 
+            tremendous opportunities, and creative feats. Join us and let us help you 
+            fulfil your dreams, passion, and hobby. 
+        </p>
+
+        </div>
+        <div class="footer-assistance-sec" style="width: 30%;">
+          <h4>For Any Assistance</h4>
+          <div class="assistance-divi">
+            <div class="mail-image">
+              <img src="./assets/img/mail-an.png">
+            </div>
+            <div class="all-mails">
+              <h4>Business Inquiries</h4>
+              <p><a href="mailto:merchant@hobbycadyy.com">merchant@hobbycadyy.com</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    <hr style="width:100%;margin-left:0;height:2px;color:white; border: 1px dashed black;">
+    <div class="container-fluid">
+    <div class="custom-sec-footer text-white text-center">
+      <h3>Quick Links</h3>
+      <br>
+      <div class="row custom-menu-footer-row">
+        <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Hiring</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Guidelines and Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Terms of Services</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+        <li>
+        
+          <a data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sell On HOBBY CADDY</a>
+          <!-- Modal -->
+          
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="copyright-dividation">
+          <div class="copyright">
+           2021 &copy; HobbyCaddy.com
+          </div>
+          <div class="social-links">
+            <h6>Follow Us On :</h6>
+            <a href="#" class="twitter"><img src="./assets/img/twitter.png" style="height:6mm"></a>
+            <a href="https://www.facebook.com/hobbycaddy/" class="facebook"><img src="./assets/img/facebook.png" style="height:6mm"></a>
+            <a href="https://www.instagram.com/hobbycaddy/" class="instagram"><img src="./assets/img/instagram.png" style="height:6mm"></a>
+            <a href="https://in.linkedin.com/company/hobby-caddy/
+" class="linkedin"><img src="./assets/img/linkedin.png" style="height:6mm"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <div class="custom-sell-form-footer">
+                   <form action="">
+                       <div class="form-group">
+                          <label>Business Name</label>
+                          <input type="text" name="business-name" placeholder="Enter your Business Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Contacting Person Name</label>
+                          <input type="text" name="contact-person-name" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                          <label>City</label>
+                          <input type="text" name="city-name" placeholder="Enter your City Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Pin Code</label>
+                          <input type="number" name="pin-code" placeholder="Enter your Pin Code">
+                        </div>
+                        <div class="form-group">
+                          <label>Email Id</label>
+                          <input type="email" name="email" placeholder="Enter your Email Address">
+                        </div>
+                        <div class="form-group">
+                          <label>WhatsApp Number</label>
+                          <input type="number" name="whatsapp-no" placeholder="Enter your WhatsApp Number">
+                        </div>
+                        <button type="submit">Submit</button>
+                   </form>
+                 </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  <!-- <script type="text/javascript">
+      jQuery(document).ready(function () {
+    jQuery('.nav li:first').addClass('active');
+    jQuery('.tab-content:not(:first)').hide();
+    jQuery('.nav li a').click(function (event) {
+        event.preventDefault();
+        var content = $(this).attr('href');
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+        $(content).show();
+        $(content).siblings('.tab-content').hide();
+    });
+});
+  </script> -->
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign Up</title>
+  <link rel="icon" type="image/png" href="./assets/img/favicon.ico" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<style>
+  section.merchant_signip {
+    padding-bottom: 50px;
+    padding-top: 20px;
+  }
+
+  .img_1 {
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .extra-margin {
+    margin-top: 200px;
+  }
+
+  .btn {
+    width: 350px;
+  }
+
+  form {
+    border: 1px solid lightgrey;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 16px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+  }
+
+  #words_1 {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  #words_2 {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  #words_3 {
+    font: 7px;
+  }
+
+  .sign-in {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .conditions {
+    font-size: 8px;
+    color: blue;
+    margin-top: 30px;
+    z-index: 2;
+  }
+
+  .footer_1 {
+    width: max;
+    height: 350px;
+    background-color: #fff;
+    margin-top: 30px;
+
+  }
+
+  #exampleCheck1 {
+    margin-left: 3px;
+    margin-top: 11px;
+  }
+
+  .keep-sign-in {
+    margin-left: 24px;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+
+  /*#sign-in {
+        margin-bottom: 10px;
+        }*/
+
+  #grey-button {
+    background-color: #f3f2f2;
+    border: 1px solid #ccc;
+  }
+
+  .sign-inbtn {
+    background: rgba(21, 202, 187, 0.808) !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  #loader {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(231, 255, 255, 0.808);
+    opacity:0.2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    visibility : hidden;
+  }
+
+  #loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5%;
+  }
+</style>
+
+<body>
+  <div id="loader">
+    <img src="./assets/img/loader2.gif" />
+  </div>
+  <section class="merchant_signip">
+    <header>
+      <div class="d-flex flex-row justify-content-center">
+        <div class="row">
+          <div class="col-md-12">
+            <img class="img_1" src="./assets/img/logo.png" alt="Logo" />
+          </div>
+          <!--Col 1 End-->
+        </div>
+        <!--Row 1 End-->
+      </div>
+      <!--Container End-->
+    </header>
+    <div class="d-flex flex-row justify-content-center">
+      <div class="row">
+        <div class="col-md-12">
+          <!--    https://alphawizztest.tk/Hobbycaddy/create_account -->
+          <form>
+            <div class="sign-in">Sign Up</div>
+            <div id="error" class="container rounded"
+              style="display:none;background-color:rgb(255, 197, 197);border-color:red">
+              <ul id="internal-error" style="padding-top:10px; padding-bottom:10px;color:rgb(136, 0, 0)"></ul>
+            </div>
+            <div id="success" class="container rounded"
+              style="display:none;background-color:rgb(161, 255, 185);border-color:black">
+              <ul id="internal-success" style="padding-top:10px; padding-bottom:10px;color:rgb(0, 0, 0)"></ul>
+            </div>
+            <div class="form-group" id="emailDiv">
+              <label id="words_1" for="exampleInputEmail1">Email</label>
+              <div class="row">
+                &nbsp&nbsp&nbsp&nbsp
+                <input type="email" class="form-control" id="email" name="user_email" aria-describedby="emailHelp"
+                  placeholder="Enter Email" required="true" style="width:60%;">
+                <div class="col" style="width:40%">
+                  <button class="btn sign-inbtn" id="email_verification" style="width:95%;float:right">Send OTP</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group" id="otpDiv" style="display:none">
+              <label id="words_2" for="exampleInputEmail1">OTP</label>
+              <div class="row">
+                &nbsp&nbsp&nbsp&nbsp
+                <input type="text" class="form-control" id="otp" name="otp" aria-describedby="emailHelp"
+                  placeholder="Enter OTP" required="true" style="width:60%">
+                <div class="col" style="width:40%">
+                  <div class="btn sign-inbtn" id="otp_verification" style="width:95%;float:right">Verify</div>
+                </div>
+              </div>
+            </div>
+            <div id="fullNameAndContact" style="display:none">
+              <div class="form-group">
+                <label id="words_3" for="exampleInputEmail1">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="firstname" aria-describedby="emailHelp"
+                  placeholder="Enter Full Name" required>
+              </div>
+              <div class="form-group">
+                <label id="words_4" for="exampleInputEmail1">Contact</label>
+                <input type="text" class="form-control" id="contact" name="user_phone" aria-describedby="emailHelp"
+                  placeholder="Enter Contact" required>
+
+              </div>
+              <div class="form-group">
+                <label id="words_5" for="exampleInputEmail1">Password</label>
+                <input type="password" class="form-control" id="password" name="user_phone" aria-describedby="emailHelp"
+                  placeholder="Enter Password" required>
+
+              </div>
+              <div class="form-group">
+                <label id="words_6" for="exampleInputEmail1">Confirm Password</label>
+                <input type="text" class="form-control" id="confirm-password" name="user_phone"
+                  aria-describedby="emailHelp" placeholder="Confirm Password">
+              </div>
+            </div>
+            <div class="form-group"><button id="sign-up" class="btn sign-inbtn" disabled>Submit</button>
+              <!--  <a href="HobbyCaddy-registration-form.html"><button type="submit" name="submit" class="btn sign-inbtn" id="sign-in" value="Sign Up">Submit</button></a> -->
+            </div>
+            <a href="signin.html"><button type="button" class="btn" id="grey-button">Sign In </button></a>
+          </form>
+        </div>
+        <!--Col 1 End-->
+      </div>
+      <!--Row 1 End-->
+    </div>
+    <!--Container End-->
+    <!--Form-->
+  </section>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="./assets/js/md5.min.js"></script>
+  <script>
+    document.getElementById("email_verification").addEventListener('click', () => {
+      loader.style.height = "100%";
+      loader.style.width = "100%";
+
+      loader.style.borderRadius = "50%";
+      loader.style.visibility = "visible";
+      event.preventDefault();
+      const email = document.getElementById("email").value;
+      var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      if (!email.match(validRegex)) {
+        document.getElementById("success").style.display = "none";
+        document.getElementById("error").style.display = "block";
+        document.getElementById("internal-error").innerHTML = "Invalid Email Address!"
+        loader.style.visibility = "hidden";
+      }
+      else {
+        document.getElementById("error").style.display = "none";
+        $.ajax({
+          url: 'http://127.0.0.1:8080/api/customer/auth/getOtp',
+          type: 'POST',
+          contentType: "application/text;",
+          data: email,
+          crossDomain: true,
+          success: function (res, req) {
+            document.getElementById("otpDiv").style.display = "block";
+            document.getElementById("email_verification").disabled = true;
+            document.getElementById("email").disabled = true;
+            document.getElementById("success").style.display = "block";
+            document.getElementById("internal-success").innerHTML = "OTP Successfully sent to Mail!";
+            loader.style.visibility = "hidden";
+          },
+          error: function (e) {
+            document.getElementById("error").style.display = "block";
+            document.getElementById("internal-error").innerHTML = JSON.parse(e.responseText).message;
+            loader.style.visibility = "hidden";
+          }
+        });
+      }
+
+    });
+
+    function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1, c.length);
+        }
+        if (c.indexOf(nameEQ) == 0) {
+          return c.substring(nameEQ.length, c.length);
+        }
+      }
+      return null;
+    }
+
+    $(document).ready(function () {
+      loader.style.height = "100%";
+      loader.style.width = "100%";
+
+      loader.style.borderRadius = "50%";
+      loader.style.visibility = "visible";
+      $.ajax({
+        url: 'http://127.0.0.1:8080/api/customer/v1/getCustomersName',
+        type: 'GET',
+        contentType: "application/json;",
+        dataType: 'json',
+        crossDomain: true,
+        headers: {
+          Authorization: "Bearer " + getCookie("customerToken")
+        },
+        success: function (res, req) {
+          location.href='/index.html'
+        },
+        error: function (e) {
+          loader.style.visibility = "hidden";
+        }
+      });
+    });
+
+    document.getElementById("otp_verification").addEventListener('click', () => {
+      loader.style.height = "100%";
+      loader.style.width = "100%";
+
+      loader.style.borderRadius = "50%";
+      loader.style.visibility = "visible";
+      event.preventDefault();
+      const email = document.getElementById("email").value;
+      const otp = document.getElementById("otp").value;
+      var obj = new Object();
+      obj.email = email.toString();
+      obj.otp = otp.toString();
+      var data = JSON.stringify(obj);
+      $.ajax({
+        url: 'http://127.0.0.1:8080/api/customer/auth/verifyOtp',
+        type: 'POST',
+        contentType: "application/json;",
+        data: data,
+        dataType: 'json',
+        crossDomain: true,
+        success: function (res, req) {
+          document.getElementById("error").style.display = "none";
+          document.getElementById("success").style.display = "block";
+          document.getElementById("internal-success").innerHTML = "OTP Verified Successfully!";
+          document.getElementById("fullNameAndContact").style.display = "block";
+          document.getElementById("otpDiv").style.display = "none";
+          document.getElementById("sign-up").disabled = false;
+          loader.style.visibility = "hidden";
+        },
+        error: function (e) {
+          console.log(e);
+          document.getElementById("error").style.display = "block";
+          document.getElementById("success").style.display = "none";
+          document.getElementById("internal-error").innerHTML = "Enter Correct OTP";
+          loader.style.visibility = "hidden";
+        }
+      });
+    })
+
+    document.getElementById('sign-up').addEventListener('click', () => {
+      loader.style.height = "100%";
+      loader.style.width = "100%";
+
+      loader.style.borderRadius = "50%";
+      loader.style.visibility = "visible";
+      event.preventDefault();
+      console.log("hello")
+      const fullName = document.getElementById("fullName").value;
+      const email = document.getElementById("email").value;
+      const contact = document.getElementById("contact").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
+
+      if (password == confirmPassword) {
+        var passhash = md5(password);
+        var obj = new Object();
+        obj.contact = contact.toString();
+        obj.email = email.toString();
+        obj.fullName = fullName.toString();
+        obj.password = passhash.toString();
+        var data = JSON.stringify(obj);
+        console.log(data);
+        $.ajax({
+          url: 'http://127.0.0.1:8080/api/customer/auth/signup',
+          type: 'POST',
+          contentType: "application/json;",
+          data: data,
+          dataType: 'json',
+          crossDomain: true,
+          success: function (res, req) {
+            loader.style.visibility = "hidden";
+            document.getElementById("error").style.display = "none";
+            console.log(res);
+            document.getElementById("success").style.display = "block";
+            location.href = './signin.html';
+          },
+          error: function (e) {
+            //console.log(JSON.parse(e.responseText).message);
+            document.getElementById("error").style.display = "block";
+            document.getElementById("internal-error").innerHTML = JSON.parse(e.responseText).message;
+            loader.style.visibility = "hidden";
+          }
+        });
+      }
+      else{
+        document.getElementById("success").style.display = "none";
+        document.getElementById("error").style.display = "block";
+        document.getElementById("internal-error").innerHTML = "Password Does Not Match!"
+        loader.style.visibility = "hidden";
+      }
+    });
+  </script>
+</body>
+
+</html>

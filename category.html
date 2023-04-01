@@ -1,0 +1,1692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Category Search</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- <link href="assets/css/merchant_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/custom_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/font-awesome.css" rel="stylesheet" /> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <style></style>
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Presento - v3.7.0
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body id="category">
+    <div id="loader">
+        <img src="./assets/img/loader2.gif" />
+    </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <div class="logo"><a href="/customer/index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></div>
+          <!-- <h1 class="logo"></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdown_coins" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              City
+            </button>
+            <div id="menu" class="dropdown-menu" aria-labelledby="dropdown_coins">
+              <form class="px-4 py-2">
+                <input type="search" class="form-control" id="searchCoin" placeholder="Delhi" autofocus="autofocus">
+              </form>
+              <div id="menuItems"></div>
+              <div id="empty" class="dropdown-header">City Not Found</div>
+            </div>
+          </div>
+    
+          <div class="dropdown" style="width: 50%;">
+            <!-- <button class="btn dropdown-toggle" type="button" style="display:none"></button> -->
+            <div id="myInput" class="input-group rounded dropdown-toggle custom-toggle">
+              <span class="input-group-text border-0 custom-removal-color" id="search-addon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </span>
+              <div id="search-button" name="search-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <input id="search" type="search" name="search" class="form-control rounded" widht="1" placeholder="Search For Hobby Center Or an Event" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              </div>
+            </div>
+            <div id="searchSuggestions" class="dropdown-menu" aria-labelledby="search-button">
+              <div id="suggestions"></div>
+            </div>
+          </div>
+          
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <div class="btn-group">
+                <button type="button" id="greet" class="btn dropdown-toggle mr-3" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Account & List
+                </button>
+                <div class="dropdown-menu text-center">
+                  <div id="login-div" class="container">
+                    <div class="btn text-white text-center mt-1"
+                      style="background-color:rgba(21, 202, 187, 0.808);width:100%;color:black"><a
+                        href="signin.html">Login</a></div>
+                  </div>
+                  <div id="sign-up"><a class="sign-up" href="signup.html" style="font-size:10px;color:black;">New User?
+                      Create Account</a></div>
+                  <div id="signup-divider" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);"></div>
+                  <div id="myAccount"><a class="dropdown-item" href="myAccount.html">My Account</a></div>
+                  <div id="bookingHistory"><a class="dropdown-item" href="bookingHistory.html">Booking History</a></div>
+                  <a class="dropdown-item" href="Coupons.html">Coupons</a>
+                  <div id="dividerAboveLogout" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);">
+                  </div>
+                  <a id="logout" class="dropdown-item" href="#" onclick="logout();">Logout</a>
+                </div>
+              </div>
+              <li class="mr-2
+                " style="cursor: pointer;"><img id="notificationDiv" src="assets/img/active_notification.gif" width="30"
+                  height="30" class="img-fluid" data-bs-toggle="modal" data-bs-target="#notificationModal"></li>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <li><img id="favouritesDiv" src="assets/img/wishlist.png" width="30" height="30"
+                  class="img-fluid" data-bs-toggle="modal" data-bs-target="#wishlistModal" style="filter:grayscale"></li> -->
+                  <li style="cursor: pointer;"><img id="cart" src="assets/img/shopping-cart.png" width="30" height="30"
+                    class="img-fluid"></li>
+    
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </header><!-- End Header -->
+
+    <!-- Notification  -->
+    <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Notifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Empty
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WishList -->
+    <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Wishlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="myFavouriteList">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero-category">
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="category-banner-header col-lg-12 text-center">
+                    <h1 style="color:rgb(0, 212, 240)" id="category">Dance</h1>
+                    <div class="banner-category">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Dancing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+        <div class="toggler-button">
+                            <img src="./assets/img/toggler.png">
+                        </div>
+        <section id="Division-category" class="divisional">
+            <div class="container-fluid" data-aos="fade-up">
+                <div class="row bg-white" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
+                        <!-- <div class="search-bar-category">
+                            <h3>Search</h3>
+                            <form action="">
+                                <input type="text" name="search" placeholder="Search Here">
+                                <button type="submit"><img src="./assets/img/search-interface-symbol.png">Search</button> 
+                            </form>
+                        </div> -->
+                        
+                        <div class="all-filters">
+                            <form action="">
+                                <div class="locality-drop">
+                                    <div class="locality-drop-heading">
+                                        <h3>Locality</h3>
+                                    </div>
+                                    
+                                    <div class="locality-selection">
+                                        <div class="selected">
+                                            <a><span>Localities</span></a>
+                                        </div>
+                                        <div class="options">
+                                            <ul>
+                                                <li><input type="checkbox" name="localities" value="">Delhi</li>
+                                                <li><input type="checkbox" name="localities" value="">Mumbai</li>
+                                                <li><input type="checkbox" name="localities" value="">Chandigarh</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fisrt-cat">
+                                    <div class="category-heading">
+                                        <h3>Category</h3>
+                                    </div>
+                                    <div class="category-selection">
+                                        <div class="selected">
+                                            <a><span>Categories</span></a>
+                                        </div>
+                                        <div class="options">
+                                            <ul>
+                                                <li><input type="radio" name="localities" value="">Delhi</li>
+                                                <li><input type="radio" name="localities" value="">Mumbai</li>
+                                                <li><input type="radio" name="localities" value="">Chandigarh</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="second-cat">
+                                    <div class="sub-category-heading">
+                                        <h3>Sub Categories</h3>
+                                    </div>
+                                    <div class="sub-category-selection">
+                                        <div class="selected">
+                                            <a><span>Categories</span></a>
+                                        </div>
+                                        <div class="options">
+                                            <ul>
+                                                <li><input type="checkbox" name="localities" value="">Delhi</li>
+                                                <li><input type="checkbox" name="localities" value="">Mumbai</li>
+                                                <li><input type="checkbox" name="localities" value="">Chandigarh</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="third-cat">
+                                    <div class="category-heading">
+                                        <h3>Start Date Range</h3>
+                                    </div>
+                                    <div class="date-range-custom">
+                                        <form action="">
+                                            <input type="date" name="from" placeholder="From">
+                                            <input type="date" name="to" placeholder="From">
+                                        </form>
+                                    </div>
+                                </div> -->
+                                <div class="forth-cat">
+                                    <div class="category-heading">
+                                        <h3>Price Range</h3>
+                                    </div>
+                                    <div class="custom-range">
+                                        <input type="range" id="vol" name="vol" min="0" max="50">
+                                    </div>
+                                </div>
+                                <div class="another-filters">
+                                    <div class="age-gender-selection">
+                                        <div class="selected">
+                                            <a><span>Age/Gender</span></a>
+                                        </div>
+                                        <div class="options">
+                                            <ul>
+                                                <li><input type="checkbox" name="gender-age" value="">Kids</li>
+                                                <li><input type="checkbox" name="gender-age" value="">Teenagers</li>
+                                                <li><input type="checkbox" name="gender-age" value="">Adults</li>
+                                                <li><input type="checkbox" name="gender-age" value="">Female Only</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="modes-selection">
+                                        <div class="selected">
+                                            <a><span>Mode</span></a>
+                                        </div>
+                                        <div class="options">
+                                            <ul>
+                                                <li><input type="checkbox" name="mode" value="">Online</li>
+                                                <li><input type="checkbox" name="mode" value="">Offline</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="rating-selection">
+                                        <div class="selected">
+                                            <a><span>User Rating</span></a>
+                                        </div>
+                                        <div class="options">
+                                            <ul>
+                                                <li><input type="checkbox" name="mode" value="">★★★★★</li>
+                                                <li><input type="checkbox" name="mode" value="">★★★★</li>
+                                                <li><input type="checkbox" name="mode" value="">★★★</li>
+                                                <li><input type="checkbox" name="mode" value="">★★</li>
+                                                <li><input type="checkbox" name="mode" value="">★</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="amenties-selection">
+                                        <div class="selected">
+                                            <a><span>Amenties</span></a>
+                                        </div>
+                                        <div class="options">
+                                            <ul>
+                                                <li><input type="checkbox" name="amenties" value="">AC</li>
+                                                <li><input type="checkbox" name="amenties" value="">Bike Parking</li>
+                                                <li><input type="checkbox" name="amenties" value="">Car Parking</li>
+                                                <li><input type="checkbox" name="amenties" value="">Canteen</li>
+                                                <li><input type="checkbox" name="amenties" value="">Drinking Water</li>
+                                                <li><input type="checkbox" name="amenties" value="">Restroom</li>
+                                                <li><input type="checkbox" name="amenties" value="">Wi-fi</li>
+                                                <li><input type="checkbox" name="amenties" value="">Shower</li>
+                                                <li><input type="checkbox" name="amenties" value="">Locker</li>
+                                                <li><input type="checkbox" name="amenties" value="">Waiting Room</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit">Reset All</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="filter-sorting">
+                        <div class="thumbnail-style">
+                          <!-- <span class="grid-style"><img src="./assets/img/four.png"></span> -->
+                          <span class="grid-style"><img src="./assets/img/menu.png"></span>
+                          <div class="result-text">
+                            <p>Showing Result : 1-9 Of 11 Results</p>
+                          </div>
+                        </div>
+                        <div class="custom-sorting">
+                          <div class="sort-wth-select">
+                            <p>Sort By:</p>
+                            <select name="destinations" id="destinations">
+                              <option value="" selected disabled hidden>Release date(Newest First)</option>
+                              <option value="1">Test</option>
+                              <option value="2">Test</option>
+                              <option value="3">Test</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="destination-main">
+                        <div class="destination-images">
+                          <img src="./assets/img/university.jpg">
+                        </div>
+                        <div class="destination-details-other">
+                          <div class="price-and-name">
+                            <div class="name-rating">
+                              <h3>Brown University</h3>
+                              <div class="rating-number">
+                                <img src="./assets/img/rate-star.png">
+                                <p>4.5</p>
+                              </div>
+                            </div>
+                            <div class="monthly-fee">
+                              <p>Starting From: <span class="fees"><b>$2.14K/Month</b></span></p>
+                            </div>
+                          </div>
+                          <div class="verfied-text-batch">
+                            <p><b>(Bharatanatyam)</b><img src="./assets/img/verified-batch.jpg"></p>
+                          </div>
+                          <div class="location-text">
+                            <img src="./assets/img/black-placeholder-variant.png">
+                            <p>Phase 2, Industrial Area Mohali, Sector 58, Mohali</p>
+                          </div>
+                          <div class="opening-hours">
+                            <p>Opening Hours : <span class="timing-bold"><b>10:00 AM - 08:00 PM</b></span></p>
+                          </div>
+                          <div class="custom-category">
+                            <span class="pills-buttons">Hip Hop</span>
+                            <span class="pills-buttons">Street-style</span>
+                            <span class="pills-buttons">Salsa</span>
+                            <span class="pills-buttons">Belly Dancing</span>
+                          </div>
+                          <div class="description-button">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="#">View More</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="destination-main">
+                        <div class="destination-images">
+                          <img src="./assets/img/university.jpg">
+                        </div>
+                        <div class="destination-details-other">
+                          <div class="price-and-name">
+                            <div class="name-rating">
+                              <h3>Brown University</h3>
+                              <div class="rating-number">
+                                <img src="./assets/img/rate-star.png">
+                                <p>4.5</p>
+                              </div>
+                            </div>
+                            <div class="monthly-fee">
+                              <p>Starting From: <span class="fees"><b>$2.14K/Month</b></span></p>
+                            </div>
+                          </div>
+                          <div class="verfied-text-batch">
+                            <p><b>(Bharatanatyam)</b><img src="./assets/img/verified-batch.jpg"></p>
+                          </div>
+                          <div class="location-text">
+                            <img src="./assets/img/black-placeholder-variant.png">
+                            <p>Phase 2, Industrial Area Mohali, Sector 58, Mohali</p>
+                          </div>
+                          <div class="opening-hours">
+                            <p>Opening Hours : <span class="timing-bold"><b>10:00 AM - 08:00 PM</b></span></p>
+                          </div>
+                          <div class="custom-category">
+                            <span class="pills-buttons">Hip Hop</span>
+                            <span class="pills-buttons">Street-style</span>
+                            <span class="pills-buttons">Salsa</span>
+                            <span class="pills-buttons">Belly Dancing</span>
+                          </div>
+                          <div class="description-button">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="#">View More</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="destination-main">
+                        <div class="destination-images">
+                          <img src="./assets/img/university.jpg">
+                        </div>
+                        <div class="destination-details-other">
+                          <div class="price-and-name">
+                            <div class="name-rating">
+                              <h3>Brown University</h3>
+                              <div class="rating-number">
+                                <img src="./assets/img/rate-star.png">
+                                <p>4.5</p>
+                              </div>
+                            </div>
+                            <div class="monthly-fee">
+                              <p>Starting From: <span class="fees"><b>$2.14K/Month</b></span></p>
+                            </div>
+                          </div>
+                          <div class="verfied-text-batch">
+                            <p><b>(Bharatanatyam)</b><img src="./assets/img/verified-batch.jpg"></p>
+                          </div>
+                          <div class="location-text">
+                            <img src="./assets/img/black-placeholder-variant.png">
+                            <p>Phase 2, Industrial Area Mohali, Sector 58, Mohali</p>
+                          </div>
+                          <div class="opening-hours">
+                            <p>Opening Hours : <span class="timing-bold"><b>10:00 AM - 08:00 PM</b></span></p>
+                          </div>
+                          <div class="custom-category">
+                            <span class="pills-buttons">Hip Hop</span>
+                            <span class="pills-buttons">Street-style</span>
+                            <span class="pills-buttons">Salsa</span>
+                            <span class="pills-buttons">Belly Dancing</span>
+                          </div>
+                          <div class="description-button">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="#">View More</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="destination-main">
+                        <div class="destination-images">
+                          <img src="./assets/img/university.jpg">
+                        </div>
+                        <div class="destination-details-other">
+                          <div class="price-and-name">
+                            <div class="name-rating">
+                              <h3>Brown University</h3>
+                              <div class="rating-number">
+                                <img src="./assets/img/rate-star.png">
+                                <p>4.5</p>
+                              </div>
+                            </div>
+                            <div class="monthly-fee">
+                              <p>Starting From: <span class="fees"><b>$2.14K/Month</b></span></p>
+                            </div>
+                          </div>
+                          <div class="verfied-text-batch">
+                            <p><b>(Bharatanatyam)</b><img src="./assets/img/verified-batch.jpg"></p>
+                          </div>
+                          <div class="location-text">
+                            <img src="./assets/img/black-placeholder-variant.png">
+                            <p>Phase 2, Industrial Area Mohali, Sector 58, Mohali</p>
+                          </div>
+                          <div class="opening-hours">
+                            <p>Opening Hours : <span class="timing-bold"><b>10:00 AM - 08:00 PM</b></span></p>
+                          </div>
+                          <div class="custom-category">
+                            <span class="pills-buttons">Hip Hop</span>
+                            <span class="pills-buttons">Street-style</span>
+                            <span class="pills-buttons">Salsa</span>
+                            <span class="pills-buttons">Belly Dancing</span>
+                          </div>
+                          <div class="description-button">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="#">View More</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="destination-main">
+                        <div class="destination-images">
+                          <img src="./assets/img/university.jpg">
+                        </div>
+                        <div class="destination-details-other">
+                          <div class="price-and-name">
+                            <div class="name-rating">
+                              <h3>Brown University</h3>
+                              <div class="rating-number">
+                                <img src="./assets/img/rate-star.png">
+                                <p>4.5</p>
+                              </div>
+                            </div>
+                            <div class="monthly-fee">
+                              <p>Starting From: <span class="fees"><b>$2.14K/Month</b></span></p>
+                            </div>
+                          </div>
+                          <div class="verfied-text-batch">
+                            <p><b>(Bharatanatyam)</b><img src="./assets/img/verified-batch.jpg"></p>
+                          </div>
+                          <div class="location-text">
+                            <img src="./assets/img/black-placeholder-variant.png">
+                            <p>Phase 2, Industrial Area Mohali, Sector 58, Mohali</p>
+                          </div>
+                          <div class="opening-hours">
+                            <p>Opening Hours : <span class="timing-bold"><b>10:00 AM - 08:00 PM</b></span></p>
+                          </div>
+                          <div class="custom-category">
+                            <span class="pills-buttons">Hip Hop</span>
+                            <span class="pills-buttons">Street-style</span>
+                            <span class="pills-buttons">Salsa</span>
+                            <span class="pills-buttons">Belly Dancing</span>
+                          </div>
+                          <div class="description-button">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <a href="#">View More</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view-more">
+                        <a href="#">Load More</a>
+                      </div>
+                        <!-- <div id="nothing" style="text-align: center;margin-top:20%">
+                            <img style="top:50%;left:50%;" src="./assets/img/nothing.png">
+                        </div> -->
+                        <!-- <div id="cards">
+                            <div class="row">
+                                <div class="col-4 text-center">
+                                    <button class="btn btn-primary rounded mt-5 mb-5 btn-lg" id="prev"
+                                        style="display: inline-block;margin:auto;background-color:rgba(3, 90, 83, 0.808);"
+                                        onclick="prev()">Prev</button>
+                                </div>
+                                <div class="col-4 mt-5">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <b id="showing" style="float:right"></b>
+                                        </div>
+                                        <div class="col-2 text-center" id="of">
+                                            of
+                                        </div>
+                                        <div class="col-5">
+                                            <b id="total" style="float:left"></b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-center">
+                                    <button class="btn btn-primary rounded mt-5 mb-5 btn-lg" id="next"
+                                        style="display: inline-block;margin:auto;background-color:rgba(3, 90, 83, 0.808);"
+                                        onclick="next()">Next</button>
+                                </div>
+                            </div>
+
+                            <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card1">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded column-image" src="" alt="..." id="img1">
+                                    </div>
+                                    <div class="col-9 pl-1">
+                                        <h5 class="card-title mt-2" id="centreName1"></h5>
+                                        <div class="row mt-3">
+                                            <div class="col-1">
+                                                <img src="assets/img/location.png" style="width:100%;height:90%;">
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text" id="address1"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h5 style="color:#00a2c2">Starts From:</h5>
+                                                    </div>
+                                                    <div class="col-8" style="float:left">
+                                                        <b id="price1"></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <a href="#" class="btn btn-primary mr-3"
+                                                    style="background-color:#00a2c2; float:right;" id="button1"
+                                                    onclick="viewMore(this.id)">View
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card2">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded column-image" src="" alt="..." id="img2">
+                                    </div>
+                                    <div class="col-9 pl-1">
+                                        <h5 class="card-title mt-2" id="centreName2"></h5>
+                                        <div class="row mt-3">
+                                            <div class="col-1">
+                                                <img src="assets/img/location.png" style="width:100%;height:90%;">
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text" id="address2"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h5 style="color:#00a2c2">Starts From:</h5>
+                                                    </div>
+                                                    <div class="col-8" style="float:left">
+                                                        <b id="price2"></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <a href="#" class="btn btn-primary mr-3"
+                                                    style="background-color:#00a2c2; float:right;" id="button2"
+                                                    onclick="viewMore(this.id)">View
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card3">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded column-image" src="" alt="..." id="img3">
+                                    </div>
+                                    <div class="col-9 pl-1">
+                                        <h5 class="card-title mt-2" id="centreName3"></h5>
+                                        <div class="row mt-3">
+                                            <div class="col-1">
+                                                <img src="assets/img/location.png" style="width:100%;height:90%;">
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text" id="address3"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h5 style="color:#00a2c2">Starts From:</h5>
+                                                    </div>
+                                                    <div class="col-8" style="float:left">
+                                                        <b id="price3"></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <a href="#" class="btn btn-primary mr-3"
+                                                    style="background-color:#00a2c2; float:right;" id="button3"
+                                                    onclick="viewMore(this.id)">View
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card4">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded column-image" src="" alt="..." id="img4">
+                                    </div>
+                                    <div class="col-9 pl-1">
+                                        <h5 class="card-title mt-2" id="centreName4"></h5>
+                                        <div class="row mt-3">
+                                            <div class="col-1">
+                                                <img src="assets/img/location.png" style="width:100%;height:90%;">
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text" id="address4"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h5 style="color:#00a2c2">Starts From:</h5>
+                                                    </div>
+                                                    <div class="col-8" style="float:left">
+                                                        <b id="price4"></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <a href="#" class="btn btn-primary mr-3"
+                                                    style="background-color:#00a2c2; float:right;" id="button4"
+                                                    onclick="viewMore(this.id)">View
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card5">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded column-image" src="" alt="..." id="img5">
+                                    </div>
+                                    <div class="col-9 pl-1">
+                                        <h5 class="card-title mt-2" id="centreName5"></h5>
+                                        <div class="row mt-3">
+                                            <div class="col-1">
+                                                <img src="assets/img/location.png" style="width:100%;height:90%;">
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text" id="address5"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h5 style="color:#00a2c2">Starts From:</h5>
+                                                    </div>
+                                                    <div class="col-8" style="float:left">
+                                                        <b id="price5"></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <a href="#" class="btn btn-primary mr-3"
+                                                    style="background-color:#00a2c2; float:right;" id="button5"
+                                                    onclick="viewMore(this.id)">View
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card6">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded column-image" src="" alt="..." id="img6">
+                                    </div>
+                                    <div class="col-9 pl-1">
+                                        <h5 class="card-title mt-2" id="centreName6"></h5>
+                                        <div class="row mt-3">
+                                            <div class="col-1">
+                                                <img src="assets/img/location.png" style="width:100%;height:90%;">
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text" id="address6"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h5 style="color:#00a2c2">Starts From:</h5>
+                                                    </div>
+                                                    <div class="col-8" style="float:left">
+                                                        <b id="price6"></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <a href="#" class="btn btn-primary mr-3"
+                                                    style="background-color:#00a2c2; float:right;" id="button6"
+                                                    onclick="viewMore(this.id)">View
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card7">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded column-image" src="" alt="..." id="img7">
+                                    </div>
+                                    <div class="col-9 pl-1">
+                                        <h5 class="card-title mt-2" id="centreName7"></h5>
+                                        <div class="row mt-3">
+                                            <div class="col-1">
+                                                <img src="assets/img/location.png" style="width:100%;height:90%;">
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text" id="address7"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h5 style="color:#00a2c2">Starts From:</h5>
+                                                    </div>
+                                                    <div class="col-8" style="float:left">
+                                                        <b id="price7"></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <a href="#" class="btn btn-primary mr-3"
+                                                    style="background-color:#00a2c2; float:right;" id="button7"
+                                                    onclick="viewMore(this.id)">View
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card8">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img class="rounded column-image" src="" alt="..." id="img8">
+                                    </div>
+                                    <div class="col-9 pl-1">
+                                        <h5 class="card-title mt-2" id="centreName8"></h5>
+                                        <div class="row mt-3">
+                                            <div class="col-1">
+                                                <img src="assets/img/location.png" style="width:100%;height:90%;">
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text" id="address8"></p>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <h5 style="color:#00a2c2">Starts From:</h5>
+                                                    </div>
+                                                    <div class="col-8" style="float:left">
+                                                        <b id="price8"></b>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mb-2">
+                                                <a href="#" class="btn btn-primary mr-3"
+                                                    style="background-color:#00a2c2; float:right;" id="button8"
+                                                    onclick="viewMore(this.id)">View
+                                                    More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+ -->
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======= Footer ======= -->
+   <footer style="position: relative; z-index: 0;">
+    
+    <div class="footer-back">
+    <div class="footer-top text-white pt-5">
+      <div class="container-fluid">
+        <h1 class="logo"><a href="#"><img src="assets/img/logo.png" alt="" class="img-fluid"
+              style="width: 70mm; height:12mm"></a></h1>
+      <div class="custom-container ">
+        <div class="footer-about wow fadeInUp animated footer-about-sec"
+          style="visibility: visible; animation-name: fadeInUp; width: 70%;">
+
+          <h3>About us</h3>
+          <p>
+            Wipe away the problems from your life by experiencing a whole new and 
+            creative platform proving hobbies. HOBBY CADDY is that platform that helps 
+            you with different options as per your interest. Our team is here to fulfil 
+            your dreams into reality. We aim to serve you with memorable activities, 
+            tremendous opportunities, and creative feats. Join us and let us help you 
+            fulfil your dreams, passion, and hobby. 
+        </p>
+
+        </div>
+        <div class="footer-assistance-sec" style="width: 30%;">
+          <h4>For Any Assistance</h4>
+          <div class="assistance-divi">
+            <div class="mail-image">
+              <img src="./assets/img/mail-an.png">
+            </div>
+            <div class="all-mails">
+              <h4>Business Inquiries</h4>
+              <p><a href="mailto:merchant@hobbycadyy.com">merchant@hobbycadyy.com</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    <hr style="width:100%;margin-left:0;height:2px;color:white; border: 1px dashed black;">
+    <div class="container-fluid">
+    <div class="custom-sec-footer text-white text-center">
+      <h3>Quick Links</h3>
+      <br>
+      <div class="row custom-menu-footer-row">
+        <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Hiring</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Guidelines and Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Terms of Services</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+        <li>
+        
+          <a data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sell On HOBBY CADDY</a>
+          <!-- Modal -->
+          
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="copyright-dividation">
+          <div class="copyright">
+           2021 &copy; HobbyCaddy.com
+          </div>
+          <div class="social-links">
+            <h6>Follow Us On :</h6>
+            <a href="#" class="twitter"><img src="./assets/img/twitter.png" style="height:6mm"></a>
+            <a href="https://www.facebook.com/hobbycaddy/" class="facebook"><img src="./assets/img/facebook.png" style="height:6mm"></a>
+            <a href="https://www.instagram.com/hobbycaddy/" class="instagram"><img src="./assets/img/instagram.png" style="height:6mm"></a>
+            <a href="https://in.linkedin.com/company/hobby-caddy/
+" class="linkedin"><img src="./assets/img/linkedin.png" style="height:6mm"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <div class="custom-sell-form-footer">
+                   <form action="">
+                       <div class="form-group">
+                          <label>Business Name</label>
+                          <input type="text" name="business-name" placeholder="Enter your Business Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Contacting Person Name</label>
+                          <input type="text" name="contact-person-name" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                          <label>City</label>
+                          <input type="text" name="city-name" placeholder="Enter your City Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Pin Code</label>
+                          <input type="number" name="pin-code" placeholder="Enter your Pin Code">
+                        </div>
+                        <div class="form-group">
+                          <label>Email Id</label>
+                          <input type="email" name="email" placeholder="Enter your Email Address">
+                        </div>
+                        <div class="form-group">
+                          <label>WhatsApp Number</label>
+                          <input type="number" name="whatsapp-no" placeholder="Enter your WhatsApp Number">
+                        </div>
+                        <button type="submit">Submit</button>
+                   </form>
+                 </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    <a href="" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/filter.js"></script> -->
+
+    <!-- <script>
+        var myInputWidth = (document.getElementById("myInput").offsetWidth);
+        document.getElementById("myInput").style.width = myInputWidth * 0.8 + "px";
+        var total = 0;
+        var currPage = 1;
+        var gender = [];
+        var age = "";
+        var locality = [];
+        var mode = [];
+        var price = [];
+        var temp = [];
+        var total_locality = [];
+
+        function filterNew() {
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+            console.log("Called Filter New Function")
+            currPage = 1;
+            total = 0;
+
+            let paramString = window.location.href.split('?')[1];
+            let queryString = new URLSearchParams(paramString);
+            var url;
+            for (let pair of queryString.entries()) {
+                url = pair[1];
+                break;
+            }
+
+            var city = $('#dropdown_coins').text();
+            console.log(city);
+
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/v1/getBusinessBasedOnCategory?category=' + url,
+                type: 'POST',
+                contentType: "application/text;",
+                dataType: 'json',
+                data: city,
+                crossDomain: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    console.log(res);
+                    total_locality = res.locality;
+                    console.log(total_locality)
+                    total = res.businesses.length;
+                    if (total == 0) {
+                        document.getElementById("nothing").style.display = 'block';
+                        document.getElementById("cards").style.display = "none";
+                        document.getElementById("prev").style.display = "none";
+                        document.getElementById("next").style.display = "none";
+                        document.getElementById("total").style.display = "none";
+                        document.getElementById("of").style.display = "none";
+                        document.getElementById("showing").style.display = "none";
+                        var i = 1;
+                        for (; i <= 8; i++) {
+                            document.getElementById("card" + i).style.display = "none";
+                        }
+                    }
+                    else {
+                        temp = res;
+
+                        document.getElementById("category").innerHTML = url;
+                        document.getElementById("home").innerHTML = "Home | " + url;
+                        document.getElementById("cards").style.display = "inline";
+                        document.getElementById("nothing").style.display = 'none';
+                        document.getElementById("total").innerHTML = total;
+                        document.getElementById("hero-category").style.background = "url(" + res.categoryImage + ")";
+                        document.getElementById("hero-category").style.backgroundSize = "cover";
+
+                        console.log("age " + age);
+                        console.log(res.businesses);
+                        if (Boolean(age)) {
+                            console.log("inside age")
+                            var i = res.businesses.length;
+                            while (i--) {
+                                if (!res.businesses[i].ageGroup.includes(age)) {
+                                    res.businesses.splice(i, 1);
+                                }
+                            }
+                        }
+
+                        console.log("gender " + gender);
+                        console.log(res.businesses);
+
+                        if (gender.length != 0) {
+                            console.log("inside gender")
+                            if (gender.length == 2) {
+                                var i = res.businesses.length;
+                                while (i--) {
+                                    if (!res.businesses[i].gender.includes("Both")) {
+                                        res.businesses.splice(i, 1);
+                                    }
+                                }
+                            }
+                            else {
+                                var i = res.businesses.length;
+                                while (i--) {
+                                    if (!res.businesses[i].gender.includes(gender[0])) {
+                                        res.businesses.splice(i, 1);
+                                    }
+                                }
+                            }
+
+                        }
+
+                        console.log("mode " + mode)
+                        console.log(res.businesses);
+
+                        if (mode.length != 0) {
+                            console.log("inside mode")
+                            if (mode.length == 1) {
+                                var i = res.businesses.length;
+                                while (i--) {
+                                    if (res.businesses[i].mode.includes(mode[0])) {
+                                        res.businesses.splice(i, 1);
+                                    }
+                                }
+                            }
+                        }
+                        console.log("locality " + locality)
+                        console.log(res.businesses);
+
+                        if (locality.length != 0) {
+                            console.log("inside locality")
+                            var temp_locality = [];
+                            for(var k=0;k<res.locality.length;k++){
+                                if(locality.includes(res.locality[k].locality)){
+                                    if(res.locality[k].closerLocality.length!=0){
+                                        temp_locality.push(res.locality[k].closerLocality);
+                                    }
+                                    if(res.locality[k].secondCloserLocality.length!=0){
+                                        temp_locality.push(res.locality[k].secondCloserLocality);
+                                    }
+                                    if(res.locality[k].thirdCloserLocalilty.length!=0){
+                                        temp_locality.push(res.locality[k].thirdCloserLocalilty);
+                                    }
+                                }
+                            }
+                            for(var k=0;k<temp_locality.length;k++){
+                                locality.push(temp_locality[k]);
+                            }
+                            var i = res.businesses.length;
+                            while (i--) {
+                                if (!locality.includes(res.businesses[i].locality)) {
+                                    res.businesses.splice(i, 1);
+                                }
+                            }
+                        }
+
+                        console.log("price " + price)
+                        console.log(res)
+                        if (price.length != 0) {
+                            console.log("Inside price");
+                            var i = res.businesses.length;
+                            while (i--) {
+                                var count = 0;
+                                for (var j = 0; j < price.length; j++) {
+                                    var min = parseInt(price[j]) + 1;
+                                    var max;
+                                    if (min == 6001) {
+                                        max = parseInt(50000);
+                                    } else {
+                                        max = parseInt(price[j]) + 2000;
+                                    }
+                                    if (parseInt(res.businesses[i].startFrom) >= min && parseInt(res.businesses[i].startFrom) <= max) {
+                                        count++;
+                                    }
+                                }
+                                if (parseInt(count) == 0) {
+                                    res.businesses.splice(i, 1);
+                                }
+                            }
+                        }
+
+                        var i = 1;
+                        total = res.businesses.length;
+                        if (total == 0) {
+                            document.getElementById("showing").innerHTML = 0 + "-" + 0;
+                            document.getElementById("total").innerHTML = 0;
+                        }
+                        else {
+                            for (; i <= Math.min(8, res.businesses.length); i++) {
+                                document.getElementById("centreName" + i).innerHTML = res.businesses[i - 1].businessName;
+                                document.getElementById("address" + i).innerHTML = res.businesses[i - 1].businessAddress;
+                                document.getElementById("price" + i).innerHTML = "₹ " + res.businesses[i - 1].startFrom;
+                                if (res.businesses[i - 1].businessImage == null) {
+                                    document.getElementById("img" + i).setAttribute("src", './assets/img/grey.jpg')
+                                }
+                                else {
+                                    document.getElementById("img" + i).setAttribute("src", res.businesses[i - 1].businessImage);
+                                }
+                                document.getElementById("card" + i).style.display = "block";
+                            }
+                            document.getElementById("showing").innerHTML = 1 + "-" + (i - 1);
+                        }
+
+
+                        document.getElementById("prev").disabled = true;
+                        if (total == i - 1) {
+                            document.getElementById("next").disabled = true;
+                        }
+                        for (; i <= 8; i++) {
+                            document.getElementById("card" + i).style.display = "none";
+                        }
+                    }
+                    loader.style.visibility = "hidden";
+                },
+                error: function (e) {
+                    document.getElementById("nothing").style.display = 'block';
+                    document.getElementById("prev").style.display = "none";
+                    document.getElementById("next").style.display = "none";
+                    document.getElementById("cards").style.display = "none";
+                    document.getElementById("total").style.display = "none";
+                    document.getElementById("of").style.display = "none";
+                    document.getElementById("showing").style.display = "none";
+                    loader.style.visibility = "hidden";
+                }
+            });
+        }
+
+        function resetFilters() {
+            $('input:checkbox').removeAttr('checked');
+            $("[name=flexRadioDefault]").removeAttr("checked");
+            mode = [];
+            price = [];
+            age = "";
+            locality = [];
+            gender = [];
+            filterNew();
+        }
+
+        var template = document.getElementsByTagName("template")[0];
+        //console.log(template.content.cloneNode(true));
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1, c.length);
+                }
+                if (c.indexOf(nameEQ) == 0) {
+                    return c.substring(nameEQ.length, c.length);
+                }
+            }
+            return null;
+        }
+
+        function localitySelected() {
+            var saketAdded = document.getElementById("saket-check");
+            var gulmoharparkAdded = document.getElementById("gulmohar-park-check");
+            var hauzKhasAdded = document.getElementById("hauzKhas-check");
+            var chhatarpurAdded = document.getElementById("chhatarpur-check");
+            var greenParkAdded = document.getElementById("green-park-check");
+            var rajouriGardenAdded = document.getElementById("rajouri-garden-check");
+            var punjabiBaghAdded = document.getElementById("punjabi-bagh-check");
+            var paschimViharAdded = document.getElementById("paschim-vihar-check");
+
+            locality = [];
+            var temp_locality = [];
+
+            if (saketAdded.checked) {
+                locality.push("Saket");
+            }
+            if (gulmoharparkAdded.checked) {
+                locality.push("Gulmohar Park")
+            }
+            if (hauzKhasAdded.checked) {
+                locality.push("Hauz Khas")
+            }
+            if (chhatarpurAdded.checked) {
+                locality.push("Chhatarpur");
+            }
+            if (greenParkAdded.checked) {
+                locality.push("Green Park");
+            }
+            if (rajouriGardenAdded.checked) {
+                locality.push("Rajouri Garden");
+            }
+            if (punjabiBaghAdded.checked) {
+                locality.push("Punjabi Bagh");
+            }
+            if (paschimViharAdded.checked) {
+                locality.push("Paschim Vihar");
+            }
+
+            for(var k=0;k<total_locality.length;k++){
+                if(locality.includes(total_locality[k].locality)){
+                    if(total_locality[k].closerLocality.length!=0){
+                        temp_locality.push(total_locality[k].closerLocality);
+                    }
+                    if(total_locality[k].secondCloserLocality.length!=0){
+                        temp_locality.push(total_locality[k].secondCloserLocality);
+                    }
+                    if(total_locality[k].thirdCloserLocalilty.length!=0){
+                        temp_locality.push(total_locality[k].thirdCloserLocalilty);
+                    }
+                }
+            }
+
+            for(var k=0;k<temp_locality.length;k++){
+                if(!locality.includes(temp_locality[k])){
+                    locality.push(temp_locality[k]);
+                }
+            }
+
+            filterNew();
+        }
+
+        function ageGroup(updatedAge) {
+            age = updatedAge;
+            filterNew();
+        }
+
+        function genderSelected() {
+            var maleAdded = document.getElementById("male");
+            var femaleAdded = document.getElementById("female");
+            // console.log(maleAdded.checked);
+            // console.log(femaleAdded.checked);
+            gender = [];
+            if (maleAdded.checked) {
+                gender.push("Male");
+            }
+            if (femaleAdded.checked) {
+                gender.push("Female");
+            }
+            filterNew();
+        }
+
+        function modeSelected() {
+
+            var onlineAdded = document.getElementById("online");
+            var offlineAdded = document.getElementById("offline");
+            mode = [];
+            if (onlineAdded.checked) {
+                mode.push("Online");
+            }
+            if (offlineAdded.checked) {
+                mode.push("Offline");
+            }
+            filterNew();
+        }
+
+        function priceSelected() {
+            var price0000 = document.getElementById("2000");
+            var price2000 = document.getElementById("4000");
+            var price4000 = document.getElementById("6000");
+            var price6000 = document.getElementById("6000+");
+
+            price = [];
+            if (price0000.checked) {
+                price.push("0");
+            }
+            if (price2000.checked) {
+                price.push("2000");
+            }
+            if (price4000.checked) {
+                price.push("4000");
+            }
+            if (price6000.checked) {
+                price.push("6000");
+            }
+            filterNew();
+        }
+
+        function eraseCookie() {
+            document.cookie = "customerToken" + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+        function viewMore(id) {
+            var id = id.substring(6);
+            console.log(temp.businesses[parseInt((currPage - 1) * 8) + parseInt(id) - 1].city);
+            var city = temp.businesses[parseInt((currPage - 1) * 8) + parseInt(id) - 1].city;
+            var locality = temp.businesses[parseInt((currPage - 1) * 8) + parseInt(id) - 1].locality;
+            var businessName = temp.businesses[parseInt((currPage - 1) * 8) + parseInt(id) - 1].businessName;
+
+            businessName = businessName.replace(/\s+/g, '-').toLowerCase();
+            city = city.replace(/\s+/g, '-').toLowerCase();
+            locality = locality.replace(/\s+/g, '-').toLowerCase();
+
+            console.log(city);
+            console.log(locality);
+            console.log(businessName);
+
+
+            var url = 'centerPage.html?city=' + temp.businesses[parseInt((currPage - 1) * 8) + parseInt(id) - 1].city + '&locality=' + locality + '&businessName=' + businessName;
+            console.log(url);
+            window.open(url, "_self");
+        }
+
+        function next() {
+            currPage++;
+            document.getElementById("prev").disabled = false;
+
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+
+            var i = (currPage - 1) * 8 + 1;
+            var j = 1;
+            for (; i <= Math.min(currPage * 8, total); i++, j++) {
+                document.getElementById("centreName" + j).innerHTML = temp.businesses[i - 1].businessName;
+                document.getElementById("address" + j).innerHTML += temp.businesses[i - 1].businessAddress;
+                document.getElementById("price" + j).innerHTML = "₹ " + temp.businesses[i - 1].startFrom;
+                if (temp.businesses[i - 1].businessImage == null) {
+                    document.getElementById("img" + j).setAttribute("src", './assets/img/grey.jpg')
+                }
+                else {
+                    document.getElementById("img" + j).setAttribute("src", temp.busineses[i - 1].businessImage);
+                }
+                document.getElementById("card" + i).style.display = "block";
+            }
+            document.getElementById("showing").innerHTML = ((currPage - 1) * 8 + 1) + "-" + (i - 1);
+            if (total == i - 1) {
+                document.getElementById("next").disabled = true;
+            }
+            for (; j <= 8; j++) {
+                document.getElementById("card" + j).style.display = "none";
+            }
+            loader.style.visibility = "hidden";
+        }
+
+        function prev() {
+
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+
+            currPage--;
+            if (currPage == 1) {
+                document.getElementById("prev").disabled = true;
+            }
+            document.getElementById("next").disabled = false;
+            var i = (currPage - 1) * 8 + 1;
+            var j = 1;
+            for (; i <= Math.min(currPage * 8, total); i++, j++) {
+                // document.getElementById("card" + j).style.visibility= 'visible';
+                document.getElementById("centreName" + j).innerHTML = temp.businesses[i - 1].businessName;
+                document.getElementById("address" + j).innerHTML += temp.businesses[i - 1].businessAddress;
+                document.getElementById("price" + j).innerHTML = "₹ " + temp.businesses[i - 1].startFrom;
+                if (temp.businesses[i - 1].businessImage == null) {
+                    document.getElementById("img" + j).setAttribute("src", './assets/img/grey.jpg')
+                }
+                else {
+                    document.getElementById("img" + j).setAttribute("src", temp.businesses[i - 1].businessImage);
+                }
+                document.getElementById("card" + i).style.display = "block";
+            }
+            document.getElementById("showing").innerHTML = ((currPage - 1) * 8 + 1) + "-" + (i - 1);
+            loader.style.visibility = "hidden";
+        }
+
+        $(document).ready(function () {
+            $('#dropdown_coins').text("Delhi")
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/v1/getCustomersName',
+                type: 'GET',
+                contentType: "application/json;",
+                dataType: 'json',
+                crossDomain: true,
+                headers: {
+                    // Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    const name = res.customerFullName.split(" ");
+                    const firstName = name[0];
+                    document.getElementById("greet").innerHTML = "Hi, " + firstName;
+                    document.getElementById("login-div").style.display = "none";
+                    document.getElementById("sign-up").style.display = "none";
+                    document.getElementById("signup-divider").style.display = "none";
+                    document.getElementById("myAccount").style.display = "block";
+                    if (res.customerFavourites == null) {
+                        document.getElementById("myFavouriteList").innerHTML = "EMPTY";
+                    }
+                    else {
+                        document.getElementById("myFavouriteList").innerHTML = res.customerFavourites;
+
+                    }
+                    loader.style.visibility = "hidden";
+                },
+                error: function (e) {
+                    // location.href = './signin.html'
+                    // alert("error");
+                }
+            });
+
+            let paramString = window.location.href.split('?')[1];
+            let queryString = new URLSearchParams(paramString);
+            var url;
+            var localityFilter = "";
+            var k = 0;
+            for (let pair of queryString.entries()) {
+                if (k == 0) {
+                    url = pair[1];
+                }
+                else {
+                    localityFilter = pair[1];
+                }
+                k++;
+            }
+
+            if (localityFilter != "") {
+                locality.push(localityFilter);
+                localityFilter = localityFilter.replace(/\s+/g, '-').toLowerCase();
+                localityFilter += '-check';
+                console.log(localityFilter);
+                document.getElementById(localityFilter).checked = true;
+                document.getElementById("panelsStayOpen-collapseFive").setAttribute("class", "accordion-collapse collapse show")
+                document.getElementById("panelsStayOpen-collapseFive-button").setAttribute("class", "accordion-button");
+            }
+
+
+            filterNew();
+
+            // var rangeSlider = document.getElementById('slider-range');
+            // rangeSlider.noUiSlider.on('update', function (values, handle) {
+            //     min = values[0].substring(1);
+            //     max = values[1].substring(1);
+            //     filterNew();
+            // });
+        });
+
+        function logout() {
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/auth/signout',
+                type: 'POST',
+                contentType: "application/json;",
+                crossDomain: true,
+                withCredentials: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    eraseCookie();
+                    location.href = '/index.html'
+                },
+                error: function (e) {
+                    location.href = '/index.html';
+                }
+            });
+        }
+
+        var dropdownToggle = $('.dropdown');
+        var dropdown = dropdownToggle.next('.dropdown-menu');
+        $(function () {
+            dropdown.slideUp(0);
+            $(document).on('click', function (e) {
+                var target = e.target;
+                if (!$(target).is('.dropdown') && !$(target).parents().is('.dropdown')) {
+                    if (dropdown.is(':visible')) {
+                        dropdown.stop(true).slideUp();
+                    }
+                }
+            });
+            dropdownToggle.on('click', function () {
+                dropdown.stop(true).slideToggle();
+            });
+        });
+
+    </script> -->
+    <!-- <script>
+
+        //Initialize with the list of symbols
+        let cityNames = ["Delhi"]
+
+        //Find the input search box
+        let search = document.getElementById("searchCoin")
+
+        //Find every item inside the dropdown
+        let items = document.getElementsByClassName("dropdown-city")
+        function buildDropDownCity(values) {
+            let contents = []
+            for (let name of values) {
+                contents.push('<input type="button" class="dropdown-item dropdown-city" type="button" value="' + name + '"/>')
+            }
+            $('#menuItems').append(contents.join(""))
+
+            //Hide the row that shows no items were found
+            $('#empty').hide()
+        }
+
+        //Capture the event when user types into the search box
+        document.getElementById("searchCoin").addEventListener('input', function () {
+            event.preventDefault();
+            filterCity(search.value.trim().toLowerCase())
+        })
+
+        //For every word entered by the user, check if the symbol starts with that word
+        //If it does show the symbol, else hide it
+        function filterCity(word) {
+            console.log(word)
+            let length = items.length
+            console.log(items)
+            let collection = []
+            let hidden = 0
+            for (let i = 0; i < length; i++) {
+                if (items[i].value.toLowerCase().startsWith(word)) {
+                    $(items[i]).show()
+                }
+                else {
+                    $(items[i]).hide()
+                    hidden++
+                }
+            }
+
+            //If all items are hidden, show the empty view
+            if (hidden === length) {
+                $('#empty').show()
+            }
+            else {
+                $('#empty').hide()
+            }
+        }
+
+        //If the user clicks on any item, set the title of the button as the text of the item
+        $('#menuItems').on('click', '.dropdown-item', function () {
+            sessionStorage.setItem("city", $(this)[0].value);
+            $('#dropdown_coins').text($(this)[0].value)
+            $("#dropdown_coins").dropdown('toggle');
+        })
+        buildDropDownCity(cityNames)
+    </script> -->
+
+    <script type="text/javascript">
+        $('.toggler-button').on('click', function(){
+            $('.all-filters').toggleClass('active');
+        });
+    </script>
+</body>
+
+</html>

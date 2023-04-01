@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Hobby Center</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- <link href="assets/css/merchant_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/custom_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/font-awesome.css" rel="stylesheet" /> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <style></style>
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Presento - v3.7.0
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <div id="loader">
+        <img src="./assets/img/loader2.gif" />
+    </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <div class="logo"><a href="/customer/index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></div>
+          <!-- <h1 class="logo"></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdown_coins" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              City
+            </button>
+            <div id="menu" class="dropdown-menu" aria-labelledby="dropdown_coins">
+              <form class="px-4 py-2">
+                <input type="search" class="form-control" id="searchCoin" placeholder="Delhi" autofocus="autofocus">
+              </form>
+              <div id="menuItems"></div>
+              <div id="empty" class="dropdown-header">City Not Found</div>
+            </div>
+          </div>
+    
+          <div class="dropdown" style="width: 50%;">
+            <!-- <button class="btn dropdown-toggle" type="button" style="display:none"></button> -->
+            <div id="myInput" class="input-group rounded dropdown-toggle custom-toggle">
+              <span class="input-group-text border-0 custom-removal-color" id="search-addon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </span>
+              <div id="search-button" name="search-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <input id="search" type="search" name="search" class="form-control rounded" widht="1" placeholder="Search For Hobby Center Or an Event" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              </div>
+            </div>
+            <div id="searchSuggestions" class="dropdown-menu" aria-labelledby="search-button">
+              <div id="suggestions"></div>
+            </div>
+          </div>
+          
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <div class="btn-group">
+                <button type="button" id="greet" class="btn dropdown-toggle mr-3" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Account & List
+                </button>
+                <div class="dropdown-menu text-center">
+                  <div id="login-div" class="container">
+                    <div class="btn text-white text-center mt-1"
+                      style="background-color:rgba(21, 202, 187, 0.808);width:100%;color:black"><a
+                        href="signin.html">Login</a></div>
+                  </div>
+                  <div id="sign-up"><a class="sign-up" href="signup.html" style="font-size:10px;color:black;">New User?
+                      Create Account</a></div>
+                  <div id="signup-divider" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);"></div>
+                  <div id="myAccount"><a class="dropdown-item" href="myAccount.html">My Account</a></div>
+                  <div id="bookingHistory"><a class="dropdown-item" href="bookingHistory.html">Booking History</a></div>
+                  <a class="dropdown-item" href="Coupons.html">Coupons</a>
+                  <div id="dividerAboveLogout" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);">
+                  </div>
+                  <a id="logout" class="dropdown-item" href="#" onclick="logout();">Logout</a>
+                </div>
+              </div>
+              <li class="mr-2
+                " style="cursor: pointer;"><img id="notificationDiv" src="assets/img/active_notification.gif" width="30"
+                  height="30" class="img-fluid" data-bs-toggle="modal" data-bs-target="#notificationModal"></li>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <li><img id="favouritesDiv" src="assets/img/wishlist.png" width="30" height="30"
+                  class="img-fluid" data-bs-toggle="modal" data-bs-target="#wishlistModal" style="filter:grayscale"></li> -->
+                  <li style="cursor: pointer;"><img id="cart" src="assets/img/shopping-cart.png" width="30" height="30"
+                    class="img-fluid"></li>
+    
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </header><!-- End Header -->
+
+    <!-- End Header -->
+
+    <!-- Notification  -->
+    <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Notifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Empty
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WishList -->
+    <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Wishlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="myFavouriteList">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main id="main">
+        <div class="toggler-button">
+                            <img src="./assets/img/toggler.png">
+                        </div>
+<section class="sidebar-custom-bar">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-12 col-12">
+            
+            <div class="main-sidebar-start">
+                <div class="account-main-dashboard">
+                    <div class="login-person-image">
+                        <img src="./assets/img/rated-person.jpg">
+                    </div>
+                    <div class="welcome-login-person">
+                        <h3 class="hello-message">Hello,</h3>
+                        <p class="person-name">Johan Deo</p>
+                    </div>
+                </div>
+                <ul class="nav nav-pills flex-column" id="menu">
+                    <li class="nav-item">
+                        <a href="#tabs-1" data-toggle="tab" role="tab" class="nav-link p-0" aria-hidden="true">
+                            <div class="main-dashboard-icons">
+                                <div class="dashboard-icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="main-icon-heading">
+                            <span class="main-menu-name">My Booking</span>
+                            <p>Lorem Ipsum is simply dummy</p>
+                        </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link align-middle px-0">
+                             <div class="main-dashboard-icons">
+                                <div class="dashboard-icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="main-icon-heading">
+                            <span class="main-menu-name">My Account Settings</span>
+                            <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </a>
+                        <ul class="collapse nav flex-column" id="submenu1" data-bs-parent="#menu">
+                            <li class="nav-item" class="w-100">
+                                    <a href="#tabs-2" data-toggle="tab" role="tab" class="nav-link px-0"><i class="fa fa-question-circle" aria-hidden="true"></i>Profile Information</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-6" data-toggle="tab" role="tab" class="nav-link px-0"><i class="fa fa-map-marker" aria-hidden="true"></i>Manage Users Details</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-3" data-toggle="tab" role="tab" class="nav-link px-0"><i class="fa fa-lock" aria-hidden="true"></i>Change Password</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tabs-11" data-toggle="tab" role="tab" class="nav-link p-0">
+                            <div class="main-dashboard-icons">
+                                <div class="dashboard-icon">
+                            <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="main-icon-heading">
+                            <span class="main-menu-name">Wishlist & Favourite</span>
+                            <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tabs-4" data-toggle="tab" role="tab" class="nav-link p-0">
+                            <div class="main-dashboard-icons">
+                                <div class="dashboard-icon">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="main-icon-heading">
+                            <span class="main-menu-name">Notifications</span>
+                            <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link align-middle px-0">
+                             <div class="main-dashboard-icons">
+                                <div class="dashboard-icon">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="main-icon-heading">
+                            <span class="main-menu-name">Review & Rating</span>
+                            <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                    </a>
+                        <ul class="collapse nav flex-column" id="submenu2" data-bs-parent="#menu">
+                            <li class="nav-item" class="w-100">
+                                    <a href="#tabs-5" data-toggle="tab" role="tab" class="nav-link px-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Write Review</a>
+                            </li>
+                            <li>
+                                <a href="#tabs-7" data-toggle="tab" role="tab" class="nav-link px-0"><i class="fa fa-star-half-o" aria-hidden="true"></i></i>My Reviews</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tabs-8" data-toggle="tab" role="tab" class="nav-link p-0">
+                            <div class="main-dashboard-icons">
+                                <div class="dashboard-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="main-icon-heading">
+                            <span class="main-menu-name">Support</span>
+                            <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tabs-9" data-toggle="tab" role="tab" class="nav-link p-0">
+                            <div class="main-dashboard-icons">
+                                <div class="dashboard-icon">
+                            <i class="fa fa-ticket" aria-hidden="true"></i>
+                        </div>
+                        <div class="main-icon-heading">
+                            <span class="main-menu-name">My Coupons</span>
+                            <p>Lorem Ipsum is simply dummy</p>
+                            </div>
+                        </div>
+                        </a>
+                    </li>
+                    <hr></hr>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link p-0">
+                            <div class="main-dashboard-icons">
+                                <div class="dashboard-icon">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </div>
+                        <div class="main-icon-heading">
+                            <span class="main-menu-name">Logout</span>  
+                            </div>
+                        </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-12 col-12">
+            <div class="custom-dashboard-side">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                        <div class="my-account-tab-header">
+                            <div class="booking-section">
+                                <div class="booking-header">
+                                    <h2>My Booking</h2>
+                                </div>
+                                <div class="bookings">
+                                    <div class="booking-dest-image">
+                                        <img src="./assets/img/dance_1.jpg">
+                                    </div>
+                                    <div class="booking-one-side-content">
+                                        <div class="theme-cancel-line">
+                                            <div class="booking-theme-name"><h3>(Western Dance)<b>Hip Hop</b></h3></div>
+                                            <div class="review-rating-content">
+                                                <ul class="rating-image-text-hero nav nav-pills" id="menu">
+                                                 <li>
+                                                    <a href="#tabs-5" data-toggle="tab" role="tab">
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    Rating & Review
+                                                    </a>
+                                                </li>
+                                                </ul>
+                                                <div class="custom-tooltip"><i class="fa fa-times-circle-o" aria-hidden="true"></i><p>Cancel</p>
+                                                    <ul class="cancel-booking nav nav-pills" id="menu">
+                                                        <li>
+                                                            <a href="#tabs-10" data-toggle="tab" role="tab" class="nav-link p-0 ">
+                                                                Cancel
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="courseDetails.html">
+                                                               Reschedule
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                               </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="booking-desc">
+                                            <p><b>Address: </b> PVR Anupam Road, Saket, Delhi, 110017</p>
+                                        </div>
+                                        <div class="some-important-bio">
+                                            <h4 class="username"><span class="green-text">Username:</span>Johan Deo</h4>
+                                            <h4 class="amount"><span class="green-text">Total Amount:</span>$11,660</h4>
+                                            <h4 class="date"><span class="green-text">Booking Date:</span>20/09/2021</h4>
+                                            <h4 class="trial-date"><span class="green-text">Trial Date:</span>20/12/2021</h4>
+                                            <h4 class="trial-time"><span class="green-text">Trial Time:</span>4:00 PM</h4>
+                                            <h4 class="subscription"><span class="green-text">Subscription Days:</span>20 Days</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-10" role="tabpanel">
+                            <div class="booking-form-or-cancel">
+                                <div class="cancel-booking-header">
+                                    <h2>Booking Cancel</h2>
+                                </div>
+                                <form class="custom-cancellation">
+                                    <div class="form-group">
+                                        <label for="email">Reason For Cancellation:</label>
+                                        <select class="form-select" aria-label="Default select example">
+                                          <option selected>Open this select menu</option>
+                                          <option value="1">I want to reschedule the appointment</option>
+                                          <option value="2">I am not interested anymore</option>
+                                          <option value="3">Merchant has asked to cancel and pay directly</option>
+                                          <option value="4">I don’t like the centre</option>
+                                          <option value="5">Price or amenties</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group form-custom">
+                                        <label for="pwd">Comments:</label>
+                                        <textarea class="form-control" id="comment" placeholder="Write Comment"></textarea>
+                                      </div>
+                                      <div class="custom-group">
+                                      <div class="form-check">
+                                          <!-- <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Original Payment Mode Refund
+                                            <p>Refund will be Processed with in 8 Days</p>
+                                          </label> -->
+                                        </div>
+                                    <button type="submit" class="btn btn-primary">Continue</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    <div class="tab-pane" id="tabs-2" role="tabpanel">
+                       <div class="account-side-user-info">
+                           <div class="userpage-heading">
+                               <h2>Profile information</h2>
+                           </div>
+                           <div class="information-form">
+                               <form class="edit-info">
+                                <div class="file-upload-input">
+                                    <label for="profile-pic">Select a Profile Picture:</label>
+                                    <input type="file" id="profile-pic" name="profile-pic">
+                                </div>
+                                <div class="edit-info-one">
+                                   <div class="form-divide">
+                                       <div class="form-group">
+                                           <label for="username">Username</label>
+                                           <input type="text" name="Username" id="username" placeholder="Johan Deo">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="email">Email Address</label>
+                                           <input type="email" name="email" id="email" placeholder="JohanDeo@gmail.com">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="phone">Mobile Number</label>
+                                           <input type="number" name="phone" id="phone" placeholder="+91 8882253154">
+                                       </div>
+                                   </div>
+                                   <div class="form-divide">
+                                       <fieldset data-role="controlgroup">
+                                      <legend>Choose your gender:</legend>
+                                      <div class="custom-radio-divi">
+                                            <div class="custom-radio">
+                                                <input type="radio" name="gender" id="male" value="male" checked>
+                                                <label for="male">Male</label>
+                                            </div>
+                                            <div class="custom-radio">
+                                                <input type="radio" name="gender" id="female" value="female">
+                                                <label for="female">Female</label>
+                                            </div>
+                                        </div>
+                                      </fieldset>
+                                      <div class="form-group">
+                                           <label for="age">Age</label>
+                                           <input type="number" name="age" id="age" placeholder="26">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="whatapp-no">WhatApp Number</label>
+                                           <input type="number" name="whatapp-no" id="whatapp-no" placeholder="+91 8091919191">
+                                       </div>
+                                   </div>
+                               </div>
+                                   <button type="submit" class="btn btn-primary">Save</button>
+                               </form>
+                               <div class="faq-account-info">
+                                   <div class="faq-content-head">
+                                       <h3>FAQs</h3>
+                                   </div>
+                                   <div class="faq-content-text">
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                   </div>
+                               </div>
+                               <div class="delete-acc">
+                                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                      Delete Account
+                                    </button>
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </div>
+                                          <div class="modal-body">
+                                            <div class="delete-popup-divide">
+                                                <div class="pop-one-side">
+                                                    <div class="faq-heading-pop">
+                                                        <h2>FAQs</h2>
+                                                    </div>
+                                                    <ul class="instructions-pop">
+                                                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</li>
+                                                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</li>
+                                                        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</li>
+                                                    </ul>
+                                                    <div class="some-other-instruction">
+                                                        <p><b>Lorem Ipsum is simply dummy text of the printing and typesetting industry</b></p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</p>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pop-second-side">
+                                                    <h2>Are You sure want To Delete ?</h2>
+                                                    <from action="" class="delete-form">
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" id="email" name="email" placeholder="JohanDeo@gmail.com">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="number" class="form-control" id="phone" name="phone" placeholder="91 8882223658">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="password" name="password" placeholder="Enter Your Password">
+                                                        </div>
+                                                        <button type="button" class="confirm_del">Confirm Deleting</button>
+                                                        <button type="button" class="cancel_del">No Let me Stay</button>
+                                                    </from>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div class="tab-pane" id="tabs-3" role="tabpanel">
+                        <div class="change-password-main">
+                           <div class="change-password-heading">
+                               <h2>Change Password</h2>
+                           </div>
+                           <div class="change-password-form">
+                               <div class="pswd-change-form">
+                                   <form action="" class="change-pass">
+                                       <div class="form-group">
+                                           <label for="current-pass">Your Current Password</label>
+                                            <input type="text" name="current-pass" id="current-pass" class="form-control" placeholder="Current Password">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="new-pass">Type New Password</label>
+                                            <input type="text" name="new-pass" id="new-pass" class="form-control" placeholder="New Password">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="retype-new-pass">Retype New Password</label>
+                                            <input type="text" name="retype-new-pass" id="retype-new-pass" class="form-control" placeholder="Retype New Password">
+                                       </div>
+                                       <div class="form-group">
+                                           <label for="otp">Enter OTP</label>
+                                            <input type="number" name="otp" id="otp" class="form-control" placeholder="Enter OTP">
+                                       </div>
+                                       <button type="submit">Change Password</button>
+                                   </form>
+                               </div>
+                               <!-- <div class="password-instruction">
+                                   <h4>Your Password Must</h4>
+                                   <ul>
+                                       <li>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing</li>
+                                       <li>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing</li>
+                                       <li>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing</li>
+                                       <li>Lorem Ipsum is simply dummy text of the printing Lorem Ipsum is simply dummy text of the printing</li>
+                                   </ul>
+                               </div> -->
+                           </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-4" role="tabpanel">
+                    <div class="notification-accor">
+                       <div class="notification-accor-heading">
+                           <h2>Change Password</h2>
+                       </div>
+                       <div class="accor-notification">
+                           <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    My Booking
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Reminder
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    New Offers
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    New Offers
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiver" aria-expanded="false" aria-controls="flush-collapseFive">
+                                    New Offers
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+                                </div>
+                              </div>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tabs-5" role="tabpanel">
+                    <div class="write-review">
+                       <div class="write-review-heading">
+                           <h2>Rate this Service</h2>
+                           <div class="rating-stars-static">
+                               <img src="./assets/img/Star_rating_3.5_of_5.png">
+                           </div>
+                       </div>
+                       <div class="comment-review">
+                           <div class="comment-review-heading">
+                               <h3>Review This Service</h3>
+                           </div>
+                           <div class="comment-review-form">
+                               <form action="">
+                                <div class="custom-back-review">
+                                   <textarea id="desc" name="desc" placeholder="Description"></textarea>
+                                   <hr>
+                                   <input type="text" id="title" name="title" placeholder="Title">
+                               </div>
+                                   <div class="form-group">
+                                       <div class="image-upload">
+                                           <img src="./assets/img/upload.png">
+                                       </div>
+                                       <button type="submit" class="btn">Submit</button>
+                                   </div>
+                               </form>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="tab-pane" id="tabs-6" role="tabpanel">
+                    <div class="manage-address">
+                       <div class="manage-address-heading">
+                           <h2>Manage Users Details</h2>
+                       </div>
+                       <div class="add-address-field">
+                           <button type="button" data-bs-toggle="modal" data-bs-target="#add-address">
+                                <i class="fa fa-plus" aria-hidden="true"></i> 
+                                <h3>New User Details</h3>
+                           </button>
+                           <div class="modal fade" id="add-address" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Add New User Details</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <div class="new-user-details">
+                                            <form action="">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <input type="first_name" class="form-control" name="first_name" placeholder="First Name">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="last_name" class="form-control" name="last_name" placeholder="Last name">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="email" class="form-control" name="email" placeholder="Email">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="number" class="form-control" name="phone" placeholder="Contact Number (WhatsApp)">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="number" class="form-control" name="ap-num" placeholder="Apartment/Flat No.">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-control" name="street" placeholder="Street/Locality">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-control" name="city" placeholder="City">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="number" class="form-control" name="pincode" placeholder="Pincode">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="number" class="form-control" name="age" placeholder="Age">
+                                                </div>
+                                                <div class="col-6">
+                                                    <select class="form-select" name="gender" id="gender">
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <button type="submit">Save</button>
+                                        </form>
+                                    </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
+                       <div class="added-address">
+                           <div class="main-added">
+                               <span class="town-name">Home</span>
+                               <div class="tooltip"><img src="./assets/img/dots.png">
+                                    <div class="tooltiptext">
+                                        <a href="#">Edit</a>
+                                        <a href="#">Delete</a>
+                                    </div>
+                               </div>
+                           </div>
+                           <div class="editable-address-show">
+                               <p>Industrial Area Phase 8b, Mohali, S.A.S.Nagar (Mohali), Chandigarh, Rupnagar</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="tab-pane" id="tabs-7" role="tabpanel">
+                    <div class="my-all-reviews">
+                       <div class="my-all-reviews-heading">
+                           <h2>My Reviews<span class="review-count">(2)</span></h2>
+                       </div>
+                       <div class="all-my-reviews">
+                           <div class="single-reviews">
+                            <div class="first-line-rev">
+                                   <div class="review-person-image">
+                                       <img src="./assets/img/dance_1.jpg">
+                                   </div>
+                                   <div class="reviewed-name-location">
+                                       <h4 class="person-name">Hip Hop Dance</h4>
+                                       <p class="location">Delhi locality</p>
+                                   </div>
+                                   <div class="reviewed-rating">
+                                       <img src="./assets/img/rate-star.png">
+                                       <p class="single-reviews-rate">4.5</p>
+                                   </div>
+                               </div>
+                               <div class="person-rev-time">
+                                   <p class="comments-written">very nice place to learn new skills</p>
+                                   <p class="review-timing">One Month Ago</p>
+                               </div>
+                               <div class="review-delete-edit">
+                                   <a href="#">Edit</a>
+                                   <a href="#">Delete</a>
+                                   <a href="#">Share</a>
+                               </div>
+                           </div>
+                           <div class="single-reviews">
+                            <div class="first-line-rev">
+                                   <div class="review-person-image">
+                                       <img src="./assets/img/dance_1.jpg">
+                                   </div>
+                                   <div class="reviewed-name-location">
+                                       <h4 class="person-name">Hip Hop Dance</h4>
+                                       <p class="location">Delhi locality</p>
+                                   </div>
+                                   <div class="reviewed-rating">
+                                       <img src="./assets/img/rate-star.png">
+                                       <p class="single-reviews-rate">4.5</p>
+                                   </div>
+                               </div>
+                               <div class="person-rev-time">
+                                   <p class="comments-written">very nice place to learn new skills</p>
+                                   <p class="review-timing">One Month Ago</p>
+                               </div>
+                               <div class="review-delete-edit">
+                                   <a href="#">Edit</a>
+                                   <a href="#">Delete</a>
+                                   <a href="#">Share</a>
+                               </div>
+                           </div>
+                           <div class="single-reviews">
+                            <div class="first-line-rev">
+                                   <div class="review-person-image">
+                                       <img src="./assets/img/dance_1.jpg">
+                                   </div>
+                                   <div class="reviewed-name-location">
+                                       <h4 class="person-name">Hip Hop Dance</h4>
+                                       <p class="location">Delhi locality</p>
+                                   </div>
+                                   <div class="reviewed-rating">
+                                       <img src="./assets/img/rate-star.png">
+                                       <p class="single-reviews-rate">4.5</p>
+                                   </div>
+                               </div>
+                               <div class="person-rev-time">
+                                   <p class="comments-written">very nice place to learn new skills</p>
+                                   <p class="review-timing">One Month Ago</p>
+                               </div>
+                               <div class="review-delete-edit">
+                                   <a href="#">Edit</a>
+                                   <a href="#">Delete</a>
+                                   <a href="#">Share</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="tab-pane" id="tabs-8" role="tabpanel">
+                    <div class="help-and-support">
+                       <div class="help-and-support-heading">
+                           <h2>Which Booking are you facing an issue with?</h2>
+                       </div>
+                       <div class="booking-issues">
+                           <div class="booking-issue-image">
+                               <img src="./assets/img/batches.jpg">
+                           </div>
+                           <div class="booking-issue-content">
+                                <div class="all-content-support-issues">
+                                   <div class="booking-issue-name">
+                                       <h2>(Western Dance)<span class="theme-issue-name"><b>Hip Hop</b></span></h2>
+                                   </div>
+                                   <div class="booking-issue-text">
+                                       <p><b>Address: </b> PVR Anupam Road, Saket, Delhi, 110017</p>
+                                   </div>
+                                   <div class="issue-booking-price-date">
+                                       <h2><span class="green-text">Total Amount:</span>$11,660</h2>
+                                       <p><span class="green-text">Booking Date:</span>20/09/2021</p>
+                                   </div>
+                               </div>
+                               <div class="supports-chat-option">
+                                   <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#support">
+                                  Support Chat
+                                </a>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Chat With Us</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                       <div class="whatsapp-support">
+                                           <form action="">
+                                               <div class="form-group">
+                                                   <input type="number" class="form-control" name="whatapp-number" id="whatapp-number" placeholder="WhatsApp Number">
+                                               </div>
+                                               <button type="submit" class="btn btn-primary">Send</button>
+                                           </form>
+                                       </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="booking-issues">
+                           <div class="booking-issue-image">
+                               <img src="./assets/img/batches.jpg">
+                           </div>
+                           <div class="booking-issue-content">
+                                <div class="all-content-support-issues">
+                                   <div class="booking-issue-name">
+                                       <h2>(Western Dance)<span class="theme-issue-name"><b>Hip Hop</b></span></h2>
+                                   </div>
+                                   <div class="booking-issue-text">
+                                       <p><b>Address: </b> PVR Anupam Road, Saket, Delhi, 110017</p>
+                                   </div>
+                                   <div class="issue-booking-price-date">
+                                       <h2><span class="green-text">Total Amount:</span>$11,660</h2>
+                                       <p><span class="green-text">Booking Date:</span>20/09/2021</p>
+                                   </div>
+                               </div>
+                               <div class="supports-chat-option">
+                                   <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#support">
+                                  Support Chat
+                                </a>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Support</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        whatsapp
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="booking-issues">
+                           <div class="booking-issue-image">
+                               <img src="./assets/img/batches.jpg">
+                           </div>
+                           <div class="booking-issue-content">
+                                <div class="all-content-support-issues">
+                                   <div class="booking-issue-name">
+                                       <h2>(Western Dance)<span class="theme-issue-name"><b>Hip Hop</b></span></h2>
+                                   </div>
+                                   <div class="booking-issue-text">
+                                       <p><b>Address: </b> PVR Anupam Road, Saket, Delhi, 110017</p>
+                                   </div>
+                                   <div class="issue-booking-price-date">
+                                       <h2><span class="green-text">Total Amount:</span>$11,660</h2>
+                                       <p><span class="green-text">Booking Date:</span>20/09/2021</p>
+                                   </div>
+                               </div>
+                               <div class="supports-chat-option">
+                                   <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#support">
+                                  Support Chat
+                                </a>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="support" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Support</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        whatsapp
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="what-issue-face-chat-support">
+                           <div class="what-issue-face-heading">
+                               <h2>What issue Are you facing</h2>
+                           </div>
+                           <div class="issue-facing-accor">
+                               <div class="accordion accordion-flush" id="accordionFlushExample">
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTen">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                        I want to manage my Booking ?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingEle">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEle" aria-expanded="false" aria-controls="flush-collapseEle">
+                                        How to find Your Missing Course ?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseEle" class="accordion-collapse collapse" aria-labelledby="flush-headingEle" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwe">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwe" aria-expanded="false" aria-controls="flush-collapseTwe">
+                                        How to find Your Missing Course ?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseTwe" class="accordion-collapse collapse" aria-labelledby="flush-headingTwe" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThi">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThi" aria-expanded="false" aria-controls="flush-collapseThi">
+                                        How to find Your Missing Course ?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseThi" class="accordion-collapse collapse" aria-labelledby="flush-headingThi" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFor">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseFor">
+                                        How to find Your Missing Course ?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseFor" class="accordion-collapse collapse" aria-labelledby="flush-headingFor" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingFiv">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFiv" aria-expanded="false" aria-controls="flush-collapseFiv">
+                                        How to find Your Missing Course ?
+                                      </button>
+                                    </h2>
+                                    <div id="flush-collapseFiv" class="accordion-collapse collapse" aria-labelledby="flush-headingFiv" data-bs-parent="#accordionFlushExample">
+                                      <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</div>
+                                    </div>
+                                  </div>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="tab-pane" id="tabs-9" role="tabpanel">
+                    <div class="coupons">
+                       <div class="coupons-heading">
+                           <h2>Available Coupons</h2>
+                       </div>
+                       <div class="for-cover-coupons">
+                           <div class="all-the-coupons">
+                               <div class="main-coupons-details">
+                                   <div class="coupons-content">
+                                       <h2><span class="category">(Western Dance)</span><span class="sub-category"> Hip Hop</span></h2>
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                                   </div>
+                                   <div class="coupons-valid-date">
+                                       <h2>Valid Till 31 Dec, 2021</h2>
+                                   </div>
+                               </div>
+                                <div class="off-price">
+                                    <div class="off-price-text">
+                                        <p>Get 50% On Booking with this Coupon</p>
+                                    </div>
+                                    <div class="refral-code">
+                                        <span class="code">HIPHOP50</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="all-the-coupons">
+                               <div class="main-coupons-details">
+                                   <div class="coupons-content">
+                                       <h2><span class="category">(Western Dance)</span><span class="sub-category"> Hip Hop</span></h2>
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                                   </div>
+                                   <div class="coupons-valid-date">
+                                       <h2>Valid Till 31 Dec, 2021</h2>
+                                   </div>
+                               </div>
+                                <div class="off-price">
+                                    <div class="off-price-text">
+                                        <p>Get 50% On Booking with this Coupon</p>
+                                    </div>
+                                    <div class="refral-code">
+                                        <span class="code">HIPHOP50</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="all-the-coupons">
+                               <div class="main-coupons-details">
+                                   <div class="coupons-content">
+                                       <h2><span class="category">(Western Dance)</span><span class="sub-category"> Hip Hop</span></h2>
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                                   </div>
+                                   <div class="coupons-valid-date">
+                                       <h2>Valid Till 31 Dec, 2021</h2>
+                                   </div>
+                               </div>
+                                <div class="off-price">
+                                    <div class="off-price-text">
+                                        <p>Get 50% On Booking with this Coupon</p>
+                                    </div>
+                                    <div class="refral-code">
+                                        <span class="code">HIPHOP50</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="all-the-coupons">
+                               <div class="main-coupons-details">
+                                   <div class="coupons-content">
+                                       <h2><span class="category">(Western Dance)</span><span class="sub-category"> Hip Hop</span></h2>
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                                   </div>
+                                   <div class="coupons-valid-date">
+                                       <h2>Valid Till 31 Dec, 2021</h2>
+                                   </div>
+                               </div>
+                                <div class="off-price">
+                                    <div class="off-price-text">
+                                        <p>Get 50% On Booking with this Coupon</p>
+                                    </div>
+                                    <div class="refral-code">
+                                        <span class="code">HIPHOP50</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="all-the-coupons">
+                               <div class="main-coupons-details">
+                                   <div class="coupons-content">
+                                       <h2><span class="category">(Western Dance)</span><span class="sub-category"> Hip Hop</span></h2>
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                                   </div>
+                                   <div class="coupons-valid-date">
+                                       <h2>Valid Till 31 Dec, 2021</h2>
+                                   </div>
+                               </div>
+                                <div class="off-price">
+                                    <div class="off-price-text">
+                                        <p>Get 50% On Booking with this Coupon</p>
+                                    </div>
+                                    <div class="refral-code">
+                                        <span class="code">HIPHOP50</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="all-the-coupons">
+                               <div class="main-coupons-details">
+                                   <div class="coupons-content">
+                                       <h2><span class="category">(Western Dance)</span><span class="sub-category"> Hip Hop</span></h2>
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                                   </div>
+                                   <div class="coupons-valid-date">
+                                       <h2>Valid Till 31 Dec, 2021</h2>
+                                   </div>
+                               </div>
+                                <div class="off-price">
+                                    <div class="off-price-text">
+                                        <p>Get 50% On Booking with this Coupon</p>
+                                    </div>
+                                    <div class="refral-code">
+                                        <span class="code">HIPHOP50</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="all-the-coupons">
+                               <div class="main-coupons-details">
+                                   <div class="coupons-content">
+                                       <h2><span class="category">(Western Dance)</span><span class="sub-category"> Hip Hop</span></h2>
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                                   </div>
+                                   <div class="coupons-valid-date">
+                                       <h2>Valid Till 31 Dec, 2021</h2>
+                                   </div>
+                               </div>
+                                <div class="off-price">
+                                    <div class="off-price-text">
+                                        <p>Get 50% On Booking with this Coupon</p>
+                                    </div>
+                                    <div class="refral-code">
+                                        <span class="code">HIPHOP50</span>
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="all-the-coupons">
+                               <div class="main-coupons-details">
+                                   <div class="coupons-content">
+                                       <h2><span class="category">(Western Dance)</span><span class="sub-category"> Hip Hop</span></h2>
+                                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                                   </div>
+                                   <div class="coupons-valid-date">
+                                       <h2>Valid Till 31 Dec, 2021</h2>
+                                   </div>
+                               </div>
+                                <div class="off-price">
+                                    <div class="off-price-text">
+                                        <p>Get 50% On Booking with this Coupon</p>
+                                    </div>
+                                    <div class="refral-code">
+                                        <span class="code">HIPHOP50</span>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div class="tab-pane" id="tabs-11" role="tabpanel">
+                    <div class="wishlist-fav">
+                       <div class="wishlist-fav-heading">
+                           <h2>Wishlist</h2>
+                       </div>
+                       <div class="wishlist-listing">
+                           <div class="wishlist-image">
+                               <img src="./assets/img/batches.jpg">
+                           </div>
+                           <div class="wishlist-content">
+                                <div class="wishlist-heading-content">
+                                   <div class="wishlist-name-heading"><h2>(Western Dance)<span class="wishlist-theme-name"><b>Hip Hop</b></span></h2><span class="wishlist-rating"><img src="./assets/img/rate-star.png">4.5</span></div>
+                                   <div class="wishlist-delete">
+                                       <span class="delete-wish-cart"><img src="./assets/img/trash-can.png"></span>
+                                   </div>
+                               </div>
+                               <div class="wishlist-body-content">
+                                   <p><b>Address: </b> PVR Anupam Road, Saket, Delhi, 110017</p>
+                               </div>
+                               <div class="wishllist-price">
+                                   <h2><span class="wishlist-green-text">Starting From:</span>Rs.2000/month</h2>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+<footer style="position: relative; z-index: 0;">
+    
+    <div class="footer-back">
+    <div class="footer-top text-white pt-5">
+      <div class="container-fluid">
+        <h1 class="logo"><a href="#"><img src="assets/img/logo.png" alt="" class="img-fluid"
+              style="width: 70mm; height:12mm"></a></h1>
+      <div class="custom-container ">
+        <div class="footer-about wow fadeInUp animated footer-about-sec"
+          style="visibility: visible; animation-name: fadeInUp; width: 70%;">
+
+          <h3>About us</h3>
+          <p>
+            Wipe away the problems from your life by experiencing a whole new and 
+            creative platform proving hobbies. HOBBY CADDY is that platform that helps 
+            you with different options as per your interest. Our team is here to fulfil 
+            your dreams into reality. We aim to serve you with memorable activities, 
+            tremendous opportunities, and creative feats. Join us and let us help you 
+            fulfil your dreams, passion, and hobby. 
+        </p>
+
+        </div>
+        <div class="footer-assistance-sec" style="width: 30%;">
+          <h4>For Any Assistance</h4>
+          <div class="assistance-divi">
+            <div class="mail-image">
+              <img src="./assets/img/mail-an.png">
+            </div>
+            <div class="all-mails">
+              <h4>Business Inquiries</h4>
+              <p><a href="mailto:merchant@hobbycadyy.com">merchant@hobbycadyy.com</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    <hr style="width:100%;margin-left:0;height:2px;color:white; border: 1px dashed black;">
+    <div class="container-fluid">
+    <div class="custom-sec-footer text-white text-center">
+      <h3>Quick Links</h3>
+      <br>
+      <div class="row custom-menu-footer-row">
+        <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Hiring</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Guidelines and Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Terms of Services</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+        <li>
+        
+          <a data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sell On HOBBY CADDY</a>
+          <!-- Modal -->
+          
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="copyright-dividation">
+          <div class="copyright">
+           2021 &copy; HobbyCaddy.com
+          </div>
+          <div class="social-links">
+            <h6>Follow Us On :</h6>
+            <a href="#" class="twitter"><img src="./assets/img/twitter.png" style="height:6mm"></a>
+            <a href="https://www.facebook.com/hobbycaddy/" class="facebook"><img src="./assets/img/facebook.png" style="height:6mm"></a>
+            <a href="https://www.instagram.com/hobbycaddy/" class="instagram"><img src="./assets/img/instagram.png" style="height:6mm"></a>
+            <a href="https://in.linkedin.com/company/hobby-caddy/
+" class="linkedin"><img src="./assets/img/linkedin.png" style="height:6mm"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <div class="custom-sell-form-footer">
+                   <form action="">
+                       <div class="form-group">
+                          <label>Business Name</label>
+                          <input type="text" name="business-name" placeholder="Enter your Business Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Contacting Person Name</label>
+                          <input type="text" name="contact-person-name" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                          <label>City</label>
+                          <input type="text" name="city-name" placeholder="Enter your City Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Pin Code</label>
+                          <input type="number" name="pin-code" placeholder="Enter your Pin Code">
+                        </div>
+                        <div class="form-group">
+                          <label>Email Id</label>
+                          <input type="email" name="email" placeholder="Enter your Email Address">
+                        </div>
+                        <div class="form-group">
+                          <label>WhatsApp Number</label>
+                          <input type="number" name="whatsapp-no" placeholder="Enter your WhatsApp Number">
+                        </div>
+                        <button type="submit">Submit</button>
+                   </form>
+                 </div>
+                </div>
+            </div>
+          </div>
+        </div>
+  <!-- <script type="text/javascript">
+      jQuery(document).ready(function () {
+    jQuery('.nav li:first').addClass('active');
+    jQuery('.tab-content:not(:first)').hide();
+    jQuery('.nav li a').click(function (event) {
+        event.preventDefault();
+        var content = $(this).attr('href');
+        $(this).parent().addClass('active');
+        $(this).parent().siblings().removeClass('active');
+        $(content).show();
+        $(content).siblings('.tab-content').hide();
+    });
+});
+  </script> -->
+  <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  <script>
+        $(document).ready(function(){
+    
+    $('ul.tabs li').click(function(){
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li').removeClass('current');
+        $('.tab-content').removeClass('current');
+
+        $(this).addClass('current');
+        $("#"+tab_id).addClass('current');
+    })
+
+})
+
+    $('.toggler-button').on('click', function(){
+        $('.main-sidebar-start').toggleClass('active');
+    });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Hobby Center</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- <link href="assets/css/merchant_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/custom_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/font-awesome.css" rel="stylesheet" /> -->
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <style></style>
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Presento - v3.7.0
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <div id="loader">
+        <img src="./assets/img/loader2.gif" />
+    </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <div class="logo"><a href="/customer/index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></div>
+          <!-- <h1 class="logo"></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdown_coins" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              City
+            </button>
+            <div id="menu" class="dropdown-menu" aria-labelledby="dropdown_coins">
+              <form class="px-4 py-2">
+                <input type="search" class="form-control" id="searchCoin" placeholder="Delhi" autofocus="autofocus">
+              </form>
+              <div id="menuItems"></div>
+              <div id="empty" class="dropdown-header">City Not Found</div>
+            </div>
+          </div>
+    
+          <div class="dropdown" style="width: 50%;">
+            <!-- <button class="btn dropdown-toggle" type="button" style="display:none"></button> -->
+            <div id="myInput" class="input-group rounded dropdown-toggle custom-toggle">
+              <span class="input-group-text border-0 custom-removal-color" id="search-addon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </span>
+              <div id="search-button" name="search-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <input id="search" type="search" name="search" class="form-control rounded" widht="1" placeholder="Search For Hobby Center Or an Event" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              </div>
+            </div>
+            <div id="searchSuggestions" class="dropdown-menu" aria-labelledby="search-button">
+              <div id="suggestions"></div>
+            </div>
+          </div>
+          
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <div class="btn-group">
+                <button type="button" id="greet" class="btn dropdown-toggle mr-3" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Account & List
+                </button>
+                <div class="dropdown-menu text-center">
+                  <div id="login-div" class="container">
+                    <div class="btn text-white text-center mt-1"
+                      style="background-color:rgba(21, 202, 187, 0.808);width:100%;color:black"><a
+                        href="signin.html">Login</a></div>
+                  </div>
+                  <div id="sign-up"><a class="sign-up" href="signup.html" style="font-size:10px;color:black;">New User?
+                      Create Account</a></div>
+                  <div id="signup-divider" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);"></div>
+                  <div id="myAccount"><a class="dropdown-item" href="myAccount.html">My Account</a></div>
+                  <div id="bookingHistory"><a class="dropdown-item" href="bookingHistory.html">Booking History</a></div>
+                  <a class="dropdown-item" href="Coupons.html">Coupons</a>
+                  <div id="dividerAboveLogout" class="dropdown-divider" style="border-color:rgba(11, 219, 202, 0.808);">
+                  </div>
+                  <a id="logout" class="dropdown-item" href="#" onclick="logout();">Logout</a>
+                </div>
+              </div>
+              <li class="mr-2
+                " style="cursor: pointer;"><img id="notificationDiv" src="assets/img/active_notification.gif" width="30"
+                  height="30" class="img-fluid" data-bs-toggle="modal" data-bs-target="#notificationModal"></li>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <!-- <li><img id="favouritesDiv" src="assets/img/wishlist.png" width="30" height="30"
+                  class="img-fluid" data-bs-toggle="modal" data-bs-target="#wishlistModal" style="filter:grayscale"></li> -->
+                  <li style="cursor: pointer;"><img id="cart" src="assets/img/shopping-cart.png" width="30" height="30"
+                    class="img-fluid"></li>
+    
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </header><!-- End Header -->
+
+    <!-- End Header -->
+
+    <!-- Notification  -->
+    <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Notifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Empty
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WishList -->
+    <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Wishlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="myFavouriteList">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero-center center-page-course" class="d-flex align-items-center" style="height:80vh">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption">
+                            <h3>(Western Dance)</h3>
+                            <p>Hip Hop</p>
+                          </div>
+                      <img class="d-block w-100" src="./assets/img/hip-hop.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <h3>(Western Dance)</h3>
+                            <p>Hip Hop</p>
+                          </div>
+                      <img class="d-block w-100" src="./assets/img/hip-hop.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <h3>(Western Dance)</h3>
+                            <p>Hip Hop</p>
+                          </div>
+                      <img class="d-block w-100" src="./assets/img/hip-hop.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+    </section>
+    <!-- End Hero -->
+ 
+    <main id="main">
+        <section class="course-page-gallery">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="course-gallery-type">
+                            <!-- <div class="course-gallery-images">
+                                <img src="./assets/img/hero-category-bg.jpg">
+                                <img src="./assets/img/hero-category-bg.jpg">
+                                <img src="./assets/img/hero-category-bg.jpg">
+                                <img src="./assets/img/hero-category-bg.jpg">
+                            </div> -->
+                            <div class="some-cuircumstance">
+                                <div class="features">
+                                    <div class="feature-grid">
+                                        <p><span class="feature-gray">Starting From: </span>$2.14/M</p>
+                                    </div>
+                                    <div class="feature-grid">
+                                        <p><span class="feature-gray">Sessions/Week: </span>6</p>
+                                    </div>
+                                    <div class="feature-grid">
+                                        <p><span class="feature-gray">Time Slot: </span>10:00AM-02:00PM</p>
+                                    </div>
+                                    <div class="feature-grid">
+                                        <p><span class="feature-gray">Age Group: </span>26</p>
+                                    </div>
+                                    <div class="feature-grid">
+                                        <p><span class="feature-gray">Start Date: </span>26 Nov 2021</p>
+                                    </div>
+                                    <div class="feature-grid">
+                                        <p><span class="feature-gray">Capacity: </span>Group</p>
+                                    </div>
+                                    <div class="feature-grid">
+                                        <p><span class="feature-gray">Sessions/Month: </span>30 Days</p>
+                                    </div>
+                                    <div class="feature-grid">
+                                        <p><span class="feature-gray">Gender: </span>Female ,Male</p>
+                                    </div>
+                                </div>
+                                <div class="review-and-share">
+                                    <div class="rating-customer-text-course">
+                                        <div class="rating-client-course">
+                                            <span class="rating-course-client"><img src="./assets/img/rate-star.png">4.5</span>
+                                            <p class="counters-rating">300+</p>
+                                        </div>
+                                        <p class="customer-review">Customer Review</p>
+                                    </div>
+                                    <div class="share-button-center-course">
+                                        <a href="#"><span class="share-image"><img src="./assets/img/share-new.png"></span>Share</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="course-content-acc-one-product">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="course-content-acc-head">
+                            <h2>Course Content</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-12">
+                        <div class="main-table">
+                            <table class="table-months-data">
+                                <tbody>
+                                    <tr class="custom-first-row">
+                                        <th class="for-first-border">6 Months</th>
+                                        <th class="for-first-border">3 Months</th>
+                                        <th class="for-first-border">2 Months</th>
+                                        <th class="for-first-border">1 Months</th>
+                                    </tr>
+                                    <tr class="custom-second-row">
+                                        <td class="for-second-border">$150/M</td>
+                                        <td class="for-second-border">$100/M</td>
+                                        <td class="for-second-border">$100/M</td>
+                                        <td class="for-second-border">$100/M</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="select-button">
+                                            <a href="#">Select</a>
+                                        </td>
+                                        <td class="select-button">
+                                            <a href="#">Select</a>
+                                        </td>
+                                        <td class="select-button">
+                                            <a href="#">Select</a>
+                                        </td>
+                                        <td class="select-button">
+                                            <a href="#">Select</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- <div class="course-contents-accordion">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne12">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne12" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    01. History of Dance
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne12" class="accordion-collapse collapse show"  aria-labelledby="flush-headingOne12" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne13">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne13" aria-expanded="false" aria-controls="flush-collapseOne13">
+                                    02. How to do Proper Dance Posture
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne13" class="accordion-collapse collapse" aria-labelledby="flush-headingOne13" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne14">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne14" aria-expanded="false" aria-controls="flush-collapseOne14">
+                                    03. How to do Proper Dance Posture
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne14" class="accordion-collapse collapse" aria-labelledby="flush-headingOne14" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne15">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne15" aria-expanded="false" aria-controls="flush-collapseOne15">
+                                    04. How to do Proper Dance Posture
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne15" class="accordion-collapse collapse" aria-labelledby="flush-headingOne15" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne16">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne16" aria-expanded="false" aria-controls="flush-collapseOne16">
+                                    05. How to do Proper Dance Posture
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne16" class="accordion-collapse collapse" aria-labelledby="flush-headingOne16" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne17">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne17" aria-expanded="false" aria-controls="flush-collapseOne17">
+                                    06. How to do Proper Dance Posture
+                                  </button>
+                                </h2>
+                                <div id="flush-collapseOne17" class="accordion-collapse collapse" aria-labelledby="flush-headingOne17" data-bs-parent="#accordionFlushExample">
+                                  <div class="accordion-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                </div>
+                              </div>
+                            </div>
+                        </div> -->
+                        <div class="time-slot">
+                        	<div class="time-slot-head">
+                        		<h2>Choose A Time Slot</h2>
+                        	</div>
+                        	<div class="time-slotes-time">
+                        		<form action="" class="course-radio">
+                        			<div class="checkbox-wrapper">
+										<div class="checkbox">
+										<label class="checkbox-label-container" for="one-slot">
+										09:00AM-10:20AM
+										<input class="time-slot d-none" name="slot" type="radio" id="one-slot" value="09:00AM-10:20AM">
+										<span class="checkbox-label"></span>
+										</label>
+										</div>
+										<div class="checkbox">
+										<label class="checkbox-label-container" for="two-slot">
+										01:00PM-02:20PM
+										<input class="time-slot d-none" name="slot" type="radio" id="two-slot" value="01:00PM-02:20PM">
+										<span class="checkbox-label"></span>
+										</label>
+										</div>
+										<div class="checkbox">
+										<label class="checkbox-label-container" for="three-slot">
+										04:00PM-06:20PM
+										<input class="time-slot d-none" name="slot" type="radio" id="three-slot" value="04:00PM-06:20PM">
+										<span class="checkbox-label"></span>
+										</label>
+										</div>
+										<div class="checkbox">
+										<label class="checkbox-label-container" for="four-slot">
+										05:00PM-06:20PM
+										<input class="time-slot d-none" name="slot" type="radio" id="four-slot" value="05:00PM-06:20PM">
+										<span class="checkbox-label"></span>
+										</label>
+										</div>
+										<div class="checkbox">
+										<label class="checkbox-label-container" for="five-slot">
+										07:00PM-08:20PM
+										<input class="time-slot d-none" name="slot" type="radio" id="five-slot" value="07:00PM-08:20PM">
+										<span class="checkbox-label"></span>
+										</label>
+										</div>
+										</div>
+                        		</form>
+                        	</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                        
+                    	<div class="custom-product-course">
+                            <form action="">
+                    		<div class="custom-pro-image">
+                    			<img src="./assets/img/hero-category-bg.jpg">
+                    		</div>
+                    		<div class="custom-pro-content">
+                    			<!-- <div class="custom-check-point">
+	                    			<div class="check-img">
+	                    				<img src="./assets/img/checked-new.png">
+	                    			</div>
+	                    			<div class="check-text">
+	                    				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	                    			</div>
+	                    		</div>
+	                    		<div class="custom-check-point">
+	                    			<div class="check-img">
+	                    				<img src="./assets/img/checked-new.png">
+	                    			</div>
+	                    			<div class="check-text">
+	                    				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	                    			</div>
+	                    		</div>
+	                    		<div class="custom-check-point">
+	                    			<div class="check-img">
+	                    				<img src="./assets/img/checked-new.png">
+	                    			</div>
+	                    			<div class="check-text">
+	                    				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+	                    			</div>
+	                    		</div> -->
+                                
+                                    <div class="form-group">
+                                        <label>Trial Date</label>
+                                        <input type="date" name="trial-date">
+                                    </div>
+                                
+                    		</div>
+                    		<div class="add-to-cart-wishlist">
+                    			<div class="add-to-cart-button">
+                    				<a href="#">Add to Wishlist</a>
+                    			</div>
+                    			<div class="wishlist-icons">
+                    				<img src="./assets/img/wishlist.png">
+                    			</div>
+                    		</div>
+                        </form>
+                    		<div class="booking-button">
+                                <a data-bs-toggle="modal" href="#exampleModalToggle-another" role="button">Add User Details</a>
+                                <div class="modal fade" id="exampleModalToggle-another" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalToggleLabel">User Details</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="user-details">
+                                            <form action="">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <input type="first_name" class="form-control" name="first_name" placeholder="First Name">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="last_name" class="form-control" name="last_name" placeholder="Last name">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="email" class="form-control" name="email" placeholder="Email">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="number" class="form-control" name="phone" placeholder="Contact Number (WhatsApp)">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="number" class="form-control" name="ap-num" placeholder="Apartment/Flat No.">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-control" name="street" placeholder="Street/Locality">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="text" class="form-control" name="city" placeholder="City">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="number" class="form-control" name="pincode" placeholder="Pincode">
+                                                </div>
+                                                <div class="col-6">
+                                                    <input type="number" class="form-control" name="age" placeholder="Age">
+                                                </div>
+                                                <div class="col-6">
+                                                    <select class="form-select" name="gender" id="gender">
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <button type="submit">Book an Appointment</button>
+                                        </form>
+                                    </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                    		</div>
+                    	</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="package-tables d-none">
+        	<div class="container-fluid">
+        		<div class="row">
+        			<div class="col-md-12">
+        				<div class="main-table">
+        					<table class="table-months-data">
+        						<tbody>
+        							<tr class="custom-first-row">
+        								<th class="for-first-border">6 Months</th>
+        								<th class="for-first-border">3 Months</th>
+        								<th class="for-first-border">2 Months</th>
+        								<th class="for-first-border">1 Months</th>
+        							</tr>
+        							<tr class="custom-second-row">
+        								<td class="for-second-border">$150/M</td>
+                                        <td class="for-second-border">$100/M</td>
+                                        <td class="for-second-border">$100/M</td>
+                                        <td class="for-second-border">$100/M</td>
+        							</tr>
+        							<tr>
+        								<td class="select-button">
+                                            <a href="#">Select</a>
+                                        </td>
+        								<td class="select-button">
+        									<a href="#">Select</a>
+        								</td>
+        								<td class="select-button">
+        									<a href="#">Select</a>
+        								</td>
+        								<td class="select-button">
+        									<a href="#">Select</a>
+        								</td>
+        							</tr>
+        						</tbody>
+        					</table>
+        				</div>
+                        <div class="coupons-details">
+                            <div class="coupons-details-heading">
+                                <h3>My Coupons</h3>
+                            </div>
+                            <div class="all-coupons">
+                                <table class="coupon-table">
+                                    <tbody>
+                                        <tr>
+                                            <th style="width:60%;">COUPON</th>
+                                            <th style="width:30%;">EXPIRATION DATE</th>
+                                            <th style="width:10%;"></th>
+                                        </tr>
+                                        <tr class="single-coupon">
+                                            <td>Save 10% on all orders</td>
+                                            <td>Jun 6,2012</td>
+                                            <td style="text-align: center;"><button type="submit">Apply</button></td>
+                                        </tr>
+                                        <tr class="single-coupon">
+                                            <td>Save 10% on all orders</td>
+                                            <td>Jun 6,2012</td>
+                                            <td style="text-align: center;"><button type="submit">Apply</button></td>
+                                        </tr>
+                                        <tr class="single-coupon">
+                                            <td>Save 10% on all orders</td>
+                                            <td>Jun 6,2012</td>
+                                            <td style="text-align: center;"><button type="submit">Apply</button></td>
+                                        </tr>
+                                        <tr class="single-coupon">
+                                            <td>Save 10% on all orders</td>
+                                            <td>Jun 6,2012</td>
+                                            <td style="text-align: center;"><button type="submit">Apply</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+
+        <section class="course-instruction">
+        	<div class="container-fluid">
+        		<div class="row">
+        			<div class="col-md-12">
+        				<div class="course-instruction-head">
+        					<h2>Open Requirements For Course</h2>
+        				</div>
+        				<div class="instruction-list">
+        					<ul>
+        						<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</li>
+        						<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</li>
+        						<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</li>
+        						<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</li>
+        						<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</li>
+        					</ul>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <section class="course-review">
+        	<div class="container-fluid">
+        		<div class="col-md-12">
+        			<div class="reviews-custom-section">
+                        <div class="reveiw-head">
+                            <h2>Reviews</h2>
+                        </div>
+                        <div class="review-text">
+                            <p>This is the third item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.</p>
+                        </div>
+                        <div class="rated-review">
+                            <div class="person-image">
+                                <div class="person-image-hero">
+                                    <img src="./assets/img/rated-person.jpg">
+                                </div>
+                                <div class="person-name-content">
+                                    <div class="name-rated">Johan Deo <span class="review-rating"><img src="./assets/img/rate-star.png">4.5</span></div>
+                                    <p class="rate-text-custom">This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.</p>
+                                </div>
+                            </div>
+                            <div class="person-image">
+                                <div class="person-image-hero">
+                                    <img src="./assets/img/rated-person.jpg">
+                                </div>
+                                <div class="person-name-content">
+                                    <div class="name-rated">Johan Deo <span class="review-rating"><img src="./assets/img/rate-star.png">4.5</span></div>
+                                    <p class="rate-text-custom">This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.</p>
+                                </div>
+                            </div>
+                            <div class="person-image">
+                                <div class="person-image-hero">
+                                    <img src="./assets/img/rated-person.jpg">
+                                </div>
+                                <div class="person-name-content">
+                                    <div class="name-rated">Johan Deo <span class="review-rating"><img src="./assets/img/rate-star.png">4.5</span></div>
+                                    <p class="rate-text-custom">This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.</p>
+                                </div>
+                            </div>
+                            <div class="person-image">
+                                <div class="person-image-hero">
+                                    <img src="./assets/img/rated-person.jpg">
+                                </div>
+                                <div class="person-name-content">
+                                    <div class="name-rated">Johan Deo <span class="review-rating"><img src="./assets/img/rate-star.png">4.5</span></div>
+                                    <p class="rate-text-custom">This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        		</div>
+        	</div>
+        </section>
+    </main>
+
+    <!-- ======= Footer ======= -->
+     <footer style="position: relative; z-index: 0;">
+    
+    <div class="footer-back">
+    <div class="footer-top text-white pt-5">
+      <div class="container-fluid">
+        <h1 class="logo"><a href="#"><img src="assets/img/logo.png" alt="" class="img-fluid"
+              style="width: 70mm; height:12mm"></a></h1>
+      <div class="custom-container ">
+        <div class="footer-about wow fadeInUp animated footer-about-sec"
+          style="visibility: visible; animation-name: fadeInUp; width: 70%;">
+
+          <h3>About us</h3>
+          <p>
+            Wipe away the problems from your life by experiencing a whole new and 
+            creative platform proving hobbies. HOBBY CADDY is that platform that helps 
+            you with different options as per your interest. Our team is here to fulfil 
+            your dreams into reality. We aim to serve you with memorable activities, 
+            tremendous opportunities, and creative feats. Join us and let us help you 
+            fulfil your dreams, passion, and hobby. 
+        </p>
+
+        </div>
+        <div class="footer-assistance-sec" style="width: 30%;">
+          <h4>For Any Assistance</h4>
+          <div class="assistance-divi">
+            <div class="mail-image">
+              <img src="./assets/img/mail-an.png">
+            </div>
+            <div class="all-mails">
+              <h4>Business Inquiries</h4>
+              <p><a href="mailto:merchant@hobbycadyy.com">merchant@hobbycadyy.com</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+    <hr style="width:100%;margin-left:0;height:2px;color:white; border: 1px dashed black;">
+    <div class="container-fluid">
+    <div class="custom-sec-footer text-white text-center">
+      <h3>Quick Links</h3>
+      <br>
+      <div class="row custom-menu-footer-row">
+        <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Hiring</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Guidelines and Policy</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">Terms of Services</a>
+        </li>
+        <span>|</span>
+        <li>
+          <a href="#">FAQs</a>
+        </li>
+        <li>
+        
+          <a data-bs-toggle="modal" href="#exampleModalToggle" role="button">Sell On HOBBY CADDY</a>
+          <!-- Modal -->
+          
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+    <div class="footer-bottom">
+      <div class="container-fluid">
+        <div class="copyright-dividation">
+          <div class="copyright">
+           2021 &copy; HobbyCaddy.com
+          </div>
+          <div class="social-links">
+            <h6>Follow Us On :</h6>
+            <a href="#" class="twitter"><img src="./assets/img/twitter.png" style="height:6mm"></a>
+            <a href="https://www.facebook.com/hobbycaddy/" class="facebook"><img src="./assets/img/facebook.png" style="height:6mm"></a>
+            <a href="https://www.instagram.com/hobbycaddy/" class="instagram"><img src="./assets/img/instagram.png" style="height:6mm"></a>
+            <a href="https://in.linkedin.com/company/hobby-caddy/
+" class="linkedin"><img src="./assets/img/linkedin.png" style="height:6mm"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <div class="custom-sell-form-footer">
+                   <form action="">
+                       <div class="form-group">
+                          <label>Business Name</label>
+                          <input type="text" name="business-name" placeholder="Enter your Business Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Contacting Person Name</label>
+                          <input type="text" name="contact-person-name" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                          <label>City</label>
+                          <input type="text" name="city-name" placeholder="Enter your City Name">
+                        </div>
+                        <div class="form-group">
+                          <label>Pin Code</label>
+                          <input type="number" name="pin-code" placeholder="Enter your Pin Code">
+                        </div>
+                        <div class="form-group">
+                          <label>Email Id</label>
+                          <input type="email" name="email" placeholder="Enter your Email Address">
+                        </div>
+                        <div class="form-group">
+                          <label>WhatsApp Number</label>
+                          <input type="number" name="whatsapp-no" placeholder="Enter your WhatsApp Number">
+                        </div>
+                        <button type="submit">Submit</button>
+                   </form>
+                 </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- <script>
+        var myInputWidth = (document.getElementById("myInput").offsetWidth);
+        document.getElementById("myInput").style.width = myInputWidth * 0.8 + "px";
+        const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var subscriptionPlan = "";
+        var gender = "";
+        var temp = [];
+
+        function addUserDetails() {
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+            var date = document.getElementById("trialDate").value;
+
+            if (date == "") {
+                document.getElementById("error").style.display = "block";
+                document.getElementById("internal-error").innerHTML = "Please Select Your Visit(Trial) Date";
+                loader.style.visibility = "hidden";
+            }
+            else if (subscriptionPlan == "") {
+                document.getElementById("error").style.display = "block";
+                document.getElementById("internal-error").innerHTML = "Please Select a Subscription Plan";
+                loader.style.visibility = "hidden";
+            }
+            else {
+                document.getElementById("error").style.display = "none";
+                $("#userDetailsModal").modal('show');
+                loader.style.visibility = "hidden";
+            }
+        }
+
+        function setSubscriptionPlan(plan) {
+            subscriptionPlan = plan;
+        }
+
+        function bookAnAppointment() {
+
+            console.log("hello");
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+
+            var date = document.getElementById("trialDate").value;
+
+            if (date == "") {
+                document.getElementById("error").style.display = "block";
+                document.getElementById("internal-error").innerHTML = "Please Select Your Visit(Trial) Date";
+                loader.style.visibility = "hidden";
+            }
+            else if (subscriptionPlan == "") {
+                document.getElementById("error").style.display = "block";
+                document.getElementById("internal-error").innerHTML = "Please Select a Subscription Plan";
+                loader.style.visibility = "hidden";
+            }
+            else {
+                document.getElementById("error").style.display = "none";
+                data = new Date(date);
+
+
+                let paramString = window.location.href.split('?')[1];
+                let queryString = new URLSearchParams(paramString);
+
+
+                var k = 0;
+                var city;
+                var businessName;
+                var locality;
+                var batchName;
+
+                for (let pair of queryString.entries()) {
+                    url = pair[1];
+                    if (k == 0) {
+                        city = url;
+                    }
+                    else if (k == 1) {
+                        locality = url;
+                    }
+                    else if (k == 2) {
+                        businessName = url;
+                    }
+                    else if (k == 3) {
+                        batchName = url;
+                    }
+                    k++;
+                }
+
+                businessName = businessName.replace(/\s+/g, '-').toLowerCase();
+                city = city.replace(/\s+/g, '-').toLowerCase();
+                locality = locality.replace(/\s+/g, '-').toLowerCase();
+                batchName = batchName.replace(/\s+/g, '-').toLowerCase();
+
+                var firstName = document.getElementById("firstName").value;
+                var lastName = document.getElementById("lastName").value;
+                var apartmentNo = document.getElementById("apartmentNo").value;
+                var bookingPersonLocality = document.getElementById("locality").value;
+                var bookingPersonCity = document.getElementById("city").value;
+                var pin = document.getElementById("pin").value;
+                var age = document.getElementById("age").value;
+                var email = document.getElementById("email").value;
+                var contact = document.getElementById("contact").value;
+
+                if (firstName == "" || lastName == "" || apartmentNo == "" || bookingPersonLocality == "" || bookingPersonCity == "" || pin == "" || age == "" || gender == "" || email == "" || contact == "") {
+                    document.getElementById("modal-error").style.display = "block";
+                    document.getElementById("modal-internal-error").innerHTML = "Field Cannot be Empty!";
+                    loader.style.visibility = "visible";
+                }
+                else if(contact.length!=10){
+                    document.getElementById("modal-error").style.display = "block";
+                    document.getElementById("modal-internal-error").innerHTML = "Contact Number should be of 10 Digits!";
+                    loader.style.visibility = "visible";
+                }
+                else if(pin.length!=6){
+                    document.getElementById("modal-error").style.display = "block";
+                    document.getElementById("modal-internal-error").innerHTML = "PIN should be of 6 digits!";
+                    loader.style.visibility = "visible";
+                }
+                else {
+                    var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                    if (!email.match(validRegex)) {
+                        document.getElementById("modal-error").style.display = "block";
+                        document.getElementById("modal-internal-error").innerHTML = "Invalid Email Address!"
+                        loader.style.visibility = "hidden";
+                    }
+                    else {
+                        var obj = new Object();
+                        obj.businessName = businessName.toString();
+                        obj.city = city.toString();
+                        obj.locality = locality.toString();
+                        obj.batchName = batchName.toString();
+                        obj.trialDate = date;
+                        obj.subscriptionPlan = subscriptionPlan.toString();
+                        obj.firstName = firstName.toString();
+                        obj.lastName = lastName.toString();
+                        obj.bookingPersonApartmentNo = apartmentNo.toString();
+                        obj.bookingPersonLocality = bookingPersonLocality.toString();
+                        obj.bookingPersonCity = bookingPersonCity.toString();
+                        obj.bookingPersonPin = pin.toString();
+                        obj.age = age.toString();
+                        obj.email = email.toString();
+                        obj.contact = contact.toString();
+                        obj.gender = gender.toString();
+                        obj.amount = "";
+                        var data = JSON.stringify(obj);
+
+                        console.log(data)
+
+                        $.ajax({
+                            url: 'http://127.0.0.1:8080/api/customer/v1/bookAppointment',
+                            type: 'POST',
+                            contentType: "application/json;",
+                            dataType: 'json',
+                            data: data,
+                            crossDomain: true,
+                            headers: {
+                                Authorization: "Bearer " + getCookie("customerToken")
+                            },
+                            success: function (res, req) {
+                                location.href = 'http://127.0.0.1:5500/customer/success.html?bookingId=' + res.message;
+                                loader.style.visibility = "hidden";
+                            },
+                            error: function (e) {
+                                document.getElementById("error").style.display = "block";
+                                document.getElementById("internal-error").innerHTML = "Something went Wrong, Try Again Later";
+                                loader.style.visibility = "hidden";
+                            }
+                        });
+                    }
+                }
+            }
+
+        }
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1, c.length);
+                }
+                if (c.indexOf(nameEQ) == 0) {
+                    return c.substring(nameEQ.length, c.length);
+                }
+            }
+            return null;
+        }
+
+        function eraseCookie() {
+            document.cookie = "customerToken" + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+        function checkTrialDate(date) {
+            var date = document.getElementById("trialDate").value
+            date = new Date(date);
+
+            if (!temp.frequencyPerWeek.includes(weekday[date.getDay()])) {
+                document.getElementById("error").style.display = "block";
+                document.getElementById("internal-error").innerHTML = "Institute is not open on this day of week. Please select Trail Date only from " + temp.frequencyPerWeek;
+                document.getElementById("trialDate").value = "";
+            }
+            else {
+                document.getElementById("error").style.display = "none";
+            }
+        }
+
+        $(document).ready(function () {
+            $('#dropdown_coins').text("Delhi")
+
+            const year = new Date().getFullYear();
+            const month = new Date().getMonth() + 1;
+            const day = new Date().getDate();
+            var today = new Date().toISOString().split('T')[0];
+
+            var d = new Date(year, month, day);
+
+            d.setMonth(d.getMonth() + 1);
+            d = d.toISOString().split('T')[0];
+
+
+
+            // const d = new Date();
+            // let day = weekday[d.getDay()];
+
+
+            document.getElementById("trialDate").setAttribute('min', today);
+            document.getElementById("trialDate").setAttribute('max', d);
+
+
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/v1/getCustomersName',
+                type: 'GET',
+                contentType: "application/json;",
+                dataType: 'json',
+                crossDomain: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    const name = res.customerFullName.split(" ");
+                    const firstName = name[0];
+                    document.getElementById("greet").innerHTML = "Hi, " + firstName;
+                    document.getElementById("login-div").style.display = "none";
+                    document.getElementById("sign-up").style.display = "none";
+                    document.getElementById("signup-divider").style.display = "none";
+                    document.getElementById("myAccount").style.display = "block";
+                    // document.getElementById("favouritesDiv").setAttribute("data-bs-target", "#");
+                    if (res.customerFavourites == null) {
+                        document.getElementById("myFavouriteList").innerHTML = "EMPTY";
+                    }
+                    else {
+                        document.getElementById("myFavouriteList").innerHTML = res.customerFavourites;
+                    }
+                },
+                error: function (e) {
+                    location.href = 'signin.html'
+                }
+            });
+
+
+            let paramString = window.location.href.split('?')[1];
+            let queryString = new URLSearchParams(paramString);
+
+
+            var k = 0;
+            var city;
+            var businessName;
+            var locality;
+            var batchName;
+
+            for (let pair of queryString.entries()) {
+                url = pair[1];
+                if (k == 0) {
+                    city = url;
+                }
+                else if (k == 1) {
+                    locality = url;
+                }
+                else if (k == 2) {
+                    businessName = url;
+                }
+                else if (k == 3) {
+                    batchName = url;
+                }
+                k++;
+            }
+
+            businessName = businessName.replace(/\s+/g, '-').toLowerCase();
+            city = city.replace(/\s+/g, '-').toLowerCase();
+            locality = locality.replace(/\s+/g, '-').toLowerCase();
+            batchName = batchName.replace(/\s+/g, '-').toLowerCase();
+
+            var obj = new Object();
+            obj.businessName = businessName.toString();
+            obj.city = city.toString();
+            obj.locality = locality.toString();
+            obj.batchName = batchName.toString();
+            obj.subscriptionPlan = subscriptionPlan.toString();
+            var data = JSON.stringify(obj);
+            console.log(data)
+
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/v1/getBatchDetails',
+                type: 'POST',
+                contentType: "application/json;",
+                dataType: 'json',
+                data: data,
+                crossDomain: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    console.log(res);
+                    temp = res;
+                    document.getElementById("businessName").innerHTML = res.businessName;
+                    document.getElementById("batchName").innerHTML = res.batchName;
+                    document.getElementById("hero-course").style.background = "url(" + res.batchImage + ")";
+                    document.getElementById("hero-course").style.backgroundSize = "cover";
+                    if (res.isFlexible == true) {
+                        document.getElementById("startDate").innerHTML = res.batchStartDate + " Onwards";
+                    }
+                    else {
+                        document.getElementById("startDate").innerHTML = res.batchStartDate;
+                    }
+                    document.getElementById("freq").innerHTML = res.frequencyPerWeek;
+                    document.getElementById("capacity").innerHTML = res.batchCapacity;
+                    document.getElementById("price").innerHTML = "₹" + res.price30days;
+                    document.getElementById("gender").innerHTML = res.eligibility;
+                    document.getElementById("ageGroup").innerHTML = res.ageGroups;
+                    document.getElementById("month").innerHTML = res.frequencyPerMonth;
+                    document.getElementById("timeSlot").innerHTML = res.classStartTime + "-" + res.classEndTime;
+                    console.log(res.price30days)
+                    if (res.price30days == null) {
+                        $("#30 *").attr("disabled", "disabled").off('click');
+                        document.getElementById("price30").style.backgroundColor = "lightgrey";
+                    }
+                    else {
+                        document.getElementById("price30").innerHTML = "₹" + res.price30days;
+                    }
+                    if (res.price60days == null) {
+                        $("#60 *").attr("disabled", "disabled").off('click');
+                        document.getElementById("price60").style.backgroundColor = "lightgrey";
+                    }
+                    else {
+                        document.getElementById("price60").innerHTML = "₹" + res.price60days;
+                    }
+                    if (res.price90days == null) {
+                        $("#90 *").attr("disabled", "disabled").off('click');
+                        document.getElementById("price90").style.backgroundColor = "lightgrey";
+                    }
+                    else {
+                        document.getElementById("price90").innerHTML = "₹" + res.price90days;
+                    }
+                    if (res.price180days == null) {
+                        $("#180 *").attr("disabled", "disabled").off('click');
+                        document.getElementById("price180").style.backgroundColor = "lightgrey";
+                    }
+                    else {
+                        document.getElementById("price180").innerHTML = "₹" + res.price180days;
+                    }
+                    if (res.isUpcomingAppointment == true) {
+                        var date = res.upcomingAppointmentDate;
+                        document.getElementById("success").style.display = "block";
+                        document.getElementById("internal-success").innerHTML = "You have an upcoming Appointment for this batch on " + date;
+                    }
+                    document.getElementById("category").innerHTML = res.batchCategory;
+                    document.getElementById("course-image").setAttribute("src", res.batchImage);
+                    loader.style.visibility = "hidden";
+                },
+                error: function (e) {
+                    console.log(e)
+                    loader.style.visibility = "hidden";
+                }
+            });
+        });
+
+        function logout() {
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/auth/signout',
+                type: 'POST',
+                contentType: "application/json;",
+                crossDomain: true,
+                withCredentials: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    eraseCookie();
+                    location.href = '/art-and-craft.html'
+                },
+                error: function (e) {
+                    location.href = '/index.html';
+                }
+            });
+        }
+
+        function share() {
+            navigator.clipboard.writeText(window.location.href);
+            document.getElementById("custom-tooltip").style.display = "inline";
+            // document.getElementById("shareButton").style.display = "none";
+            setTimeout(function () {
+                document.getElementById("custom-tooltip").style.display = "none";
+                // document.getElementById("shareButton").style.display = "block";
+            }, 1000);
+        }
+
+
+        //Initialize with the list of symbols
+        let cityNames = ["Delhi"]
+    
+        //Find the input search box
+        let search = document.getElementById("searchCoin")
+    
+        //Find every item inside the dropdown
+        let items = document.getElementsByClassName("dropdown-city")
+        function buildDropDownCity(values) {
+          let contents = []
+          for (let name of values) {
+            contents.push('<input type="button" class="dropdown-item dropdown-city" type="button" value="' + name + '"/>')
+          }
+          $('#menuItems').append(contents.join(""))
+    
+          //Hide the row that shows no items were found
+          $('#empty').hide()
+        }
+    
+        //Capture the event when user types into the search box
+        document.getElementById("searchCoin").addEventListener('input', function () {
+          event.preventDefault();
+          filterCity(search.value.trim().toLowerCase())
+        })
+    
+        //For every word entered by the user, check if the symbol starts with that word
+        //If it does show the symbol, else hide it
+        function filterCity(word) {
+          console.log(word)
+          let length = items.length
+          console.log(items)
+          let collection = []
+          let hidden = 0
+          for (let i = 0; i < length; i++) {
+            if (items[i].value.toLowerCase().startsWith(word)) {
+              $(items[i]).show()
+            }
+            else {
+              $(items[i]).hide()
+              hidden++
+            }
+          }
+    
+          //If all items are hidden, show the empty view
+          if (hidden === length) {
+            $('#empty').show()
+          }
+          else {
+            $('#empty').hide()
+          }
+        }
+    
+        //If the user clicks on any item, set the title of the button as the text of the item
+        $('#menuItems').on('click', '.dropdown-item', function () {
+          $('#dropdown_coins').text($(this)[0].value)
+          $("#dropdown_coins").dropdown('toggle');
+        })
+        buildDropDownCity(cityNames)
+
+        //Initialize with the list of symbols
+        let genderNames = ["Male", "Female"]
+
+        function buildDropDownGender(values) {
+          let contents = []
+          for (let name of values) {
+            contents.push('<input type="button" class="dropdown-item dropdown-gender" type="button" value="' + name + '"/>')
+          }
+          $('#menuItems-gender').append(contents.join(""))
+    
+          //Hide the row that shows no items were found
+          $('#empty').hide()
+        }
+    
+        //If the user clicks on any item, set the title of the button as the text of the item
+        $('#menuItems-gender').on('click', '.dropdown-item', function () {
+            gender = $(this)[0].value;
+            $('#dropdown_gender').text($(this)[0].value)
+            $("#dropdown_gender").dropdown('toggle');
+        })
+        buildDropDownGender(genderNames)
+    </script> -->
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="test.css">
+</head>
+<style>
+    #firstone {
+        z-index: 2;
+    }
+
+    #contain {
+        height: 400px;
+        width: 400px;
+        background-color: rgba(100, 25, 25, 0.2);
+    }
+
+    body {
+        text-align: center;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    .fancy_input_box {
+        text-align: left;
+        display: inline-block;
+        margin: 40px 3% 1px;
+        position: relative;
+    }
+
+    .fancy_input {
+        font: 15px/24px "Lato", Arial, sans-serif;
+        color: #aaa;
+        box-sizing: border-box;
+        letter-spacing: 1px;
+        border: 0;
+        padding: 7px 7px;
+        border: 1px solid #ccc;
+        position: relative;
+        background: transparent;
+    }
+
+    .fancy_input:focus~.dropdown-content {
+        display: block;
+        cursor: default;
+    }
+
+    .fancy_input:focus~.dropdown-content>span {
+        display: block;
+        cursor: default;
+    }
+
+    .dropdown-content {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.2);
+        width: 222px;
+        overflow: auto;
+        position: relative;
+    }
+
+    .dropdown-content:active {
+        display: block;
+    }
+
+    .dropdown-content>span {
+        padding: 12px 16px;
+        display: none;
+    }
+
+    .dropdown-content>span:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .fancy_input~.fancy_label {
+        position: absolute;
+        left: 14px;
+        width: 100%;
+        top: 10px;
+        color: #aaa;
+        letter-spacing: 0.5px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        z-index: -1;
+    }
+
+    .fancy_input:focus~.fancy_label {
+        top: -18px;
+        left: 1px;
+        font-size: 12px;
+        color: grey !important;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+    }
+
+    .fancy_input:focus {
+        border: 1px solid grey !important;
+    }
+
+    .fancy_input:not(focus):valid~.fancy_label {
+        top: -18px;
+        font-size: 12px;
+        left: 1px;
+        color: #aaa;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+    }
+</style>
+
+<body>
+    <div id="contain">
+
+        <div id="firstone" class="fancy_input_box">
+            <input class="fancy_input" type="text" placeholder="" maxlength="25" size="25" required>
+            <label class="fancy_label">Search</label>
+
+            <div class="dropdown-content">
+                <span>a</span>
+                <span>b</span>
+                <span>c</span>
+                <span>d</span>
+                <span>e</span>
+            </div>
+        </div>
+
+        <div class="fancy_input_box">
+            <input class="fancy_input" type="text" placeholder="" maxlength="4" size="10">
+            <label class="fancy_label">Thing</label>
+        </div>
+
+        <br>
+
+        <div>
+            <div class="fancy_input_box">
+                <input class="fancy_input" type="text" placeholder="" maxlength="4" size="10">
+                <label class="fancy_label">stuff</label>
+            </div>
+
+            <div class="fancy_input_box">
+                <input class="fancy_input" type="text" placeholder="" maxlength="4" size="10">
+                <label class="fancy_label">more stuff</label>
+            </div>
+
+            <div class="fancy_input_box">
+                <input class="fancy_input" type="text" placeholder="" maxlength="4" size="10">
+                <label class="fancy_label">more stuff</label>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

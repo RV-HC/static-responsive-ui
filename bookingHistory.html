@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Booking History</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- <link href="assets/css/merchant_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/custom_style.css" rel="stylesheet" /> -->
+    <!-- <link href="assets/css/font-awesome.css" rel="stylesheet" /> -->
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <style></style>
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript'
+        src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+    <!-- =======================================================
+  * Template Name: Presento - v3.7.0
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    <div id="loader">
+        <img src="./assets/img/loader2.gif" />
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="logo"><a href="/customer/index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdown_coins" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    City
+                </button>
+                <div id="menu" class="dropdown-menu" aria-labelledby="dropdown_coins">
+                    <form class="px-4 py-2">
+                        <input type="search" class="form-control" id="searchCoin" placeholder="Delhi"
+                            autofocus="autofocus">
+                    </form>
+                    <div id="menuItems"></div>
+                    <div id="empty" class="dropdown-header">City Not Found</div>
+                </div>
+            </div>
+
+            <div class="dropdown" style="width: 50%;">
+                <div id="myInput" class="input-group rounded">
+                    <input id="search" type="search" class="form-control rounded" widht="1"
+                        placeholder="Search for Hobby Center Or an Event" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                </div>
+                <div id="searchSuggestions" class="dropdown-menu">
+                    <div id="suggestions"></div>
+                </div>
+            </div>
+
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <div class="btn-group">
+                        <button type="button" id="greet" class="btn dropdown-toggle mr-3" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Account & List
+                        </button>
+                        <div class="dropdown-menu text-center">
+                            <div id="login-div" class="container">
+                                <div class="btn text-white text-center mt-1"
+                                    style="background-color:rgba(21, 202, 187, 0.808);width:100%;color:black"><a
+                                        href="signin.html">Login</a></div>
+                            </div>
+                            <div id="sign-up"><a class="sign-up" href="signup.html"
+                                    style="font-size:10px;color:black;">New User?
+                                    Create Account</a></div>
+                            <div id="signup-divider" class="dropdown-divider"
+                                style="border-color:rgba(11, 219, 202, 0.808);"></div>
+                            <div id="myAccount"><a class="dropdown-item" href="myAccount.html">My Account</a></div>
+                            <div id="bookingHistory"><a class="dropdown-item" href="bookingHistory.html">Booking
+                                    History</a></div>
+                            <a class="dropdown-item" href="Coupons.html">Coupons</a>
+                            <div id="dividerAboveLogout" class="dropdown-divider"
+                                style="border-color:rgba(11, 219, 202, 0.808);">
+                            </div>
+                            <a id="logout" class="dropdown-item" href="#" onclick="logout();">Logout</a>
+                        </div>
+                    </div>
+                    <li class="mr-2
+                " style="cursor: pointer;"><img id="notificationDiv" src="assets/img/active_notification.gif"
+                            width="30" height="30" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#notificationModal"></li>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <!-- <li><img id="favouritesDiv" src="assets/img/wishlist.png" width="30" height="30"
+                  class="img-fluid" data-bs-toggle="modal" data-bs-target="#wishlistModal" style="filter:grayscale"></li> -->
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+
+    <!-- Notification  -->
+    <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Notifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Empty
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- WishList -->
+    <div class="modal fade" id="wishlistModal" tabindex="-1" aria-labelledby="verificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="verificationModalLabel">Wishlist</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="myFavouriteList">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <section class="contact">
+            <div class="container rounded" style="margin-top:5%; margin-bottom:2%;">
+                <div class="section-title pt-5">
+                    <h2>Booking History</h2>
+                </div>
+                <div class="row pb-5">
+                    <div id="nothing" style="display:none">
+                        <img src="./assets/img/nothing.png">
+                    </div>
+                    <div id="cards">
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card1">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img1">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card1">
+                                    <div class="row mt-2">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link1">
+                                                <h4 id="batchName1"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel1"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(1)"><b>Cancel</b></button>
+                                            <!-- <img src="./assets/img/cancelled.png" style="max-width:80%;max-height:80%;"> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName1"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName1"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate1"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price1"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate1"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(1)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card2">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img2">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card2">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link2">
+                                                <h4 id="batchName2"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel2"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(2)"><b>Cancel</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName2"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName2"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate2"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price2"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate2"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(2)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img3">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card3">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link3">
+                                                <h4 id="batchName3"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel3"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(3)"><b>Cancel</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName3"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName3"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate3"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price3"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate3"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(3)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card4">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img4">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card4">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link4">
+                                                <h4 id="batchName4"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel4"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(4)"><b>Cancel</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName4"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName4"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate4"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price4"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate4"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(4)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card5">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img5">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card5">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link5">
+                                                <h4 id="batchName5"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel5"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(5)"><b>Cancel</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName5"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName5"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate5"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price5"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate5"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(5)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card6">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img6">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card6">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link6">
+                                                <h4 id="batchName6"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel6"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(6)"><b>Cancel</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName6"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName6"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate6"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price6"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate6"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(6)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card7">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img7">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card7">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link7">
+                                                <h4 id="batchName7"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel7"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(7)"><b>Cancel</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName7"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName7"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate7"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price7"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate7"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(7)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card8">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img8">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card8">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link8">
+                                                <h4 id="batchName8"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel8"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(8)"><b>Cancel</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName8"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName8"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate8"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price8"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate8"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(8)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow mb-3 rounded mt-3" style="width: 100%;" id="card9">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img class="rounded column-image" src="" alt="..." id="img9">
+                                </div>
+                                <div class="col-9 pl-1 pb-2 pt-2" id="in-card9">
+                                    <div class="row">
+                                        <div class="col-9">
+                                            <a class="card-title mt-2 batchTitle" target="_self" id="link9">
+                                                <h4 id="batchName9"></h4>
+                                            </a>
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="cancel9"
+                                                class="btn btn-white text-danger mr-5 bookingHistory-card"
+                                                style="float:right" onclick="askcancel(9)"><b>Cancel</b></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        <p class="card-text" id="businessName9"></p>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">User Name :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="userName9"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Booking Date :</h6>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="bookingDate9"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 style="color:#00a2c2">Price :</h6>
+                                                </div>
+                                                <div class="col-8" style="float:left">
+                                                    <b id="price9"></b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 style="color:#00a2c2">Appointment Date :</63>
+                                                </div>
+                                                <div class="col-7" style="float:left">
+                                                    <b id="appointmentDate9">30/07/2</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn rounded mr-3 mb-1 text-white"
+                                        style="background-color:#00a2c2;float:right" onclick="viewMore(9)">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row mt-3" id="row1">
+                <div class="col" id="card1" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img1">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category1"></div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning"><b id="batchName1">Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity1">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender1">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price1">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq1">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup1">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button1">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="card2" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img2">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category2">Dance
+                            </div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning" id="batchName2"><b>Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity2">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender2">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price2">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq2">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup2">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button2">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="card3" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img3">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category3">Dance
+                            </div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning"><b id="batchName3">Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity3">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender3">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price3">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq3">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup3">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button3">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" id="row2">
+                <div class="col" id="card4" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img4">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category4">Dance
+                            </div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning"><b id="batchName4">Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity4">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender4">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price4">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq4">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup4">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button4">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="card5" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img5">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category5">Dance
+                            </div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning"><b id="batchName5">Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity5">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender5">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price5">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq5">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup5">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button5">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="card6" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img6">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category6">Dance
+                            </div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning"><b id="batchName6">Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity6">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender6">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price6">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq6">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup6">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button6">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 mb-5" id="row3">
+                <div class="col" id="card7" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img7">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category7">Dance
+                            </div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning"><b id="batchName7">Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity7">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender7">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price7">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq7">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup7">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button7">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="card8" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img8">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category8">Dance
+                            </div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning"><b id="batchName8">Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity8">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender8">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price8">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq8">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup8">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button8">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="card9" style="width:33.33%">
+                    <div class="w3-card-4 rounded">
+                        <div class="w3-display-container w3-text-white">
+                            <img class="rounded-top" src="./assets/img/batches.jpg" alt="Lights"
+                                style="width:100%;filter:brightness(50%)" id="img9">
+                            <div class="w3-xlarge w3-display-bottomleft w3-padding" id="category9">Dance
+                            </div>
+                        </div>
+                        <div class="w3-row mt-2 pl-3" style="line-height:0.4rem">
+                            <h6 class="text-warning"><b id="batchName9">Batch Name</b></h6>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-3">
+                                    <p style="color:#00a2c2">Capacity:</p>
+                                </div>
+                                <div class="col-3" style="float:left" id="capacity9">
+                                    50
+                                </div>
+                                <div class="col-3" style="float:right">
+                                    <p style="color:#00a2c2">Gender</p>
+                                </div>
+                                <div class="col-2" style="float:left" id="gender9">
+                                    M,F
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6" style="float:left">
+                                    <p style="color:#00a2c2">Starting From</p>
+                                </div>
+                                <div class="col-6" style="float:right" id="price9">
+                                    ₹ 1000/M
+                                </div>
+                            </div>
+
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Frequency/Week</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="freq9">
+                                    5
+                                </div>
+                            </div>
+                            <div class="row" style="font-size:0.8rem;">
+                                <div class="col-6">
+                                    <p style="color:#00a2c2">Age Group</p>
+                                </div>
+                                <div class="col-6" style="float:left" id="ageGroup9">
+                                    Adult
+                                </div>
+                            </div>
+                            <div class="btn btn-white mb-2 mt-2 ml-2 mr-2 batch-button" style="width:94%;"
+                                id="button9">
+                                View More</div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <button class="btn btn-primary rounded mt-5 mb-5 btn-lg" id="prev"
+                                style="display: inline-block;margin:auto;background-color:rgba(3, 90, 83, 0.808);"
+                                onclick="prev()">Prev</button>
+                        </div>
+                        <div class="col-4 mt-5">
+                            <div class="row">
+                                <div class="col-5">
+                                    <b id="showing" style="float:right"></b>
+                                </div>
+                                <div class="col-2 text-center" id="of">
+                                    of
+                                </div>
+                                <div class="col-5">
+                                    <b id="total" style="float:left"></b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <button class="btn btn-primary rounded mt-5 mb-5 btn-lg" id="next"
+                                style="display: inline-block;margin:auto;background-color:rgba(3, 90, 83, 0.808);"
+                                onclick="next()">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="position: relative; z-index: 0;">
+        <div class="footer-top text-white pt-5">
+            <div class="container">
+                <h1 class="logo"><a href=""><img src="assets/img/logo.png" alt="" class="img-fluid"
+                            style="width: 70mm;height:12mm"></a></h1>
+            </div>
+            <div class="container">
+                <div class="footer-about wow fadeInUp animated"
+                    style="visibility: visible; animation-name: fadeInUp; width: 70%; float:left">
+
+                    <h3>About us</h3>
+                    <p>
+                        Wipe away the problems from your life by experiencing a whole new and
+                        creative platform proving hobbies. HOBBY CADDY is that platform that helps
+                        you with different options as per your interest. Our team is here to fulfil
+                        your dreams into reality. We aim to serve you with memorable activities,
+                        tremendous opportunities, and creative feats. Join us and let us help you
+                        fulfil your dreams, passion, and hobby.
+                    </p>
+
+                </div>
+                <div class="" style="width: 20%; float:right">
+                    <h4>For Any Assistance</h4>
+                    <img src="./assets/img/mail.png" style="width: 10mm; height:10mm"> Business Inquiries</img>
+                    <p>hobbycaddy@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="backstretch"
+            style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 471.422px; width: 1349px; z-index: -999998; position: absolute; background-color:rgba(3, 90, 83, 0.808);">
+            <img src="./assets/img/kenny-eliason-1-aA2Fadydc-unsplash.jpg"
+                style="position: absolute; margin: 0px; padding: 0px; border: none; width: 1349px; height: 899.333px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -213.956px; opacity: 0.1">
+        </div>
+        <hr style="width:100%;margin-left:0;height:2px;color:white">
+        <div class="container text-white text-center">
+            <h3>Quick Links</h3>
+            <br>
+            <div class="row">
+                <!--
+        <div class="col-sm" style="font-size: 0.8em">
+          List of Centres
+        </div> -->
+                <div class="col-sm" style="font-size: 0.8em">
+                    About
+                </div>
+                <div class="col-sm" style="font-size: 0.8em">
+                    Hiring
+                </div>
+                <div class="col-sm" style="font-size: 0.8em">
+                    Privacy Policy
+                </div>
+                <div class="col-sm" style="font-size: 0.8em">
+                    Guidelines and Policy
+                </div>
+                <div class="col-sm" style="font-size: 0.8em">
+                    Terms of Services
+                </div>
+                <div class="col-sm" style="font-size: 0.8em">
+                    FAQs
+                </div>
+                <!--
+        <div class="col-sm">
+          <button type="button" class="btn btn-warning text-white" style="font-size: 0.6em">Sell On Hobby Caddy</button>
+        </div> -->
+            </div>
+        </div>
+        <div class="container d-md-flex py-4 footer-bottom text-white">
+            <div class="me-md-auto text-center text-md-start">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Hobby Caddy</span></strong>. All Rights Reserved
+                </div>
+            </div>
+            <div class="social-links text-center text-md-end pt-3 pt-md-0">
+                <h6>Follow us on</h6>
+                <a href="#" class="twitter"><img src="./assets/img/twitter.png" style="height:6mm"></a>
+                <a href="#" class="facebook"><img src="./assets/img/facebook.png" style="height:6mm"></a>
+                <a href="#" class="instagram"><img src="./assets/img/instagram.png" style="height:6mm"></a>
+                <a href="#" class="linkedin"><img src="./assets/img/linkedin.png" style="height:6mm"></a>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <!-- Swiper JS -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.js"></script>
+    <script>
+        var myInputWidth = (document.getElementById("myInput").offsetWidth);
+        document.getElementById("myInput").style.width = myInputWidth * 0.8 + "px";
+
+        //Initialize with the list of symbols
+        let cityNames = ["Delhi"]
+
+        //Find the input search box
+        let search = document.getElementById("searchCoin")
+
+        //Find every item inside the dropdown
+        let items = document.getElementsByClassName("dropdown-city")
+        function buildDropDownCity(values) {
+            let contents = []
+            for (let name of values) {
+                contents.push('<input type="button" class="dropdown-item dropdown-city" type="button" value="' + name + '"/>')
+            }
+            $('#menuItems').append(contents.join(""))
+
+            //Hide the row that shows no items were found
+            $('#empty').hide()
+        }
+
+        //Capture the event when user types into the search box
+        document.getElementById("searchCoin").addEventListener('input', function () {
+            event.preventDefault();
+            filterCity(search.value.trim().toLowerCase())
+        })
+
+        //For every word entered by the user, check if the symbol starts with that word
+        //If it does show the symbol, else hide it
+        function filterCity(word) {
+            console.log(word)
+            let length = items.length
+            console.log(items)
+            let collection = []
+            let hidden = 0
+            for (let i = 0; i < length; i++) {
+                if (items[i].value.toLowerCase().startsWith(word)) {
+                    $(items[i]).show()
+                }
+                else {
+                    $(items[i]).hide()
+                    hidden++
+                }
+            }
+
+            //If all items are hidden, show the empty view
+            if (hidden === length) {
+                $('#empty').show()
+            }
+            else {
+                $('#empty').hide()
+            }
+        }
+
+        //If the user clicks on any item, set the title of the button as the text of the item
+        $('#menuItems').on('click', '.dropdown-item', function () {
+            $('#dropdown_coins').text($(this)[0].value)
+            $("#dropdown_coins").dropdown('toggle');
+        })
+        buildDropDownCity(cityNames)
+
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1, c.length);
+                }
+                if (c.indexOf(nameEQ) == 0) {
+                    return c.substring(nameEQ.length, c.length);
+                }
+            }
+            return null;
+        }
+
+        var temp = [];
+        var currPage = 1;
+
+        function main() {
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/v1/getBookingHistory',
+                type: 'GET',
+                contentType: "application/json;",
+                dataType: 'json',
+                crossDomain: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    temp = res;
+                    console.log(res);
+                    if (res.length == 0) {
+                        document.getElementById("nothing").style.display = 'block';
+                        document.getElementById("prev").style.display = "none";
+                        document.getElementById("next").style.display = "none";
+                        document.getElementById("total").style.display = "none";
+                        document.getElementById("of").style.display = "none";
+                        document.getElementById("showing").style.display = "none";
+                        document.getElementById("cards").style.display = "none";
+
+                    }
+                    else {
+                        var i = 1;
+                        total = res.length;
+                        for (; i <= Math.min(9, res.length); i++) {
+                            document.getElementById("batchName" + i).innerHTML = res[i - 1].batchName;
+                            document.getElementById("businessName" + i).innerHTML = res[i - 1].businessName + ", " + res[i - 1].businessAddress;
+                            document.getElementById("userName" + i).innerHTML = res[i - 1].firstName + " " + res[i - 1].lastName;
+                            document.getElementById("price" + i).innerHTML = res[i - 1].amount;
+                            document.getElementById("bookingDate" + i).innerHTML = res[i - 1].dateOfBooking;
+                            document.getElementById("appointmentDate" + i).innerHTML = res[i - 1].trialDate;
+
+                            var batchName = res[i - 1].batchName;
+                            var city = res[i - 1].city;
+                            var businessLocality = res[i - 1].locality;
+                            var businessName = res[i - 1].businessName;
+                            batchName = batchName.replace(/\s+/g, '-').toLowerCase();
+                            city = city.replace(/\s+/g, '-').toLowerCase();
+                            businessLocality = businessLocality.replace(/\s+/g, '-').toLowerCase();
+                            businessName = businessName.replace(/\s+/g, '-').toLowerCase();
+                            var courseDetailsUrl = "http://127.0.0.1:5500/customer/courseDetails.html?city=" + city + "&locality=" + businessLocality + "&businessName=" + businessName + "&batchName=" + batchName;
+                            document.getElementById("link" + i).setAttribute("href", courseDetailsUrl)
+                            if (res[i - 1].batchImage == "") {
+                                document.getElementById("img" + i).setAttribute("src", './assets/img/grey.jpg')
+                            }
+                            else {
+                                document.getElementById("img" + i).setAttribute("src", res[i - 1].batchImage);
+                            }
+                            if (res[i - 1].cancelled == true) {
+                                document.getElementById("in-card" + i).style.filter = "grayscale(100%)";
+                                document.getElementById("img" + i).setAttribute("src", "./assets/img/cancelled2.png");
+                                document.getElementById("cancel" + i).style.display = "none";
+                                document.getElementById("img" + i).style.width = "90%";
+                                document.getElementById("img" + i).style.paddingLeft = "15%";
+                            }
+                            else {
+                                document.getElementById("in-card" + i).style.filter = "grayscale(0%)";
+                            }
+                            document.getElementById("in-card" + i).style.display = "block";
+                            document.getElementById("batchName" + i).style.color = "#ffa500";
+                            document.getElementById("card" + i).style.display = "block";
+                        }
+                        document.getElementById("total").innerHTML = total;
+                        document.getElementById("showing").innerHTML = 1 + "-" + (i - 1);
+                        document.getElementById("prev").disabled = true;
+                        if (total == i - 1) {
+                            document.getElementById("next").disabled = true;
+                        }
+                        else{
+                            document.getElementById("next").disabled = false;
+                        }
+                        for (; i <= 9; i++) {
+                            document.getElementById("card" + i).style.display = "none";
+                        }
+                    }
+                    loader.style.visibility = "hidden";
+                },
+                error: function (e) {
+                    console.log(e.responseText)
+                    document.getElementById("nothing").style.display = 'block';
+                    document.getElementById("prev").style.display = "none";
+                    document.getElementById("next").style.display = "none";
+                    document.getElementById("total").style.display = "none";
+                    document.getElementById("of").style.display = "none";
+                    document.getElementById("showing").style.display = "none";
+                    document.getElementById("cards").style.display = "none";
+                    loader.style.visibility = "hidden";
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            $('#dropdown_coins').text("Delhi")
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/v1/getCustomersName',
+                type: 'GET',
+                contentType: "application/json;",
+                dataType: 'json',
+                crossDomain: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    const name = res.customerFullName.split(" ");
+                    const firstName = name[0];
+                    document.getElementById("greet").innerHTML = "Hi, " + firstName;
+                    document.getElementById("login-div").style.display = "none";
+                    document.getElementById("sign-up").style.display = "none";
+                    document.getElementById("signup-divider").style.display = "none";
+                    // document.getElementById("favouritesDiv").setAttribute("data-bs-target", "#");
+                    document.getElementById("myFavouriteList").innerHTML = res.customerFavourites;
+                    loader.style.visibility = "hidden";
+                },
+                error: function (e) {
+                    location.href = '/signin.html'
+                }
+            });
+
+            main();
+        });
+
+        function next() {
+            currPage++;
+            document.getElementById("prev").disabled = false;
+
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+
+            var i = (currPage - 1) * 9 + 1;
+            var j = 1;
+            for (; i <= Math.min(currPage * 9, temp.length); i++, j++) {
+                document.getElementById("batchName" + j).innerHTML = temp[i - 1].batchName;
+                document.getElementById("businessName" + j).innerHTML = temp[i - 1].businessName + ", " + temp[i - 1].businessAddress;
+                document.getElementById("userName" + j).innerHTML = temp[i - 1].firstName + " " + temp[i - 1].lastName;
+                document.getElementById("price" + j).innerHTML = temp[i - 1].amount;
+                document.getElementById("bookingDate" + j).innerHTML = temp[i - 1].dateOfBooking;
+                document.getElementById("appointmentDate" + j).innerHTML = temp[i - 1].trialDate;
+
+                var batchName = temp[i - 1].batchName;
+                var city = temp[i - 1].city;
+                var businessLocality = temp[i - 1].locality;
+                var businessName = temp[i - 1].businessName;
+                batchName = batchName.replace(/\s+/g, '-').toLowerCase();
+                city = city.replace(/\s+/g, '-').toLowerCase();
+                businessLocality = businessLocality.replace(/\s+/g, '-').toLowerCase();
+                businessName = businessName.replace(/\s+/g, '-').toLowerCase();
+                var courseDetailsUrl = "http://127.0.0.1:5500/customer/courseDetails.html?city=" + city + "&locality=" + businessLocality + "&businessName=" + businessName + "&batchName=" + batchName;
+                document.getElementById("link" + j).setAttribute("href", courseDetailsUrl)
+                if (temp[i - 1].batchImage == "") {
+                    document.getElementById("img" + j).setAttribute("src", './assets/img/grey.jpg')
+                }
+                else {
+                    document.getElementById("img" + j).setAttribute("src", temp[i - 1].batchImage);
+                }
+                if (temp[i - 1].cancelled == true) {
+                    document.getElementById("in-card" + j).style.filter = "grayscale(100%)";
+                    document.getElementById("img" + j).setAttribute("src", "./assets/img/cancelled2.png");
+                    document.getElementById("cancel" + j).style.display = "none";
+                }
+                else {
+                    document.getElementById("in-card" + j).style.filter = "grayscale(0%)";
+                    document.getElementById("cancel" + j).style.display = "block";
+                }
+                document.getElementById("in-card" + j).style.display = "block";
+                document.getElementById("batchName" + j).style.color = "#ffa500";
+            }
+            document.getElementById("showing").innerHTML = ((currPage - 1) * 8 + 1) + "-" + (i - 1);
+            if (total == i - 1) {
+                document.getElementById("next").disabled = true;
+            }
+            for (; j <= 9; j++) {
+                document.getElementById("card" + j).style.display = "none";
+            }
+            loader.style.visibility = "hidden";
+        }
+
+        function prev() {
+
+            currPage--;
+            document.getElementById("next").disabled = false;
+
+            if (currPage == 1) {
+                document.getElementById("prev").disabled = true;
+            }
+
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+
+            var i = (currPage - 1) * 9 + 1;
+            var j = 1;
+            for (; i <= Math.min(currPage * 9, temp.length); i++, j++) {
+                document.getElementById("batchName" + j).innerHTML = temp[i - 1].batchName;
+                document.getElementById("businessName" + j).innerHTML = temp[i - 1].businessName + ", " + temp[i - 1].businessAddress;
+                document.getElementById("userName" + j).innerHTML = temp[i - 1].firstName + " " + temp[i - 1].lastName;
+                document.getElementById("price" + j).innerHTML = temp[i - 1].amount;
+                document.getElementById("bookingDate" + j).innerHTML = temp[i - 1].dateOfBooking;
+                document.getElementById("appointmentDate" + j).innerHTML = temp[i - 1].trialDate;
+
+                var batchName = temp[i - 1].batchName;
+                var city = temp[i - 1].city;
+                var businessLocality = temp[i - 1].locality;
+                var businessName = temp[i - 1].businessName;
+                batchName = batchName.replace(/\s+/g, '-').toLowerCase();
+                city = city.replace(/\s+/g, '-').toLowerCase();
+                businessLocality = businessLocality.replace(/\s+/g, '-').toLowerCase();
+                businessName = businessName.replace(/\s+/g, '-').toLowerCase();
+                var courseDetailsUrl = "http://127.0.0.1:5500/customer/courseDetails.html?city=" + city + "&locality=" + businessLocality + "&businessName=" + businessName + "&batchName=" + batchName;
+                document.getElementById("link" + i).setAttribute("href", courseDetailsUrl)
+                if (temp[i - 1].batchImage == "") {
+                    document.getElementById("img" + j).setAttribute("src", './assets/img/grey.jpg')
+                }
+                else {
+                    document.getElementById("img" + j).setAttribute("src", temp[i - 1].batchImage);
+                }
+                if (temp[i - 1].cancelled == true) {
+                    document.getElementById("in-card" + j).style.filter = "grayscale(100%)";
+                    document.getElementById("img" + j).setAttribute("src", "./assets/img/cancelled2.png");
+                    document.getElementById("cancel" + j).style.display = "none";
+                }
+                else {
+                    document.getElementById("cancel" + j).style.display = "block";
+                    document.getElementById("in-card" + j).style.filter = "grayscale(0%)";
+                }
+                document.getElementById("card" + j).style.display = "block";
+                document.getElementById("batchName" + j).style.color = "#ffa500";
+            }
+            document.getElementById("showing").innerHTML = ((currPage - 1) * 8 + 1) + "-" + (i - 1);
+            loader.style.visibility = "hidden";
+            /*
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+
+            currPage--;
+            if (currPage == 1) {
+                document.getElementById("prev").disabled = true;
+            }
+            document.getElementById("next").disabled = false;
+            var i = (currPage - 1) * 8 + 1;
+            var j = 1;
+            for (; i <= Math.min(currPage * 9, total); i++, j++) {
+                document.getElementById("centreName" + j).innerHTML = temp.businesses[i - 1].businessName;
+                document.getElementById("address" + j).innerHTML += temp.businesses[i - 1].businessAddress;
+                document.getElementById("price" + j).innerHTML = "₹ " + temp.businesses[i - 1].startFrom;
+                if (temp.businesses[i - 1].businessImage == null) {
+                    document.getElementById("img" + j).setAttribute("src", './assets/img/grey.jpg')
+                }
+                else {
+                    document.getElementById("img" + j).setAttribute("src", temp.busineses[i - 1].businessImage);
+                }
+                document.getElementById("card" + j).style.display = "block";
+            }
+            document.getElementById("showing").innerHTML = ((currPage - 1) * 9 + 1) + "-" + (i - 1);
+            loader.style.visibility = "hidden";
+            */
+        }
+
+        function eraseCookie() {
+            document.cookie = "customerToken" + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        }
+
+        function cancel(id) {
+
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+            var index = 9 * [currPage - 1] + id - 1;
+            console.log(temp)
+            var bookingId = temp[index].bookingId;
+
+            console.log(bookingId);
+
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/v1/cancelBooking',
+                type: 'PUT',
+                contentType: "application/text;",
+                dataType: 'text',
+                data: bookingId,
+                crossDomain: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+
+                    loader.style.visibility = "hidden";
+                    // main();
+                    location.reload();
+                },
+                error: function (e) {
+                    location.href = '/signin.html'
+                }
+            });
+        }
+
+        function viewMore(id) {
+            var index = 9 * [currPage - 1] + id - 1;
+            window.open("./success.html?bookingId=" + temp[index].bookingId, "_self");
+        }
+
+        function askcancel(id) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You cannot retrieve the changes!",
+                // icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Confirm'
+            }).then((res) => {
+                console.log(res);
+                if (res.value) {
+                    cancel(id);
+                }
+            })
+        }
+
+        //Logout
+        function logout() {
+            loader.style.height = "100%";
+            loader.style.width = "100%";
+
+            loader.style.borderRadius = "50%";
+            loader.style.visibility = "visible";
+            $.ajax({
+                url: 'http://127.0.0.1:8080/api/customer/auth/signout',
+                type: 'POST',
+                contentType: "application/json;",
+                crossDomain: true,
+                withCredentials: true,
+                headers: {
+                    Authorization: "Bearer " + getCookie("customerToken")
+                },
+                success: function (res, req) {
+                    eraseCookie();
+                    location.href = "http://localhost:5500/signin.html";
+                },
+                error: function (e) {
+                    location.href = '/signin.html';
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
